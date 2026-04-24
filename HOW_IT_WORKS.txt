@@ -1,0 +1,230 @@
+================================================================================
+                    HOW THE RESUME RANKER WORKS (Simple Explanation)
+================================================================================
+
+OVERVIEW
+--------
+This is an AI-powered hiring platform that reads job descriptions and resumes,
+then automatically ranks candidates from best to worst fit. Think of it like a
+smart HR assistant that never gets tired.
+
+--------------------------------------------------------------------------------
+STEP 1: READ THE JOB DESCRIPTION (JD Reader Agent)
+--------------------------------------------------------------------------------
+What happens:
+  - You paste a job description.
+  - The system extracts key details: job title, required skills, preferred skills,
+    minimum experience, education requirements, certifications, and soft skills.
+
+How it works:
+  1. First, a rule-based parser scans the text using keywords and patterns.
+  2. Then, an AI model (Llama 3 via Ollama) reads the JD to improve accuracy.
+  3. The results from both methods are merged and cleaned.
+  4. The system classifies the role type (e.g., Engineering, Data Science,
+     Compliance, Management, Fresher, etc.)
+
+Example output:
+  Role: "Senior Python Developer"
+  Type: Engineering
+  Must-have skills: ["Python", "FastAPI", "PostgreSQL"]
+  Preferred skills: ["Docker", "Kubernetes"]
+  Min experience: 3 years
+
+--------------------------------------------------------------------------------
+STEP 2: PARSE RESUMES (Resume Parser Agent)
+--------------------------------------------------------------------------------
+What happens:
+  - You upload PDF, DOCX, or TXT resume files.
+  - The system extracts structured information from each resume.
+
+How it works:
+  1. Text extraction:
+     - PDFs are read using pdfplumber or PyMuPDF.
+     - If the PDF is scanned (image), it falls back to OCR (Tesseract).
+     - DOCX and TXT files are read directly.
+
+  2. Information extraction:
+     - Name (from the first few lines)
+     - Email and phone number (using regex patterns)
+     - Skills (matching against a large keyword list + section extraction)
+     - Work experience (company, title, dates, duration in months)
+     - Education (degree, institution, graduation year)
+     - Projects (name, description, technologies used)
+     - Certifications
+
+  3. Edge case handling:
+     - Duplicate resumes are detected using SHA-256 content hashing.
+     - Multilingual resumes are flagged.
+     - If parsing confidence is low, the AI model enhances the extraction.
+
+  4. Warning flags are generated for:
+     - Keyword stuffing (too many skills listed)
+     - Job hopping (many short jobs under 12 months)
+     - Missing email or education section
+
+--------------------------------------------------------------------------------
+STEP 3: SCORE CANDIDATES (Ranking Agent)
+--------------------------------------------------------------------------------
+What happens:
+  - Each candidate is scored against the job requirements.
+  - The system uses weighted scoring based on the role type.
+
+Scoring dimensions (each has a weight depending on role):
+  1. ROLE EXPERIENCE (e.g., 35% for Engineering, 45% for Management)
+     - Skill matching: Direct match = full points, related/alias skill = partial points
+     - Experience years: Meets requirement = full points, below = partial points
+
+  2. RELEVANT PROJECTS (e.g., 40% for Engineering, 20% for Management)
+     - Number of projects
+     - How many project technologies match the job skills
+     - Fallback scoring if no projects found (uses work experience or skills)
+
+  3. CERTIFICATIONS (e.g., 10% for Engineering, 35% for Compliance)
+     - Matches required/preferred certifications
+     - Neutral score if no certifications required
+
+  4. EDUCATION (e.g., 10% for most roles, 35% for Freshers)
+     - Matches degree requirements (with alias support like BCA/B.Tech/BSc)
+
+  5. SOFT SKILLS (usually 5%)
+     - Checks if soft skills from JD appear in the resume text
+
+  6. SEMANTIC SIMILARITY (bonus up to 5 points)
+     - Uses AI embeddings (ChromaDB) to measure how similar the resume is to
+       the job description in meaning, not just keywords.
+
+  7. PENALTIES (deducted from total score)
+     - Job hopping: -3 points
+     - Career gaps (>6 months): -2 points
+     - Keyword stuffing: -2 points
+     - Overqualified: -1.5 points
+     - Underqualified: -2 points
+     - Low parse confidence: -1 point
+
+  8. TIEBREAKER
+     - If two candidates have the same score, tiebreaker uses:
+       experience years + certifications count + projects count + parse confidence
+
+Role-based weight examples:
+  Engineering:    Experience 35%, Projects 40%, Certs 10%, Education 10%, Soft 5%
+  Compliance:     Experience 35%, Projects 15%, Certs 35%, Education 10%, Soft 5%
+  Fresher:        Experience 10%, Projects 35%, Certs 15%, Education 35%, Soft 5%
+  Data Science:   Experience 30%, Projects 40%, Certs 15%, Education 10%, Soft 5%
+  Management:     Experience 45%, Projects 20%, Certs 10%, Education 10%, Soft 15%
+
+Skill matching is smart:
+  - "Python" matches "Django", "Flask", "FastAPI" (related skills)
+  - "React" matches "JavaScript", "Angular", "Vue" (frontend family)
+  - "AWS" matches "Azure", "GCP" (cloud family)
+  - Fuzzy matching handles typos (e.g., "Pythn" ~ "Python")
+
+Final score: 0-100, where:
+  - 70+ = Shortlist (strong fit)
+  - 50-69 = Hold (good but has gaps)
+  - <50 = Reject (weak fit)
+
+--------------------------------------------------------------------------------
+STEP 4: GENERATE REASONING (Reasoning Agent)
+--------------------------------------------------------------------------------
+What happens:
+  - For each candidate, the system writes a human-readable assessment.
+
+How it works:
+  - Rule-based reasoning (default):
+    - Summarizes strengths (matched skills, good experience, certifications)
+    - Identifies gaps (missing skills, short experience, no projects)
+    - Notes risks (job hopping, keyword stuffing, low confidence)
+    - Determines recommendation: SHORTLIST / HOLD / REJECT
+
+  - Optional LLM reasoning:
+    - The AI model (Llama 3) can generate a detailed recruiter assessment.
+
+Example output for a candidate:
+  Summary: "John Doe is a strong fit for Senior Python Developer (85.5/100)."
+  Strengths: ["Matched 5 required skills: Python, FastAPI, PostgreSQL...",
+              "5y experience satisfies the 3y requirement at TechCorp"]
+  Gaps: ["Missing: Kubernetes"]
+  Risks: ["No risks identified"]
+  Recommendation: SHORTLIST
+  Confidence: 92%
+
+--------------------------------------------------------------------------------
+THE PIPELINE FLOW
+--------------------------------------------------------------------------------
+The whole process is managed by a pipeline (using LangGraph):
+
+  [Start]
+    |
+    v
+  [Read Job Description]  --> Extract role, skills, experience, requirements
+    |
+    v
+  [Parse Resumes]         --> Extract candidate info from each file
+    |
+    v
+  [Rank Candidates]       --> Score everyone 0-100
+    |
+    v
+  [Generate Reasoning]    --> Write assessment for each candidate
+    |
+    v
+  [Export Results]        --> Save as CSV, JSON, and text report
+
+Each step only proceeds if the previous step succeeded. Errors are caught and
+logged without crashing the entire process.
+
+--------------------------------------------------------------------------------
+THE API (Backend)
+--------------------------------------------------------------------------------
+The backend is a FastAPI server with these endpoints:
+
+  POST /analyze-job       --> Submit a job description
+  POST /upload-resumes    --> Upload resume files
+  POST /rank              --> Start the ranking pipeline
+  GET  /status/{run_id}   --> Check pipeline progress
+  GET  /results/{run_id}  --> Get ranked candidates with scores and reasoning
+  GET  /download/{run_id} --> Download CSV, JSON, or text report
+  GET  /health            --> Check if AI services are running
+
+The ranking runs in the background so you don't have to wait.
+
+--------------------------------------------------------------------------------
+THE FRONTEND
+--------------------------------------------------------------------------------
+A React web app where you can:
+  1. Paste a job description
+  2. Upload multiple resumes (drag & drop)
+  3. Click "Rank Candidates"
+  4. View results with color-coded scores (green=shortlist, yellow=hold, red=reject)
+  5. Click any candidate to see detailed reasoning
+  6. Download reports
+
+--------------------------------------------------------------------------------
+DATA STORAGE
+--------------------------------------------------------------------------------
+  - Run states are stored in a JSON file (uploads/runs_state.json)
+  - Resume text embeddings are stored in ChromaDB for semantic similarity
+  - Exported results are saved in the exports/ folder
+  - Logs are saved in logs/app.log
+
+--------------------------------------------------------------------------------
+KEY TECHNOLOGIES USED
+--------------------------------------------------------------------------------
+  - Python + FastAPI      (backend API)
+  - React + Vite          (frontend UI)
+  - LangGraph             (pipeline workflow)
+  - Llama 3 (via Ollama)  (AI model for parsing and reasoning)
+  - ChromaDB              (vector database for semantic search)
+  - pdfplumber / PyMuPDF  (PDF text extraction)
+  - pytesseract           (OCR for scanned PDFs)
+  - python-docx           (DOCX text extraction)
+
+--------------------------------------------------------------------------------
+SUMMARY IN ONE SENTENCE
+--------------------------------------------------------------------------------
+The Resume Ranker reads job descriptions and resumes, uses AI + smart rules to
+score candidates across multiple dimensions (skills, experience, projects,
+education, certifications), applies penalties for red flags, and produces ranked
+results with human-readable explanations.
+================================================================================
+

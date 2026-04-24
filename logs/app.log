@@ -1,0 +1,1294 @@
+2026-04-24 12:00:40 | INFO     | backend.api.main | POST /analyze-job run_id=058fe801-d309-4779-88e5-59e0fdb99053
+2026-04-24 12:00:40 | INFO     | backend.agents.jd_reader_agent | JD Reader Agent: starting extraction
+2026-04-24 12:00:51 | WARNING  | backend.services.ollama_client | Ollama HTTP error attempt 1: Server error '500 Internal Server Error' for url 'http://localhost:11434/api/chat'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500
+2026-04-24 12:01:30 | WARNING  | backend.agents.jd_reader_agent | LLM JD extraction failed, using rule-based only: 1 validation error for JobProfile
+role_type
+  Input should be 'engineering', 'compliance', 'fresher', 'management', 'design', 'data_science', 'sales' or 'general' [type=enum, input_value='fresher|engineering', input_type=str]
+2026-04-24 12:01:30 | INFO     | backend.services.storage | Saved run 058fe801-d309-4779-88e5-59e0fdb99053 with status=jd_analyzed
+2026-04-24 12:01:30 | INFO     | backend.api.main | POST /upload-resumes run_id=058fe801-d309-4779-88e5-59e0fdb99053 files=3
+2026-04-24 12:01:30 | INFO     | backend.api.main | Saved: uploads\058fe801-d309-4779-88e5-59e0fdb99053\Nandita Resume.pdf.pdf
+2026-04-24 12:01:30 | INFO     | backend.api.main | Saved: uploads\058fe801-d309-4779-88e5-59e0fdb99053\Niranjan patil resume new.pdf
+2026-04-24 12:01:30 | INFO     | backend.api.main | Saved: uploads\058fe801-d309-4779-88e5-59e0fdb99053\Omkar_final CV.pdf
+2026-04-24 12:01:30 | INFO     | backend.api.main | POST /rank run_id=058fe801-d309-4779-88e5-59e0fdb99053
+2026-04-24 12:01:30 | INFO     | backend.workflows.pipeline | Starting pipeline run_id=058fe801-d309-4779-88e5-59e0fdb99053 with 3 resumes
+2026-04-24 12:01:30 | INFO     | backend.services.storage | Saved run 058fe801-d309-4779-88e5-59e0fdb99053 with status=started
+2026-04-24 12:01:30 | INFO     | backend.workflows.pipeline | [Pipeline] Node: read_jd | run_id=058fe801-d309-4779-88e5-59e0fdb99053
+2026-04-24 12:01:30 | INFO     | backend.agents.jd_reader_agent | JD Reader Agent: starting extraction
+2026-04-24 12:02:04 | WARNING  | backend.agents.jd_reader_agent | LLM JD extraction failed, using rule-based only: 1 validation error for JobProfile
+role_type
+  Input should be 'engineering', 'compliance', 'fresher', 'management', 'design', 'data_science', 'sales' or 'general' [type=enum, input_value='fresher|engineering', input_type=str]
+2026-04-24 12:02:04 | INFO     | backend.workflows.pipeline | [Pipeline] Node: parse_resumes | run_id=058fe801-d309-4779-88e5-59e0fdb99053
+2026-04-24 12:02:04 | INFO     | backend.agents.resume_parser_agent | Resume Parser Agent: processing 3 files
+2026-04-24 12:02:04 | INFO     | backend.agents.resume_parser_agent | Parsing: Nandita Resume.pdf.pdf (id=0c8aceba-5d00-46ab-a53f-35ce54e64509)
+2026-04-24 12:02:04 | INFO     | backend.tools.resume_parser | Parsing resume: Nandita Resume.pdf.pdf
+2026-04-24 12:02:05 | INFO     | backend.agents.resume_parser_agent | Parsed Nandita Resume.pdf.pdf: confidence=100%, skills=15
+2026-04-24 12:02:05 | INFO     | backend.agents.resume_parser_agent | Parsing: Niranjan patil resume new.pdf (id=1c173a84-c137-464b-8927-235b950450c1)
+2026-04-24 12:02:05 | INFO     | backend.tools.resume_parser | Parsing resume: Niranjan patil resume new.pdf
+2026-04-24 12:02:05 | INFO     | backend.agents.resume_parser_agent | Parsed Niranjan patil resume new.pdf: confidence=100%, skills=23
+2026-04-24 12:02:05 | INFO     | backend.agents.resume_parser_agent | Parsing: Omkar_final CV.pdf (id=5918b71e-eaee-41f3-9636-151ce22cfaec)
+2026-04-24 12:02:05 | INFO     | backend.tools.resume_parser | Parsing resume: Omkar_final CV.pdf
+2026-04-24 12:02:05 | INFO     | backend.agents.resume_parser_agent | Parsed Omkar_final CV.pdf: confidence=80%, skills=19
+2026-04-24 12:02:05 | INFO     | backend.agents.resume_parser_agent | Resume Parser Agent: completed 3 profiles
+2026-04-24 12:02:05 | INFO     | backend.workflows.pipeline | [Pipeline] Node: rank_candidates | run_id=058fe801-d309-4779-88e5-59e0fdb99053
+2026-04-24 12:02:05 | INFO     | backend.agents.ranking_agent | Ranking Agent: scoring 3 candidates for 'is ideal for candidates with academic projects, internship simulations, strong coding interest, and '
+2026-04-24 12:04:55 | INFO     | backend.api.main | POST /analyze-job run_id=10d9837e-8d10-4140-99eb-c5063eefcba1
+2026-04-24 12:04:55 | INFO     | backend.agents.jd_reader_agent | JD Reader Agent: starting extraction
+2026-04-24 12:05:28 | WARNING  | backend.agents.jd_reader_agent | LLM JD extraction failed, using rule-based only: 1 validation error for JobProfile
+role_type
+  Input should be 'engineering', 'compliance', 'fresher', 'management', 'design', 'data_science', 'sales' or 'general' [type=enum, input_value='fresher|engineering', input_type=str]
+2026-04-24 12:05:28 | INFO     | backend.services.storage | Saved run 10d9837e-8d10-4140-99eb-c5063eefcba1 with status=jd_analyzed
+2026-04-24 12:05:28 | INFO     | backend.api.main | POST /upload-resumes run_id=10d9837e-8d10-4140-99eb-c5063eefcba1 files=1
+2026-04-24 12:05:28 | INFO     | backend.api.main | Saved: uploads\10d9837e-8d10-4140-99eb-c5063eefcba1\Nandita Resume.pdf.pdf
+2026-04-24 12:05:28 | INFO     | backend.api.main | POST /rank run_id=10d9837e-8d10-4140-99eb-c5063eefcba1
+2026-04-24 12:05:28 | INFO     | backend.workflows.pipeline | Starting pipeline run_id=10d9837e-8d10-4140-99eb-c5063eefcba1 with 1 resumes
+2026-04-24 12:05:28 | INFO     | backend.services.storage | Saved run 10d9837e-8d10-4140-99eb-c5063eefcba1 with status=started
+2026-04-24 12:05:28 | INFO     | backend.workflows.pipeline | [Pipeline] Node: read_jd | run_id=10d9837e-8d10-4140-99eb-c5063eefcba1
+2026-04-24 12:05:28 | INFO     | backend.agents.jd_reader_agent | JD Reader Agent: starting extraction
+2026-04-24 12:05:34 | WARNING  | backend.services.embeddings | Similarity computation failed: Expected collection name that (1) contains 3-63 characters, (2) starts and ends with an alphanumeric character, (3) otherwise contains only alphanumeric characters, underscores or hyphens (-), (4) contains no two consecutive periods (..) and (5) is not a valid IPv4 address, got _temp_similarity
+2026-04-24 12:05:34 | WARNING  | backend.services.embeddings | Similarity computation failed: Expected collection name that (1) contains 3-63 characters, (2) starts and ends with an alphanumeric character, (3) otherwise contains only alphanumeric characters, underscores or hyphens (-), (4) contains no two consecutive periods (..) and (5) is not a valid IPv4 address, got _temp_similarity
+2026-04-24 12:05:34 | WARNING  | backend.services.embeddings | Similarity computation failed: Expected collection name that (1) contains 3-63 characters, (2) starts and ends with an alphanumeric character, (3) otherwise contains only alphanumeric characters, underscores or hyphens (-), (4) contains no two consecutive periods (..) and (5) is not a valid IPv4 address, got _temp_similarity
+2026-04-24 12:05:34 | INFO     | backend.agents.ranking_agent | Ranking Agent: ranked 3 candidates
+2026-04-24 12:05:34 | INFO     | backend.workflows.pipeline | [Pipeline] Node: generate_reasoning | run_id=058fe801-d309-4779-88e5-59e0fdb99053
+2026-04-24 12:05:34 | INFO     | backend.agents.reasoning_agent | Reasoning Agent: generating reasoning for 3 candidates
+2026-04-24 12:06:02 | WARNING  | backend.agents.jd_reader_agent | LLM JD extraction failed, using rule-based only: 1 validation error for JobProfile
+role_type
+  Input should be 'engineering', 'compliance', 'fresher', 'management', 'design', 'data_science', 'sales' or 'general' [type=enum, input_value='fresher|engineering', input_type=str]
+2026-04-24 12:06:02 | INFO     | backend.workflows.pipeline | [Pipeline] Node: parse_resumes | run_id=10d9837e-8d10-4140-99eb-c5063eefcba1
+2026-04-24 12:06:02 | INFO     | backend.agents.resume_parser_agent | Resume Parser Agent: processing 1 files
+2026-04-24 12:06:02 | INFO     | backend.agents.resume_parser_agent | Parsing: Nandita Resume.pdf.pdf (id=ff70a992-46c6-4711-9569-2bb14887a5d2)
+2026-04-24 12:06:02 | INFO     | backend.tools.resume_parser | Parsing resume: Nandita Resume.pdf.pdf
+2026-04-24 12:06:02 | INFO     | backend.agents.resume_parser_agent | Parsed Nandita Resume.pdf.pdf: confidence=100%, skills=15
+2026-04-24 12:06:02 | INFO     | backend.agents.resume_parser_agent | Resume Parser Agent: completed 1 profiles
+2026-04-24 12:06:02 | INFO     | backend.workflows.pipeline | [Pipeline] Node: rank_candidates | run_id=10d9837e-8d10-4140-99eb-c5063eefcba1
+2026-04-24 12:06:02 | INFO     | backend.agents.ranking_agent | Ranking Agent: scoring 1 candidates for 'is ideal for candidates with academic projects, internship simulations, strong coding interest, and '
+2026-04-24 12:06:03 | WARNING  | backend.services.embeddings | Similarity computation failed: Expected collection name that (1) contains 3-63 characters, (2) starts and ends with an alphanumeric character, (3) otherwise contains only alphanumeric characters, underscores or hyphens (-), (4) contains no two consecutive periods (..) and (5) is not a valid IPv4 address, got _temp_similarity
+2026-04-24 12:06:03 | INFO     | backend.agents.ranking_agent | Ranking Agent: ranked 1 candidates
+2026-04-24 12:06:03 | INFO     | backend.workflows.pipeline | [Pipeline] Node: generate_reasoning | run_id=10d9837e-8d10-4140-99eb-c5063eefcba1
+2026-04-24 12:06:03 | INFO     | backend.agents.reasoning_agent | Reasoning Agent: generating reasoning for 1 candidates
+2026-04-24 12:07:34 | INFO     | backend.agents.reasoning_agent | Reasoning Agent: completed
+2026-04-24 12:07:34 | INFO     | backend.services.storage | Saved run 10d9837e-8d10-4140-99eb-c5063eefcba1 with status=completed
+2026-04-24 12:07:34 | INFO     | backend.workflows.pipeline | Pipeline completed run_id=10d9837e-8d10-4140-99eb-c5063eefcba1 status=completed
+2026-04-24 12:07:34 | INFO     | backend.tools.exporter | Exported 1 candidates to CSV: exports\10d9837e-8d10-4140-99eb-c5063eefcba1_results.csv
+2026-04-24 12:07:34 | INFO     | backend.tools.exporter | Exported 1 candidates to JSON: exports\10d9837e-8d10-4140-99eb-c5063eefcba1_results.json
+2026-04-24 12:07:34 | INFO     | backend.tools.exporter | Shortlist report written: exports\10d9837e-8d10-4140-99eb-c5063eefcba1_shortlist_report.txt
+2026-04-24 12:09:06 | INFO     | backend.agents.reasoning_agent | Reasoning Agent: completed
+2026-04-24 12:09:06 | INFO     | backend.services.storage | Saved run 058fe801-d309-4779-88e5-59e0fdb99053 with status=completed
+2026-04-24 12:09:06 | INFO     | backend.workflows.pipeline | Pipeline completed run_id=058fe801-d309-4779-88e5-59e0fdb99053 status=completed
+2026-04-24 12:09:07 | INFO     | backend.tools.exporter | Exported 3 candidates to CSV: exports\058fe801-d309-4779-88e5-59e0fdb99053_results.csv
+2026-04-24 12:09:07 | INFO     | backend.tools.exporter | Exported 3 candidates to JSON: exports\058fe801-d309-4779-88e5-59e0fdb99053_results.json
+2026-04-24 12:09:07 | INFO     | backend.tools.exporter | Shortlist report written: exports\058fe801-d309-4779-88e5-59e0fdb99053_shortlist_report.txt
+2026-04-24 12:11:03 | INFO     | backend.api.main | POST /analyze-job run_id=8c96aaa1-0d3b-43d5-ac5a-8cb799b466a7
+2026-04-24 12:11:03 | INFO     | backend.agents.jd_reader_agent | JD Reader Agent: starting extraction
+2026-04-24 12:11:38 | WARNING  | backend.agents.jd_reader_agent | LLM JD extraction failed, using rule-based only: 1 validation error for JobProfile
+role_type
+  Input should be 'engineering', 'compliance', 'fresher', 'management', 'design', 'data_science', 'sales' or 'general' [type=enum, input_value='fresher|engineering', input_type=str]
+2026-04-24 12:11:38 | INFO     | backend.services.storage | Saved run 8c96aaa1-0d3b-43d5-ac5a-8cb799b466a7 with status=jd_analyzed
+2026-04-24 12:14:07 | INFO     | backend.api.main | POST /analyze-job run_id=2c6c8e33-7090-4089-922c-efd7714e5ed8
+2026-04-24 12:14:07 | INFO     | backend.agents.jd_reader_agent | JD Reader Agent: starting extraction
+2026-04-24 12:14:38 | WARNING  | backend.agents.jd_reader_agent | LLM JD extraction failed, using rule-based only: 1 validation error for JobProfile
+role_type
+  Input should be 'engineering', 'compliance', 'fresher', 'management', 'design', 'data_science', 'sales' or 'general' [type=enum, input_value='fresher|engineering', input_type=str]
+2026-04-24 12:14:38 | INFO     | backend.services.storage | Saved run 2c6c8e33-7090-4089-922c-efd7714e5ed8 with status=jd_analyzed
+2026-04-24 12:14:40 | INFO     | backend.api.main | POST /upload-resumes run_id=2c6c8e33-7090-4089-922c-efd7714e5ed8 files=3
+2026-04-24 12:14:40 | INFO     | backend.api.main | Saved: uploads\2c6c8e33-7090-4089-922c-efd7714e5ed8\Nandita Resume.pdf.pdf
+2026-04-24 12:14:40 | INFO     | backend.api.main | Saved: uploads\2c6c8e33-7090-4089-922c-efd7714e5ed8\Niranjan patil resume new.pdf
+2026-04-24 12:14:40 | INFO     | backend.api.main | Saved: uploads\2c6c8e33-7090-4089-922c-efd7714e5ed8\Omkar_final CV.pdf
+2026-04-24 12:14:40 | INFO     | backend.api.main | POST /rank run_id=2c6c8e33-7090-4089-922c-efd7714e5ed8
+2026-04-24 12:27:04 | INFO     | backend.services.storage | Saved run test-persist-123 with status=jd_analyzed
+2026-04-24 12:27:04 | INFO     | backend.services.storage | Loaded 1 runs from uploads\runs_state.json
+2026-04-24 12:27:04 | INFO     | backend.services.storage | Deleted run test-persist-123
+2026-04-24 12:27:40 | WARNING  | backend.tools.edge_handler | Duplicate resume detected: test.pdf
+2026-04-24 12:27:40 | WARNING  | backend.tools.ocr_fallback | Could not determine if PDF is scanned: file error
+2026-04-24 12:27:42 | INFO     | backend.tools.ocr_fallback | OCR extracted 18 chars from tmp5n15e_jz.pdf
+2026-04-24 12:27:42 | ERROR    | backend.services.ollama_client | Failed to parse JSON from Ollama: No JSON object found in response
+Raw: This is not JSON at all, just plain text.
+2026-04-24 12:27:42 | WARNING  | backend.services.ollama_client | Ollama connection error attempt 1: fail 1
+2026-04-24 12:27:44 | WARNING  | backend.services.ollama_client | Ollama connection error attempt 2: fail 2
+2026-04-24 12:27:48 | WARNING  | backend.services.ollama_client | Ollama connection error attempt 3: fail 3
+2026-04-24 12:27:56 | INFO     | backend.agents.ranking_agent | Ranking Agent: scoring 2 candidates for 'Senior Python Developer'
+2026-04-24 12:27:56 | INFO     | backend.tools.scorer | Penalties for c002: ['Significantly underqualified: 1.0y vs required 4.0y']
+2026-04-24 12:27:56 | INFO     | backend.agents.ranking_agent | Ranking Agent: ranked 2 candidates
+2026-04-24 12:27:56 | INFO     | backend.agents.ranking_agent | Ranking Agent: scoring 2 candidates for 'Senior Python Developer'
+2026-04-24 12:27:56 | INFO     | backend.tools.scorer | Penalties for weak: ['Significantly underqualified: 0.5y vs required 4.0y']
+2026-04-24 12:27:56 | INFO     | backend.agents.ranking_agent | Ranking Agent: ranked 2 candidates
+2026-04-24 12:27:56 | INFO     | backend.agents.ranking_agent | Ranking Agent: scoring 5 candidates for 'Senior Python Developer'
+2026-04-24 12:27:56 | INFO     | backend.agents.ranking_agent | Ranking Agent: ranked 5 candidates
+2026-04-24 12:27:56 | INFO     | backend.agents.ranking_agent | Ranking Agent: scoring 2 candidates for 'Senior Python Developer'
+2026-04-24 12:27:56 | INFO     | backend.agents.ranking_agent | Skipping duplicate: c002.pdf
+2026-04-24 12:27:56 | INFO     | backend.agents.ranking_agent | Ranking Agent: ranked 1 candidates
+2026-04-24 12:27:56 | INFO     | backend.agents.reasoning_agent | Reasoning Agent: generating reasoning for 1 candidates (llm=False)
+2026-04-24 12:27:56 | INFO     | backend.agents.reasoning_agent | Reasoning Agent: completed
+2026-04-24 12:27:56 | INFO     | backend.api.main | POST /analyze-job run_id=7e4fbb60-77e5-4a3f-aee3-6122e8a2e2cb
+2026-04-24 12:27:56 | INFO     | backend.services.storage | Saved run 7e4fbb60-77e5-4a3f-aee3-6122e8a2e2cb with status=jd_analyzed
+2026-04-24 12:27:56 | INFO     | backend.api.main | GET /results/nonexistent-run-id-xyz
+2026-04-24 12:27:57 | WARNING  | backend.services.embeddings | Similarity computation failed: Expected collection name that (1) contains 3-63 characters, (2) starts and ends with an alphanumeric character, (3) otherwise contains only alphanumeric characters, underscores or hyphens (-), (4) contains no two consecutive periods (..) and (5) is not a valid IPv4 address, got _temp_similarity
+2026-04-24 12:27:57 | WARNING  | backend.services.embeddings | Similarity computation failed: Expected collection name that (1) contains 3-63 characters, (2) starts and ends with an alphanumeric character, (3) otherwise contains only alphanumeric characters, underscores or hyphens (-), (4) contains no two consecutive periods (..) and (5) is not a valid IPv4 address, got _temp_similarity
+2026-04-24 12:27:57 | WARNING  | backend.services.embeddings | Similarity computation failed: Expected collection name that (1) contains 3-63 characters, (2) starts and ends with an alphanumeric character, (3) otherwise contains only alphanumeric characters, underscores or hyphens (-), (4) contains no two consecutive periods (..) and (5) is not a valid IPv4 address, got _temp_similarity
+2026-04-24 12:27:57 | WARNING  | backend.services.embeddings | Similarity computation failed: Expected collection name that (1) contains 3-63 characters, (2) starts and ends with an alphanumeric character, (3) otherwise contains only alphanumeric characters, underscores or hyphens (-), (4) contains no two consecutive periods (..) and (5) is not a valid IPv4 address, got _temp_similarity
+2026-04-24 12:27:57 | INFO     | backend.tools.scorer | Penalties for test-001: ['Significantly underqualified: 0.5y vs required 5.0y']
+2026-04-24 12:27:57 | WARNING  | backend.services.embeddings | Similarity computation failed: Expected collection name that (1) contains 3-63 characters, (2) starts and ends with an alphanumeric character, (3) otherwise contains only alphanumeric characters, underscores or hyphens (-), (4) contains no two consecutive periods (..) and (5) is not a valid IPv4 address, got _temp_similarity
+2026-04-24 12:27:57 | WARNING  | backend.services.embeddings | Similarity computation failed: Expected collection name that (1) contains 3-63 characters, (2) starts and ends with an alphanumeric character, (3) otherwise contains only alphanumeric characters, underscores or hyphens (-), (4) contains no two consecutive periods (..) and (5) is not a valid IPv4 address, got _temp_similarity
+2026-04-24 12:27:57 | WARNING  | backend.services.embeddings | Similarity computation failed: Expected collection name that (1) contains 3-63 characters, (2) starts and ends with an alphanumeric character, (3) otherwise contains only alphanumeric characters, underscores or hyphens (-), (4) contains no two consecutive periods (..) and (5) is not a valid IPv4 address, got _temp_similarity
+2026-04-24 12:27:57 | INFO     | backend.tools.scorer | Penalties for weak: ['Significantly underqualified: 1.0y vs required 3.0y']
+2026-04-24 12:29:02 | INFO     | backend.services.storage | Loaded 1 runs from uploads\runs_state.json
+2026-04-24 12:31:48 | INFO     | backend.api.main | POST /analyze-job run_id=78467af2-60d4-46fb-9c22-183a9beba8ff
+2026-04-24 12:31:48 | INFO     | backend.agents.jd_reader_agent | JD Reader Agent: starting extraction
+2026-04-24 12:31:57 | WARNING  | backend.services.ollama_client | Ollama HTTP error attempt 1: Server error '500 Internal Server Error' for url 'http://localhost:11434/api/chat'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500
+2026-04-24 12:32:33 | WARNING  | backend.agents.jd_reader_agent | LLM JD extraction failed, using rule-based only: 1 validation error for JobProfile
+role_type
+  Input should be 'engineering', 'compliance', 'fresher', 'management', 'design', 'data_science', 'sales' or 'general' [type=enum, input_value='fresher|engineering', input_type=str]
+2026-04-24 12:32:33 | INFO     | backend.services.storage | Saved run 78467af2-60d4-46fb-9c22-183a9beba8ff with status=jd_analyzed
+2026-04-24 12:32:36 | INFO     | backend.services.storage | Loaded 1 runs from uploads\runs_state.json
+2026-04-24 12:32:38 | INFO     | backend.services.storage | Loaded 1 runs from uploads\runs_state.json
+2026-04-24 12:32:38 | INFO     | backend.api.main | POST /upload-resumes run_id=78467af2-60d4-46fb-9c22-183a9beba8ff files=3
+2026-04-24 12:32:38 | INFO     | backend.api.main | Saved: uploads\78467af2-60d4-46fb-9c22-183a9beba8ff\Nandita Resume.pdf.pdf
+2026-04-24 12:32:38 | INFO     | backend.api.main | Saved: uploads\78467af2-60d4-46fb-9c22-183a9beba8ff\Niranjan patil resume new.pdf
+2026-04-24 12:32:38 | INFO     | backend.api.main | Saved: uploads\78467af2-60d4-46fb-9c22-183a9beba8ff\Omkar_final CV.pdf
+2026-04-24 12:32:38 | INFO     | backend.services.storage | Saved run 78467af2-60d4-46fb-9c22-183a9beba8ff with status=resumes_uploaded
+2026-04-24 12:32:38 | INFO     | backend.api.main | POST /rank run_id=78467af2-60d4-46fb-9c22-183a9beba8ff
+2026-04-24 12:32:53 | INFO     | backend.api.main | POST /analyze-job run_id=57b599a8-8830-4eca-8e83-b27d3074cf24
+2026-04-24 12:32:53 | INFO     | backend.agents.jd_reader_agent | JD Reader Agent: starting extraction
+2026-04-24 12:33:22 | WARNING  | backend.agents.jd_reader_agent | LLM JD extraction failed, using rule-based only: 1 validation error for JobProfile
+role_type
+  Input should be 'engineering', 'compliance', 'fresher', 'management', 'design', 'data_science', 'sales' or 'general' [type=enum, input_value='fresher|engineering', input_type=str]
+2026-04-24 12:33:22 | INFO     | backend.services.storage | Saved run 57b599a8-8830-4eca-8e83-b27d3074cf24 with status=jd_analyzed
+2026-04-24 12:33:22 | INFO     | backend.api.main | POST /upload-resumes run_id=57b599a8-8830-4eca-8e83-b27d3074cf24 files=3
+2026-04-24 12:33:22 | INFO     | backend.api.main | Saved: uploads\57b599a8-8830-4eca-8e83-b27d3074cf24\Nandita Resume.pdf.pdf
+2026-04-24 12:33:22 | INFO     | backend.api.main | Saved: uploads\57b599a8-8830-4eca-8e83-b27d3074cf24\Niranjan patil resume new.pdf
+2026-04-24 12:33:22 | INFO     | backend.api.main | Saved: uploads\57b599a8-8830-4eca-8e83-b27d3074cf24\Omkar_final CV.pdf
+2026-04-24 12:33:22 | INFO     | backend.api.main | POST /rank run_id=57b599a8-8830-4eca-8e83-b27d3074cf24
+2026-04-24 12:33:22 | INFO     | backend.workflows.pipeline | Starting pipeline run_id=57b599a8-8830-4eca-8e83-b27d3074cf24 with 3 resumes
+2026-04-24 12:33:22 | INFO     | backend.services.storage | Saved run 57b599a8-8830-4eca-8e83-b27d3074cf24 with status=started
+2026-04-24 12:33:22 | INFO     | backend.workflows.pipeline | [Pipeline] Node: read_jd | run_id=57b599a8-8830-4eca-8e83-b27d3074cf24
+2026-04-24 12:33:22 | INFO     | backend.agents.jd_reader_agent | JD Reader Agent: starting extraction
+2026-04-24 12:33:54 | WARNING  | backend.agents.jd_reader_agent | LLM JD extraction failed, using rule-based only: 1 validation error for JobProfile
+role_type
+  Input should be 'engineering', 'compliance', 'fresher', 'management', 'design', 'data_science', 'sales' or 'general' [type=enum, input_value='fresher|engineering', input_type=str]
+2026-04-24 12:33:54 | INFO     | backend.workflows.pipeline | [Pipeline] Node: parse_resumes | run_id=57b599a8-8830-4eca-8e83-b27d3074cf24
+2026-04-24 12:33:54 | INFO     | backend.agents.resume_parser_agent | Resume Parser Agent: processing 3 files
+2026-04-24 12:33:54 | INFO     | backend.agents.resume_parser_agent | Parsing: Nandita Resume.pdf.pdf (id=fbb34a81-cadf-42a1-83e6-e1e421e49cda)
+2026-04-24 12:33:54 | INFO     | backend.tools.resume_parser | Parsing resume: Nandita Resume.pdf.pdf
+2026-04-24 12:33:54 | INFO     | backend.agents.resume_parser_agent | Parsed Nandita Resume.pdf.pdf: confidence=100%, skills=15
+2026-04-24 12:33:54 | INFO     | backend.agents.resume_parser_agent | Parsing: Niranjan patil resume new.pdf (id=c14deb65-fd02-47de-aa47-f858c722f168)
+2026-04-24 12:33:54 | INFO     | backend.tools.resume_parser | Parsing resume: Niranjan patil resume new.pdf
+2026-04-24 12:33:54 | INFO     | backend.agents.resume_parser_agent | Parsed Niranjan patil resume new.pdf: confidence=100%, skills=23
+2026-04-24 12:33:54 | INFO     | backend.agents.resume_parser_agent | Parsing: Omkar_final CV.pdf (id=0fdd2761-706e-4d68-bd3b-7a16560bcfe2)
+2026-04-24 12:33:54 | INFO     | backend.tools.resume_parser | Parsing resume: Omkar_final CV.pdf
+2026-04-24 12:33:54 | INFO     | backend.agents.resume_parser_agent | Parsed Omkar_final CV.pdf: confidence=80%, skills=19
+2026-04-24 12:33:54 | INFO     | backend.agents.resume_parser_agent | Resume Parser Agent: completed 3 profiles
+2026-04-24 12:33:54 | INFO     | backend.workflows.pipeline | [Pipeline] Node: rank_candidates | run_id=57b599a8-8830-4eca-8e83-b27d3074cf24
+2026-04-24 12:33:54 | INFO     | backend.agents.ranking_agent | Ranking Agent: scoring 3 candidates for 'Junior Python Developer to build backend applications, APIs, and database-driven systems. Freshers w'
+2026-04-24 12:33:55 | WARNING  | backend.services.embeddings | Similarity computation failed: Expected collection name that (1) contains 3-63 characters, (2) starts and ends with an alphanumeric character, (3) otherwise contains only alphanumeric characters, underscores or hyphens (-), (4) contains no two consecutive periods (..) and (5) is not a valid IPv4 address, got _temp_similarity
+2026-04-24 12:33:55 | WARNING  | backend.services.embeddings | Similarity computation failed: Expected collection name that (1) contains 3-63 characters, (2) starts and ends with an alphanumeric character, (3) otherwise contains only alphanumeric characters, underscores or hyphens (-), (4) contains no two consecutive periods (..) and (5) is not a valid IPv4 address, got _temp_similarity
+2026-04-24 12:33:55 | WARNING  | backend.services.embeddings | Similarity computation failed: Expected collection name that (1) contains 3-63 characters, (2) starts and ends with an alphanumeric character, (3) otherwise contains only alphanumeric characters, underscores or hyphens (-), (4) contains no two consecutive periods (..) and (5) is not a valid IPv4 address, got _temp_similarity
+2026-04-24 12:33:55 | INFO     | backend.agents.ranking_agent | Ranking Agent: ranked 3 candidates
+2026-04-24 12:33:55 | INFO     | backend.workflows.pipeline | [Pipeline] Node: generate_reasoning | run_id=57b599a8-8830-4eca-8e83-b27d3074cf24
+2026-04-24 12:33:55 | INFO     | backend.agents.reasoning_agent | Reasoning Agent: generating reasoning for 3 candidates (llm=False)
+2026-04-24 12:33:55 | INFO     | backend.agents.reasoning_agent | Reasoning Agent: completed
+2026-04-24 12:33:55 | INFO     | backend.services.storage | Saved run 57b599a8-8830-4eca-8e83-b27d3074cf24 with status=completed
+2026-04-24 12:33:55 | INFO     | backend.workflows.pipeline | Pipeline completed run_id=57b599a8-8830-4eca-8e83-b27d3074cf24 status=completed
+2026-04-24 12:33:55 | INFO     | backend.tools.exporter | Exported 3 candidates to CSV: exports\57b599a8-8830-4eca-8e83-b27d3074cf24_results.csv
+2026-04-24 12:33:55 | INFO     | backend.tools.exporter | Exported 3 candidates to JSON: exports\57b599a8-8830-4eca-8e83-b27d3074cf24_results.json
+2026-04-24 12:33:55 | INFO     | backend.tools.exporter | Shortlist report written: exports\57b599a8-8830-4eca-8e83-b27d3074cf24_shortlist_report.txt
+2026-04-24 12:33:58 | INFO     | backend.api.main | GET /results/57b599a8-8830-4eca-8e83-b27d3074cf24
+2026-04-24 12:35:21 | INFO     | backend.api.main | GET /download/57b599a8-8830-4eca-8e83-b27d3074cf24 format=csv
+2026-04-24 12:35:21 | INFO     | backend.tools.exporter | Exported 3 candidates to CSV: exports\57b599a8-8830-4eca-8e83-b27d3074cf24_results.csv
+2026-04-24 12:35:48 | INFO     | backend.api.main | POST /analyze-job run_id=5238f7ed-251f-40e6-9651-2556ffbd75cc
+2026-04-24 12:35:48 | INFO     | backend.agents.jd_reader_agent | JD Reader Agent: starting extraction
+2026-04-24 12:36:17 | WARNING  | backend.agents.jd_reader_agent | LLM JD extraction failed, using rule-based only: 1 validation error for JobProfile
+role_type
+  Input should be 'engineering', 'compliance', 'fresher', 'management', 'design', 'data_science', 'sales' or 'general' [type=enum, input_value='fresher|engineering', input_type=str]
+2026-04-24 12:36:17 | INFO     | backend.services.storage | Saved run 5238f7ed-251f-40e6-9651-2556ffbd75cc with status=jd_analyzed
+2026-04-24 12:36:17 | INFO     | backend.api.main | POST /upload-resumes run_id=5238f7ed-251f-40e6-9651-2556ffbd75cc files=3
+2026-04-24 12:36:17 | INFO     | backend.api.main | Saved: uploads\5238f7ed-251f-40e6-9651-2556ffbd75cc\Nandita Resume.pdf.pdf
+2026-04-24 12:36:17 | INFO     | backend.api.main | Saved: uploads\5238f7ed-251f-40e6-9651-2556ffbd75cc\Niranjan patil resume new.pdf
+2026-04-24 12:36:17 | INFO     | backend.api.main | Saved: uploads\5238f7ed-251f-40e6-9651-2556ffbd75cc\Omkar_final CV.pdf
+2026-04-24 12:36:17 | INFO     | backend.api.main | POST /rank run_id=5238f7ed-251f-40e6-9651-2556ffbd75cc
+2026-04-24 12:36:17 | INFO     | backend.workflows.pipeline | Starting pipeline run_id=5238f7ed-251f-40e6-9651-2556ffbd75cc with 3 resumes
+2026-04-24 12:36:17 | INFO     | backend.services.storage | Saved run 5238f7ed-251f-40e6-9651-2556ffbd75cc with status=started
+2026-04-24 12:36:17 | INFO     | backend.workflows.pipeline | [Pipeline] Node: read_jd | run_id=5238f7ed-251f-40e6-9651-2556ffbd75cc
+2026-04-24 12:36:17 | INFO     | backend.agents.jd_reader_agent | JD Reader Agent: starting extraction
+2026-04-24 12:36:48 | WARNING  | backend.agents.jd_reader_agent | LLM JD extraction failed, using rule-based only: 1 validation error for JobProfile
+role_type
+  Input should be 'engineering', 'compliance', 'fresher', 'management', 'design', 'data_science', 'sales' or 'general' [type=enum, input_value='fresher|engineering', input_type=str]
+2026-04-24 12:36:48 | INFO     | backend.workflows.pipeline | [Pipeline] Node: parse_resumes | run_id=5238f7ed-251f-40e6-9651-2556ffbd75cc
+2026-04-24 12:36:48 | INFO     | backend.agents.resume_parser_agent | Resume Parser Agent: processing 3 files
+2026-04-24 12:36:48 | INFO     | backend.agents.resume_parser_agent | Parsing: Nandita Resume.pdf.pdf (id=ed512c22-22ff-4934-bc98-c574a3f51d92)
+2026-04-24 12:36:48 | INFO     | backend.tools.resume_parser | Parsing resume: Nandita Resume.pdf.pdf
+2026-04-24 12:36:48 | INFO     | backend.agents.resume_parser_agent | Parsed Nandita Resume.pdf.pdf: confidence=100%, skills=15
+2026-04-24 12:36:48 | INFO     | backend.agents.resume_parser_agent | Parsing: Niranjan patil resume new.pdf (id=a434b5d7-f4f8-4b1a-8def-edf8cb77996e)
+2026-04-24 12:36:48 | INFO     | backend.tools.resume_parser | Parsing resume: Niranjan patil resume new.pdf
+2026-04-24 12:36:48 | INFO     | backend.agents.resume_parser_agent | Parsed Niranjan patil resume new.pdf: confidence=100%, skills=23
+2026-04-24 12:36:48 | INFO     | backend.agents.resume_parser_agent | Parsing: Omkar_final CV.pdf (id=c7680ee7-4716-48dc-8ee0-ecdda5439d09)
+2026-04-24 12:36:48 | INFO     | backend.tools.resume_parser | Parsing resume: Omkar_final CV.pdf
+2026-04-24 12:36:48 | INFO     | backend.agents.resume_parser_agent | Parsed Omkar_final CV.pdf: confidence=80%, skills=19
+2026-04-24 12:36:48 | INFO     | backend.agents.resume_parser_agent | Resume Parser Agent: completed 3 profiles
+2026-04-24 12:36:48 | INFO     | backend.workflows.pipeline | [Pipeline] Node: rank_candidates | run_id=5238f7ed-251f-40e6-9651-2556ffbd75cc
+2026-04-24 12:36:48 | INFO     | backend.agents.ranking_agent | Ranking Agent: scoring 3 candidates for '**Junior Software Developer** for an entry-level role. Freshers can apply.'
+2026-04-24 12:36:48 | WARNING  | backend.services.embeddings | Similarity computation failed: Expected collection name that (1) contains 3-63 characters, (2) starts and ends with an alphanumeric character, (3) otherwise contains only alphanumeric characters, underscores or hyphens (-), (4) contains no two consecutive periods (..) and (5) is not a valid IPv4 address, got _temp_similarity
+2026-04-24 12:36:48 | WARNING  | backend.services.embeddings | Similarity computation failed: Expected collection name that (1) contains 3-63 characters, (2) starts and ends with an alphanumeric character, (3) otherwise contains only alphanumeric characters, underscores or hyphens (-), (4) contains no two consecutive periods (..) and (5) is not a valid IPv4 address, got _temp_similarity
+2026-04-24 12:36:48 | WARNING  | backend.services.embeddings | Similarity computation failed: Expected collection name that (1) contains 3-63 characters, (2) starts and ends with an alphanumeric character, (3) otherwise contains only alphanumeric characters, underscores or hyphens (-), (4) contains no two consecutive periods (..) and (5) is not a valid IPv4 address, got _temp_similarity
+2026-04-24 12:36:48 | INFO     | backend.agents.ranking_agent | Ranking Agent: ranked 3 candidates
+2026-04-24 12:36:48 | INFO     | backend.workflows.pipeline | [Pipeline] Node: generate_reasoning | run_id=5238f7ed-251f-40e6-9651-2556ffbd75cc
+2026-04-24 12:36:48 | INFO     | backend.agents.reasoning_agent | Reasoning Agent: generating reasoning for 3 candidates (llm=False)
+2026-04-24 12:36:48 | INFO     | backend.agents.reasoning_agent | Reasoning Agent: completed
+2026-04-24 12:36:48 | INFO     | backend.services.storage | Saved run 5238f7ed-251f-40e6-9651-2556ffbd75cc with status=completed
+2026-04-24 12:36:48 | INFO     | backend.workflows.pipeline | Pipeline completed run_id=5238f7ed-251f-40e6-9651-2556ffbd75cc status=completed
+2026-04-24 12:36:48 | INFO     | backend.tools.exporter | Exported 3 candidates to CSV: exports\5238f7ed-251f-40e6-9651-2556ffbd75cc_results.csv
+2026-04-24 12:36:48 | INFO     | backend.tools.exporter | Exported 3 candidates to JSON: exports\5238f7ed-251f-40e6-9651-2556ffbd75cc_results.json
+2026-04-24 12:36:48 | INFO     | backend.tools.exporter | Shortlist report written: exports\5238f7ed-251f-40e6-9651-2556ffbd75cc_shortlist_report.txt
+2026-04-24 12:36:51 | INFO     | backend.api.main | GET /results/5238f7ed-251f-40e6-9651-2556ffbd75cc
+2026-04-24 13:01:44 | INFO     | backend.services.storage | Loaded 4 runs from uploads\runs_state.json
+2026-04-24 13:02:04 | INFO     | backend.services.storage | Loaded 4 runs from uploads\runs_state.json
+2026-04-24 13:02:14 | INFO     | backend.services.storage | Loaded 4 runs from uploads\runs_state.json
+2026-04-24 13:02:51 | INFO     | backend.services.storage | Loaded 4 runs from uploads\runs_state.json
+2026-04-24 13:04:50 | INFO     | backend.services.storage | Loaded 4 runs from uploads\runs_state.json
+2026-04-24 13:04:51 | INFO     | backend.services.storage | Loaded 4 runs from uploads\runs_state.json
+2026-04-24 13:05:02 | INFO     | backend.services.storage | Loaded 4 runs from uploads\runs_state.json
+2026-04-24 13:05:02 | INFO     | backend.services.storage | Loaded 4 runs from uploads\runs_state.json
+2026-04-24 13:05:40 | INFO     | backend.services.storage | Loaded 4 runs from uploads\runs_state.json
+2026-04-24 13:05:40 | INFO     | backend.services.storage | Loaded 4 runs from uploads\runs_state.json
+2026-04-24 13:08:43 | INFO     | backend.services.storage | Loaded 4 runs from uploads\runs_state.json
+2026-04-24 13:08:52 | INFO     | backend.services.storage | Loaded 4 runs from uploads\runs_state.json
+2026-04-24 13:09:02 | INFO     | backend.services.storage | Loaded 4 runs from uploads\runs_state.json
+2026-04-24 13:10:42 | INFO     | backend.services.storage | Loaded 4 runs from uploads\runs_state.json
+2026-04-24 13:10:42 | INFO     | backend.services.storage | Loaded 4 runs from uploads\runs_state.json
+2026-04-24 13:14:04 | INFO     | backend.services.storage | Loaded 4 runs from uploads\runs_state.json
+2026-04-24 13:14:13 | INFO     | backend.services.storage | Loaded 4 runs from uploads\runs_state.json
+2026-04-24 13:14:21 | INFO     | backend.tools.jd_parser | Parsing JD with rule-based parser
+2026-04-24 13:14:21 | INFO     | backend.tools.jd_parser | JD parsed: role='Senior Python Engineer with 5+ years of experience.' type=RoleType.ENGINEERING must_have=5 preferred=5 min_exp=5.0 max_exp=None
+2026-04-24 13:14:21 | INFO     | backend.tools.jd_parser | Parsing JD with rule-based parser
+2026-04-24 13:14:21 | INFO     | backend.tools.jd_parser | JD parsed: role='Senior Python Engineer with 5+ years of experience.' type=RoleType.ENGINEERING must_have=5 preferred=5 min_exp=5.0 max_exp=None
+2026-04-24 13:14:21 | INFO     | backend.tools.jd_parser | Parsing JD with rule-based parser
+2026-04-24 13:14:21 | INFO     | backend.tools.jd_parser | JD parsed: role='Senior Python Engineer with 5+ years of experience.' type=RoleType.ENGINEERING must_have=5 preferred=5 min_exp=5.0 max_exp=None
+2026-04-24 13:14:21 | INFO     | backend.tools.jd_parser | Parsing JD with rule-based parser
+2026-04-24 13:14:21 | INFO     | backend.tools.jd_parser | JD parsed: role='Senior Python Engineer with 5+ years of experience.' type=RoleType.ENGINEERING must_have=5 preferred=5 min_exp=5.0 max_exp=None
+2026-04-24 13:14:21 | INFO     | backend.tools.jd_parser | Parsing JD with rule-based parser
+2026-04-24 13:14:21 | INFO     | backend.tools.jd_parser | JD parsed: role='Senior Python Engineer with 5+ years of experience.' type=RoleType.ENGINEERING must_have=5 preferred=5 min_exp=5.0 max_exp=None
+2026-04-24 13:14:21 | INFO     | backend.tools.jd_parser | Parsing JD with rule-based parser
+2026-04-24 13:14:21 | INFO     | backend.tools.jd_parser | JD parsed: role='Mumbai, Pune' type=RoleType.DESIGN must_have=2 preferred=0 min_exp=0.0 max_exp=None
+2026-04-24 13:14:22 | WARNING  | backend.tools.edge_handler | Duplicate resume detected: test.pdf
+2026-04-24 13:14:22 | INFO     | backend.agents.ranking_agent | [RANKING:start] run_id=test-run-001 job='Senior Python Developer' candidates=2
+2026-04-24 13:14:22 | INFO     | backend.tools.scorer | [SCORE:start] candidate=c001 name=Jane Smith job=Senior Python Developer type=RoleType.ENGINEERING must_skills=4 pref_skills=2 min_exp=4.0
+2026-04-24 13:14:22 | INFO     | backend.tools.scorer | [SCORE:total] candidate=c001 base=62.2 semantic_bonus=2.5 penalties=0.0 total=64.7
+2026-04-24 13:14:22 | INFO     | backend.agents.ranking_agent | [RANKING:scored] candidate=c001 name=Jane Smith score=64.7 tiebreak=4.60
+2026-04-24 13:14:22 | INFO     | backend.tools.scorer | [SCORE:start] candidate=c002 name=Jane Smith job=Senior Python Developer type=RoleType.ENGINEERING must_skills=4 pref_skills=2 min_exp=4.0
+2026-04-24 13:14:22 | INFO     | backend.tools.scorer | [SCORE:penalties] candidate=c002 penalties=4.0 reasons=['Significantly underqualified: 1.0y vs required 4.0y']
+2026-04-24 13:14:22 | INFO     | backend.tools.scorer | [SCORE:total] candidate=c002 base=19.3 semantic_bonus=2.5 penalties=4.0 total=17.8
+2026-04-24 13:14:22 | INFO     | backend.agents.ranking_agent | [RANKING:scored] candidate=c002 name=Jane Smith score=17.8 tiebreak=2.60
+2026-04-24 13:14:22 | INFO     | backend.agents.ranking_agent | [RANKING:done] ranked=2 top=64.7 bottom=17.8 shortlist=0 hold=1 reject=1
+2026-04-24 13:14:22 | INFO     | backend.agents.ranking_agent | [RANKING:start] run_id=test-run-002 job='Senior Python Developer' candidates=2
+2026-04-24 13:14:22 | INFO     | backend.tools.scorer | [SCORE:start] candidate=strong name=Jane Smith job=Senior Python Developer type=RoleType.ENGINEERING must_skills=4 pref_skills=2 min_exp=4.0
+2026-04-24 13:14:22 | INFO     | backend.tools.scorer | [SCORE:total] candidate=strong base=47.1 semantic_bonus=1.5 penalties=0.0 total=48.6
+2026-04-24 13:14:22 | INFO     | backend.agents.ranking_agent | [RANKING:scored] candidate=strong name=Jane Smith score=48.6 tiebreak=5.10
+2026-04-24 13:14:22 | INFO     | backend.tools.scorer | [SCORE:start] candidate=weak name=Jane Smith job=Senior Python Developer type=RoleType.ENGINEERING must_skills=4 pref_skills=2 min_exp=4.0
+2026-04-24 13:14:22 | INFO     | backend.tools.scorer | [SCORE:penalties] candidate=weak penalties=4.0 reasons=['Significantly underqualified: 0.5y vs required 4.0y']
+2026-04-24 13:14:22 | INFO     | backend.tools.scorer | [SCORE:total] candidate=weak base=19.3 semantic_bonus=1.5 penalties=4.0 total=16.8
+2026-04-24 13:14:22 | INFO     | backend.agents.ranking_agent | [RANKING:scored] candidate=weak name=Jane Smith score=16.8 tiebreak=2.35
+2026-04-24 13:14:22 | INFO     | backend.agents.ranking_agent | [RANKING:done] ranked=2 top=48.6 bottom=16.8 shortlist=0 hold=0 reject=2
+2026-04-24 13:14:22 | INFO     | backend.agents.ranking_agent | [RANKING:start] run_id=test-run-003 job='Senior Python Developer' candidates=5
+2026-04-24 13:14:22 | INFO     | backend.tools.scorer | [SCORE:start] candidate=c0 name=Jane Smith job=Senior Python Developer type=RoleType.ENGINEERING must_skills=4 pref_skills=2 min_exp=4.0
+2026-04-24 13:14:22 | INFO     | backend.tools.scorer | [SCORE:total] candidate=c0 base=62.2 semantic_bonus=2.5 penalties=0.0 total=64.7
+2026-04-24 13:14:22 | INFO     | backend.agents.ranking_agent | [RANKING:scored] candidate=c0 name=Jane Smith score=64.7 tiebreak=4.60
+2026-04-24 13:14:22 | INFO     | backend.tools.scorer | [SCORE:start] candidate=c1 name=Jane Smith job=Senior Python Developer type=RoleType.ENGINEERING must_skills=4 pref_skills=2 min_exp=4.0
+2026-04-24 13:14:22 | INFO     | backend.tools.scorer | [SCORE:total] candidate=c1 base=62.2 semantic_bonus=2.5 penalties=0.0 total=64.7
+2026-04-24 13:14:22 | INFO     | backend.agents.ranking_agent | [RANKING:scored] candidate=c1 name=Jane Smith score=64.7 tiebreak=4.60
+2026-04-24 13:14:22 | INFO     | backend.tools.scorer | [SCORE:start] candidate=c2 name=Jane Smith job=Senior Python Developer type=RoleType.ENGINEERING must_skills=4 pref_skills=2 min_exp=4.0
+2026-04-24 13:14:22 | INFO     | backend.tools.scorer | [SCORE:total] candidate=c2 base=62.2 semantic_bonus=2.5 penalties=0.0 total=64.7
+2026-04-24 13:14:22 | INFO     | backend.agents.ranking_agent | [RANKING:scored] candidate=c2 name=Jane Smith score=64.7 tiebreak=4.60
+2026-04-24 13:14:22 | INFO     | backend.tools.scorer | [SCORE:start] candidate=c3 name=Jane Smith job=Senior Python Developer type=RoleType.ENGINEERING must_skills=4 pref_skills=2 min_exp=4.0
+2026-04-24 13:14:22 | INFO     | backend.tools.scorer | [SCORE:total] candidate=c3 base=62.2 semantic_bonus=2.5 penalties=0.0 total=64.7
+2026-04-24 13:14:22 | INFO     | backend.agents.ranking_agent | [RANKING:scored] candidate=c3 name=Jane Smith score=64.7 tiebreak=4.60
+2026-04-24 13:14:22 | INFO     | backend.tools.scorer | [SCORE:start] candidate=c4 name=Jane Smith job=Senior Python Developer type=RoleType.ENGINEERING must_skills=4 pref_skills=2 min_exp=4.0
+2026-04-24 13:14:22 | INFO     | backend.tools.scorer | [SCORE:total] candidate=c4 base=62.2 semantic_bonus=2.5 penalties=0.0 total=64.7
+2026-04-24 13:14:22 | INFO     | backend.agents.ranking_agent | [RANKING:scored] candidate=c4 name=Jane Smith score=64.7 tiebreak=4.60
+2026-04-24 13:14:22 | INFO     | backend.agents.ranking_agent | [RANKING:done] ranked=5 top=64.7 bottom=64.7 shortlist=0 hold=5 reject=0
+2026-04-24 13:14:22 | INFO     | backend.agents.ranking_agent | [RANKING:start] run_id=test-run-004 job='Senior Python Developer' candidates=2
+2026-04-24 13:14:22 | INFO     | backend.tools.scorer | [SCORE:start] candidate=c001 name=Jane Smith job=Senior Python Developer type=RoleType.ENGINEERING must_skills=4 pref_skills=2 min_exp=4.0
+2026-04-24 13:14:22 | INFO     | backend.tools.scorer | [SCORE:total] candidate=c001 base=62.2 semantic_bonus=2.5 penalties=0.0 total=64.7
+2026-04-24 13:14:22 | INFO     | backend.agents.ranking_agent | [RANKING:scored] candidate=c001 name=Jane Smith score=64.7 tiebreak=4.60
+2026-04-24 13:14:22 | INFO     | backend.agents.ranking_agent | [RANKING:skip] duplicate: c002.pdf
+2026-04-24 13:14:22 | INFO     | backend.agents.ranking_agent | [RANKING:done] ranked=1 top=64.7 bottom=64.7 shortlist=0 hold=1 reject=0
+2026-04-24 13:14:22 | INFO     | backend.agents.ranking_agent | [RANKING:start] run_id=test-run-fresher job='Junior Developer' candidates=1
+2026-04-24 13:14:22 | INFO     | backend.tools.scorer | [SCORE:start] candidate=f001 name=Fresh Grad job=Junior Developer type=RoleType.FRESHER must_skills=3 pref_skills=0 min_exp=0.0
+2026-04-24 13:14:22 | INFO     | backend.tools.scorer | [SCORE:total] candidate=f001 base=66.4 semantic_bonus=1.5 penalties=0.0 total=67.9
+2026-04-24 13:14:22 | INFO     | backend.agents.ranking_agent | [RANKING:scored] candidate=f001 name=Fresh Grad score=67.9 tiebreak=2.00
+2026-04-24 13:14:22 | INFO     | backend.agents.ranking_agent | [RANKING:done] ranked=1 top=67.9 bottom=67.9 shortlist=0 hold=1 reject=0
+2026-04-24 13:14:22 | INFO     | backend.agents.ranking_agent | [RANKING:start] run_id=test-run-transfer job='Python Dev' candidates=1
+2026-04-24 13:14:22 | INFO     | backend.tools.scorer | [SCORE:start] candidate=t001 name=Transferable job=Python Dev type=RoleType.ENGINEERING must_skills=1 pref_skills=0 min_exp=1.0
+2026-04-24 13:14:22 | INFO     | backend.tools.scorer | [SCORE:total] candidate=t001 base=47.1 semantic_bonus=1.5 penalties=0.0 total=48.6
+2026-04-24 13:14:22 | INFO     | backend.agents.ranking_agent | [RANKING:scored] candidate=t001 name=Transferable score=48.6 tiebreak=2.80
+2026-04-24 13:14:22 | INFO     | backend.agents.ranking_agent | [RANKING:done] ranked=1 top=48.6 bottom=48.6 shortlist=0 hold=0 reject=1
+2026-04-24 13:14:22 | INFO     | backend.tools.scorer | [SCORE:start] candidate=c001 name=Jane Smith job=Senior Python Developer type=RoleType.ENGINEERING must_skills=4 pref_skills=2 min_exp=4.0
+2026-04-24 13:14:22 | INFO     | backend.tools.scorer | [SCORE:total] candidate=c001 base=62.2 semantic_bonus=2.5 penalties=0.0 total=64.7
+2026-04-24 13:14:22 | INFO     | backend.tools.scorer | [SCORE:start] candidate=c001 name=Jane Smith job=Senior Python Developer type=RoleType.ENGINEERING must_skills=4 pref_skills=2 min_exp=4.0
+2026-04-24 13:14:22 | INFO     | backend.tools.scorer | [SCORE:total] candidate=c001 base=62.2 semantic_bonus=2.5 penalties=0.0 total=64.7
+2026-04-24 13:14:22 | INFO     | backend.tools.scorer | [SCORE:start] candidate=c001 name=Jane Smith job=Senior Python Developer type=RoleType.ENGINEERING must_skills=4 pref_skills=2 min_exp=4.0
+2026-04-24 13:14:22 | INFO     | backend.tools.scorer | [SCORE:total] candidate=c001 base=62.2 semantic_bonus=2.5 penalties=0.0 total=64.7
+2026-04-24 13:14:22 | INFO     | backend.agents.reasoning_agent | [REASONING:start] candidates=1 llm=False
+2026-04-24 13:14:22 | INFO     | backend.agents.reasoning_agent | [REASONING:done] candidate=c001 score=64.7 rec=hold conf=75%
+2026-04-24 13:14:22 | INFO     | backend.agents.reasoning_agent | [REASONING:complete]
+2026-04-24 13:14:25 | INFO     | backend.services.storage | Loaded 4 runs from uploads\runs_state.json
+2026-04-24 13:14:25 | INFO     | backend.api.main | POST /analyze-job run_id=7d7db8fc-43b1-4331-83e0-7b8a9ee92025
+2026-04-24 13:14:25 | INFO     | backend.services.storage | Saved run 7d7db8fc-43b1-4331-83e0-7b8a9ee92025 with status=jd_analyzed
+2026-04-24 13:14:25 | INFO     | backend.api.main | GET /results/nonexistent-run-id-xyz
+2026-04-24 13:14:51 | INFO     | backend.tools.jd_parser | Parsing JD with rule-based parser
+2026-04-24 13:14:51 | INFO     | backend.tools.jd_parser | JD parsed: role='Senior Python Engineer with 5+ years of experience.' type=RoleType.ENGINEERING must_have=5 preferred=5 min_exp=5.0 max_exp=None
+2026-04-24 13:14:51 | INFO     | backend.tools.jd_parser | Parsing JD with rule-based parser
+2026-04-24 13:14:51 | INFO     | backend.tools.jd_parser | JD parsed: role='Senior Python Engineer with 5+ years of experience.' type=RoleType.ENGINEERING must_have=5 preferred=5 min_exp=5.0 max_exp=None
+2026-04-24 13:14:52 | INFO     | backend.tools.jd_parser | Parsing JD with rule-based parser
+2026-04-24 13:14:52 | INFO     | backend.tools.jd_parser | JD parsed: role='Senior Python Engineer with 5+ years of experience.' type=RoleType.ENGINEERING must_have=5 preferred=5 min_exp=5.0 max_exp=None
+2026-04-24 13:14:52 | INFO     | backend.tools.jd_parser | Parsing JD with rule-based parser
+2026-04-24 13:14:52 | INFO     | backend.tools.jd_parser | JD parsed: role='Senior Python Engineer with 5+ years of experience.' type=RoleType.ENGINEERING must_have=5 preferred=5 min_exp=5.0 max_exp=None
+2026-04-24 13:14:52 | INFO     | backend.tools.jd_parser | Parsing JD with rule-based parser
+2026-04-24 13:14:52 | INFO     | backend.tools.jd_parser | JD parsed: role='Senior Python Engineer with 5+ years of experience.' type=RoleType.ENGINEERING must_have=5 preferred=5 min_exp=5.0 max_exp=None
+2026-04-24 13:14:52 | INFO     | backend.tools.jd_parser | Parsing JD with rule-based parser
+2026-04-24 13:14:52 | INFO     | backend.tools.jd_parser | JD parsed: role='Mumbai, Pune' type=RoleType.DESIGN must_have=2 preferred=0 min_exp=0.0 max_exp=None
+2026-04-24 13:15:46 | INFO     | backend.services.storage | Loaded 5 runs from uploads\runs_state.json
+2026-04-24 13:15:46 | INFO     | backend.services.storage | Loaded 5 runs from uploads\runs_state.json
+2026-04-24 13:19:16 | INFO     | backend.services.storage | Loaded 5 runs from uploads\runs_state.json
+2026-04-24 13:21:08 | INFO     | backend.services.storage | Loaded 5 runs from uploads\runs_state.json
+2026-04-24 13:21:08 | INFO     | backend.services.storage | Loaded 5 runs from uploads\runs_state.json
+2026-04-24 13:21:21 | INFO     | backend.tools.jd_parser | Parsing JD with rule-based parser
+2026-04-24 13:21:21 | INFO     | backend.tools.jd_parser | JD parsed: role='Senior Python Engineer with 5+ years of experience.' type=RoleType.ENGINEERING must_have=5 preferred=5 min_exp=5.0 max_exp=None
+2026-04-24 13:21:21 | INFO     | backend.tools.jd_parser | Parsing JD with rule-based parser
+2026-04-24 13:21:21 | INFO     | backend.tools.jd_parser | JD parsed: role='Senior Python Engineer with 5+ years of experience.' type=RoleType.ENGINEERING must_have=5 preferred=5 min_exp=5.0 max_exp=None
+2026-04-24 13:21:21 | INFO     | backend.tools.jd_parser | Parsing JD with rule-based parser
+2026-04-24 13:21:21 | INFO     | backend.tools.jd_parser | JD parsed: role='Senior Python Engineer with 5+ years of experience.' type=RoleType.ENGINEERING must_have=5 preferred=5 min_exp=5.0 max_exp=None
+2026-04-24 13:21:21 | INFO     | backend.tools.jd_parser | Parsing JD with rule-based parser
+2026-04-24 13:21:21 | INFO     | backend.tools.jd_parser | JD parsed: role='Senior Python Engineer with 5+ years of experience.' type=RoleType.ENGINEERING must_have=5 preferred=5 min_exp=5.0 max_exp=None
+2026-04-24 13:21:21 | INFO     | backend.tools.jd_parser | Parsing JD with rule-based parser
+2026-04-24 13:21:21 | INFO     | backend.tools.jd_parser | JD parsed: role='Senior Python Engineer with 5+ years of experience.' type=RoleType.ENGINEERING must_have=5 preferred=5 min_exp=5.0 max_exp=None
+2026-04-24 13:21:21 | INFO     | backend.tools.jd_parser | Parsing JD with rule-based parser
+2026-04-24 13:21:21 | INFO     | backend.tools.jd_parser | JD parsed: role='Mumbai, Pune' type=RoleType.DESIGN must_have=2 preferred=0 min_exp=0.0 max_exp=None
+2026-04-24 13:24:13 | INFO     | backend.services.storage | Loaded 5 runs from uploads\runs_state.json
+2026-04-24 13:24:21 | INFO     | backend.services.storage | Loaded 5 runs from uploads\runs_state.json
+2026-04-24 13:26:09 | INFO     | backend.services.storage | Loaded 5 runs from uploads\runs_state.json
+2026-04-24 13:26:09 | INFO     | backend.services.storage | Loaded 5 runs from uploads\runs_state.json
+2026-04-24 13:29:21 | INFO     | backend.services.storage | Loaded 5 runs from uploads\runs_state.json
+2026-04-24 13:29:29 | INFO     | backend.services.storage | Loaded 5 runs from uploads\runs_state.json
+2026-04-24 13:29:37 | INFO     | backend.services.storage | Loaded 5 runs from uploads\runs_state.json
+2026-04-24 13:29:44 | INFO     | backend.services.storage | Loaded 5 runs from uploads\runs_state.json
+2026-04-24 13:30:20 | INFO     | backend.services.storage | Loaded 5 runs from uploads\runs_state.json
+2026-04-24 13:31:10 | INFO     | backend.services.storage | Loaded 5 runs from uploads\runs_state.json
+2026-04-24 13:31:10 | INFO     | backend.services.storage | Loaded 5 runs from uploads\runs_state.json
+2026-04-24 13:31:34 | INFO     | backend.services.storage | Loaded 5 runs from uploads\runs_state.json
+2026-04-24 13:35:06 | INFO     | backend.api.main | POST /analyze-job run_id=8a9858c9-2901-4848-a74e-6b25498134bd
+2026-04-24 13:35:06 | INFO     | backend.agents.jd_reader_agent | JD Reader Agent: starting extraction
+2026-04-24 13:35:06 | INFO     | backend.tools.jd_parser | Parsing JD with rule-based parser
+2026-04-24 13:35:06 | INFO     | backend.tools.jd_parser | JD parsed: role='Junior Software Developer / Full Stack Developer**' type=RoleType.ENGINEERING must_have=15 preferred=29 min_exp=0.0 max_exp=None
+2026-04-24 13:35:31 | WARNING  | backend.services.ollama_client | Ollama HTTP error attempt 1: Server error '500 Internal Server Error' for url 'http://localhost:11434/api/chat'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500
+2026-04-24 13:35:42 | WARNING  | backend.services.ollama_client | Ollama HTTP error attempt 2: Server error '500 Internal Server Error' for url 'http://localhost:11434/api/chat'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500
+2026-04-24 13:35:56 | WARNING  | backend.services.ollama_client | Ollama HTTP error attempt 3: Server error '500 Internal Server Error' for url 'http://localhost:11434/api/chat'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500
+2026-04-24 13:35:56 | WARNING  | backend.agents.jd_reader_agent | LLM JD extraction failed, using rule-based only: Ollama unreachable after 3 retries: Server error '500 Internal Server Error' for url 'http://localhost:11434/api/chat'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500
+2026-04-24 13:35:56 | INFO     | backend.agents.jd_reader_agent | [JD:parsed] role='Junior Software Developer / Full Stack Developer**' type=RoleType.ENGINEERING must_have=14 preferred=29 min_exp=0.0 (rule-based fallback)
+2026-04-24 13:35:56 | INFO     | backend.services.storage | Saved run 8a9858c9-2901-4848-a74e-6b25498134bd with status=jd_analyzed
+2026-04-24 13:35:56 | INFO     | backend.api.main | POST /upload-resumes run_id=8a9858c9-2901-4848-a74e-6b25498134bd files=3
+2026-04-24 13:35:56 | INFO     | backend.api.main | Saved: uploads\8a9858c9-2901-4848-a74e-6b25498134bd\Nandita Resume.pdf.pdf
+2026-04-24 13:35:56 | INFO     | backend.api.main | Saved: uploads\8a9858c9-2901-4848-a74e-6b25498134bd\Niranjan patil resume new.pdf
+2026-04-24 13:35:56 | INFO     | backend.api.main | Saved: uploads\8a9858c9-2901-4848-a74e-6b25498134bd\Omkar_final CV.pdf
+2026-04-24 13:35:56 | INFO     | backend.api.main | POST /rank run_id=8a9858c9-2901-4848-a74e-6b25498134bd
+2026-04-24 13:35:56 | INFO     | backend.workflows.pipeline | Starting pipeline run_id=8a9858c9-2901-4848-a74e-6b25498134bd with 3 resumes
+2026-04-24 13:35:56 | INFO     | backend.services.storage | Saved run 8a9858c9-2901-4848-a74e-6b25498134bd with status=started
+2026-04-24 13:35:56 | INFO     | backend.workflows.pipeline | [Pipeline] Node: read_jd | run_id=8a9858c9-2901-4848-a74e-6b25498134bd
+2026-04-24 13:35:56 | INFO     | backend.agents.jd_reader_agent | JD Reader Agent: starting extraction
+2026-04-24 13:35:56 | INFO     | backend.tools.jd_parser | Parsing JD with rule-based parser
+2026-04-24 13:35:56 | INFO     | backend.tools.jd_parser | JD parsed: role='Junior Software Developer / Full Stack Developer**' type=RoleType.ENGINEERING must_have=15 preferred=29 min_exp=0.0 max_exp=None
+2026-04-24 13:36:06 | WARNING  | backend.services.ollama_client | Ollama HTTP error attempt 1: Server error '500 Internal Server Error' for url 'http://localhost:11434/api/chat'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500
+2026-04-24 13:37:57 | INFO     | backend.agents.jd_reader_agent | [JD:parsed] role='Junior Software Developer / Full Stack Developer' type=RoleType.ENGINEERING must_have=24 preferred=30 min_exp=0.0 max_exp=None edu_req=2 certs=0
+2026-04-24 13:37:57 | INFO     | backend.workflows.pipeline | [Pipeline:jd_parsed] run_id=8a9858c9-2901-4848-a74e-6b25498134bd role='Junior Software Developer / Full Stack Developer' type=RoleType.ENGINEERING must_have=24 preferred=30 min_exp=0.0
+2026-04-24 13:37:57 | INFO     | backend.workflows.pipeline | [Pipeline] Node: parse_resumes | run_id=8a9858c9-2901-4848-a74e-6b25498134bd
+2026-04-24 13:37:57 | INFO     | backend.agents.resume_parser_agent | Resume Parser Agent: processing 3 files
+2026-04-24 13:37:57 | INFO     | backend.agents.resume_parser_agent | Parsing: Nandita Resume.pdf.pdf (id=5a50854e-8671-40a4-bb85-5fe49f6f7626)
+2026-04-24 13:37:57 | INFO     | backend.tools.resume_parser | Parsing resume: Nandita Resume.pdf.pdf
+2026-04-24 13:37:59 | INFO     | backend.tools.resume_parser | [PARSE:resume] id=5a50854e-8671-40a4-bb85-5fe49f6f7626 name=SUBANANDIDA THEVAR skills=22 exp_years=0.0 projects=1 edu=1 certs=1 confidence=0.8 status=ParseStatus.SUCCESS
+2026-04-24 13:37:59 | INFO     | backend.agents.resume_parser_agent | Parsed Nandita Resume.pdf.pdf: confidence=80%, skills=22
+2026-04-24 13:37:59 | INFO     | backend.agents.resume_parser_agent | Parsing: Niranjan patil resume new.pdf (id=54e82a0a-fae9-4bec-9449-438f92a0551a)
+2026-04-24 13:37:59 | INFO     | backend.tools.resume_parser | Parsing resume: Niranjan patil resume new.pdf
+2026-04-24 13:37:59 | INFO     | backend.tools.resume_parser | [PARSE:resume] id=54e82a0a-fae9-4bec-9449-438f92a0551a name=Niranjan Patil skills=35 exp_years=0.0 projects=1 edu=1 certs=1 confidence=0.8 status=ParseStatus.SUCCESS
+2026-04-24 13:37:59 | INFO     | backend.agents.resume_parser_agent | Parsed Niranjan patil resume new.pdf: confidence=80%, skills=35
+2026-04-24 13:37:59 | INFO     | backend.agents.resume_parser_agent | Parsing: Omkar_final CV.pdf (id=d50581a8-b744-4680-95a4-b51e3f840e55)
+2026-04-24 13:37:59 | INFO     | backend.tools.resume_parser | Parsing resume: Omkar_final CV.pdf
+2026-04-24 13:38:00 | INFO     | backend.tools.resume_parser | [PARSE:resume] id=d50581a8-b744-4680-95a4-b51e3f840e55 name=OMKAR HALPATRAO skills=18 exp_years=0.0 projects=1 edu=1 certs=0 confidence=0.8 status=ParseStatus.SUCCESS
+2026-04-24 13:38:00 | INFO     | backend.agents.resume_parser_agent | Parsed Omkar_final CV.pdf: confidence=80%, skills=18
+2026-04-24 13:38:00 | INFO     | backend.agents.resume_parser_agent | Resume Parser Agent: completed 3 profiles
+2026-04-24 13:38:00 | INFO     | backend.workflows.pipeline | [Pipeline:resumes_parsed] run_id=8a9858c9-2901-4848-a74e-6b25498134bd profiles=3 valid=3 failed=0
+2026-04-24 13:38:00 | INFO     | backend.workflows.pipeline | [Pipeline] Node: rank_candidates | run_id=8a9858c9-2901-4848-a74e-6b25498134bd
+2026-04-24 13:38:00 | INFO     | backend.agents.ranking_agent | [RANKING:start] run_id=8a9858c9-2901-4848-a74e-6b25498134bd job='Junior Software Developer / Full Stack Developer' candidates=3
+2026-04-24 13:38:03 | INFO     | backend.tools.scorer | [SCORE:start] candidate=5a50854e-8671-40a4-bb85-5fe49f6f7626 name=SUBANANDIDA THEVAR job=Junior Software Developer / Full Stack Developer type=RoleType.ENGINEERING must_skills=24 pref_skills=30 min_exp=0.0
+2026-04-24 13:38:03 | WARNING  | backend.services.embeddings | Similarity computation failed: Expected collection name that (1) contains 3-63 characters, (2) starts and ends with an alphanumeric character, (3) otherwise contains only alphanumeric characters, underscores or hyphens (-), (4) contains no two consecutive periods (..) and (5) is not a valid IPv4 address, got _temp_similarity_2479354909136
+2026-04-24 13:38:03 | INFO     | backend.tools.scorer | [SCORE:total] candidate=5a50854e-8671-40a4-bb85-5fe49f6f7626 base=53.2 semantic_bonus=0.0 penalties=0.0 total=53.2
+2026-04-24 13:38:03 | INFO     | backend.agents.ranking_agent | [RANKING:scored] candidate=5a50854e-8671-40a4-bb85-5fe49f6f7626 name=SUBANANDIDA THEVAR score=53.2 tiebreak=2.10
+2026-04-24 13:38:03 | INFO     | backend.tools.scorer | [SCORE:start] candidate=54e82a0a-fae9-4bec-9449-438f92a0551a name=Niranjan Patil job=Junior Software Developer / Full Stack Developer type=RoleType.ENGINEERING must_skills=24 pref_skills=30 min_exp=0.0
+2026-04-24 13:38:03 | WARNING  | backend.services.embeddings | Similarity computation failed: Expected collection name that (1) contains 3-63 characters, (2) starts and ends with an alphanumeric character, (3) otherwise contains only alphanumeric characters, underscores or hyphens (-), (4) contains no two consecutive periods (..) and (5) is not a valid IPv4 address, got _temp_similarity_2479354909136
+2026-04-24 13:38:03 | INFO     | backend.tools.scorer | [SCORE:total] candidate=54e82a0a-fae9-4bec-9449-438f92a0551a base=56.0 semantic_bonus=0.0 penalties=0.0 total=56.0
+2026-04-24 13:38:03 | INFO     | backend.agents.ranking_agent | [RANKING:scored] candidate=54e82a0a-fae9-4bec-9449-438f92a0551a name=Niranjan Patil score=56.0 tiebreak=2.10
+2026-04-24 13:38:03 | INFO     | backend.tools.scorer | [SCORE:start] candidate=d50581a8-b744-4680-95a4-b51e3f840e55 name=OMKAR HALPATRAO job=Junior Software Developer / Full Stack Developer type=RoleType.ENGINEERING must_skills=24 pref_skills=30 min_exp=0.0
+2026-04-24 13:38:03 | WARNING  | backend.services.embeddings | Similarity computation failed: Expected collection name that (1) contains 3-63 characters, (2) starts and ends with an alphanumeric character, (3) otherwise contains only alphanumeric characters, underscores or hyphens (-), (4) contains no two consecutive periods (..) and (5) is not a valid IPv4 address, got _temp_similarity_2479354909136
+2026-04-24 13:38:03 | INFO     | backend.tools.scorer | [SCORE:total] candidate=d50581a8-b744-4680-95a4-b51e3f840e55 base=41.5 semantic_bonus=0.0 penalties=0.0 total=41.5
+2026-04-24 13:38:03 | INFO     | backend.agents.ranking_agent | [RANKING:scored] candidate=d50581a8-b744-4680-95a4-b51e3f840e55 name=OMKAR HALPATRAO score=41.5 tiebreak=1.80
+2026-04-24 13:38:03 | INFO     | backend.agents.ranking_agent | [RANKING:done] ranked=3 top=56.0 bottom=41.5 shortlist=0 hold=2 reject=1
+2026-04-24 13:38:03 | INFO     | backend.workflows.pipeline | [Pipeline:ranked] run_id=8a9858c9-2901-4848-a74e-6b25498134bd scored=3 
+2026-04-24 13:38:03 | INFO     | backend.workflows.pipeline | [Pipeline] Node: generate_reasoning | run_id=8a9858c9-2901-4848-a74e-6b25498134bd
+2026-04-24 13:38:03 | INFO     | backend.agents.reasoning_agent | [REASONING:start] candidates=3 llm=False
+2026-04-24 13:38:03 | INFO     | backend.agents.reasoning_agent | [REASONING:done] candidate=54e82a0a-fae9-4bec-9449-438f92a0551a score=56.0 rec=shortlist conf=66%
+2026-04-24 13:38:03 | INFO     | backend.agents.reasoning_agent | [REASONING:done] candidate=5a50854e-8671-40a4-bb85-5fe49f6f7626 score=53.2 rec=hold conf=64%
+2026-04-24 13:38:03 | INFO     | backend.agents.reasoning_agent | [REASONING:done] candidate=d50581a8-b744-4680-95a4-b51e3f840e55 score=41.5 rec=hold conf=57%
+2026-04-24 13:38:03 | INFO     | backend.agents.reasoning_agent | [REASONING:complete]
+2026-04-24 13:38:03 | INFO     | backend.workflows.pipeline | [Pipeline:completed] run_id=8a9858c9-2901-4848-a74e-6b25498134bd shortlist=1 hold=2 reject=0
+2026-04-24 13:38:03 | INFO     | backend.services.storage | Saved run 8a9858c9-2901-4848-a74e-6b25498134bd with status=completed
+2026-04-24 13:38:03 | INFO     | backend.workflows.pipeline | Pipeline completed run_id=8a9858c9-2901-4848-a74e-6b25498134bd status=completed
+2026-04-24 13:38:03 | INFO     | backend.tools.exporter | Exported 3 candidates to CSV: exports\8a9858c9-2901-4848-a74e-6b25498134bd_results.csv
+2026-04-24 13:38:03 | INFO     | backend.tools.exporter | Exported 3 candidates to JSON: exports\8a9858c9-2901-4848-a74e-6b25498134bd_results.json
+2026-04-24 13:38:03 | INFO     | backend.tools.exporter | Shortlist report written: exports\8a9858c9-2901-4848-a74e-6b25498134bd_shortlist_report.txt
+2026-04-24 13:38:06 | INFO     | backend.api.main | GET /results/8a9858c9-2901-4848-a74e-6b25498134bd
+2026-04-24 13:40:22 | INFO     | backend.services.storage | Loaded 6 runs from uploads\runs_state.json
+2026-04-24 13:40:29 | INFO     | backend.services.storage | Loaded 6 runs from uploads\runs_state.json
+2026-04-24 13:41:05 | INFO     | backend.services.storage | Loaded 6 runs from uploads\runs_state.json
+2026-04-24 13:41:12 | INFO     | backend.services.storage | Loaded 6 runs from uploads\runs_state.json
+2026-04-24 13:41:12 | INFO     | backend.services.storage | Loaded 6 runs from uploads\runs_state.json
+2026-04-24 13:41:41 | INFO     | backend.services.storage | Loaded 6 runs from uploads\runs_state.json
+2026-04-24 13:41:48 | INFO     | backend.services.storage | Loaded 6 runs from uploads\runs_state.json
+2026-04-24 13:41:48 | INFO     | backend.services.storage | Loaded 6 runs from uploads\runs_state.json
+2026-04-24 13:43:43 | INFO     | backend.api.main | POST /analyze-job run_id=e88e5c02-bb83-49e9-b315-3f67ea4ede0c
+2026-04-24 13:43:43 | INFO     | backend.agents.jd_reader_agent | JD Reader Agent: starting extraction
+2026-04-24 13:43:43 | INFO     | backend.tools.jd_parser | Parsing JD with rule-based parser
+2026-04-24 13:43:43 | INFO     | backend.tools.jd_parser | JD parsed: role='Junior Software Developer / Full Stack Developer**' type=RoleType.ENGINEERING must_have=15 preferred=29 min_exp=0.0 max_exp=None
+2026-04-24 13:43:53 | WARNING  | backend.services.ollama_client | Ollama HTTP error attempt 1: Server error '500 Internal Server Error' for url 'http://localhost:11434/api/chat'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500
+2026-04-24 13:45:15 | INFO     | backend.api.main | POST /analyze-job run_id=2c2f0250-6ffd-4404-9dbc-73ece25c9612
+2026-04-24 13:45:15 | INFO     | backend.agents.jd_reader_agent | JD Reader Agent: starting extraction
+2026-04-24 13:45:15 | INFO     | backend.tools.jd_parser | Parsing JD with rule-based parser
+2026-04-24 13:45:15 | INFO     | backend.tools.jd_parser | JD parsed: role='Junior Software Developer / Full Stack Developer**' type=RoleType.ENGINEERING must_have=15 preferred=29 min_exp=0.0 max_exp=None
+2026-04-24 13:45:41 | INFO     | backend.agents.jd_reader_agent | [JD:parsed] role='Junior Software Developer / Full Stack Developer' type=RoleType.ENGINEERING must_have=24 preferred=30 min_exp=0.0 max_exp=None edu_req=2 certs=0
+2026-04-24 13:45:41 | INFO     | backend.services.storage | Saved run e88e5c02-bb83-49e9-b315-3f67ea4ede0c with status=jd_analyzed
+2026-04-24 13:46:59 | INFO     | backend.agents.jd_reader_agent | [JD:parsed] role='Junior Software Developer / Full Stack Developer' type=RoleType.ENGINEERING must_have=24 preferred=30 min_exp=0.0 max_exp=None edu_req=2 certs=0
+2026-04-24 13:46:59 | INFO     | backend.services.storage | Saved run 2c2f0250-6ffd-4404-9dbc-73ece25c9612 with status=jd_analyzed
+2026-04-24 13:47:18 | INFO     | backend.api.main | POST /analyze-job run_id=97ab1750-0d41-4469-8a8d-14c0a1ff1ed3
+2026-04-24 13:47:18 | INFO     | backend.agents.jd_reader_agent | JD Reader Agent: starting extraction
+2026-04-24 13:47:18 | INFO     | backend.tools.jd_parser | Parsing JD with rule-based parser
+2026-04-24 13:47:18 | INFO     | backend.tools.jd_parser | JD parsed: role='Junior Software Developer / Full Stack Developer**' type=RoleType.ENGINEERING must_have=15 preferred=29 min_exp=0.0 max_exp=None
+2026-04-24 13:47:54 | INFO     | backend.agents.jd_reader_agent | [JD:parsed] role='Junior Software Developer / Full Stack Developer' type=RoleType.ENGINEERING must_have=24 preferred=30 min_exp=0.0 max_exp=None edu_req=2 certs=0
+2026-04-24 13:47:54 | INFO     | backend.services.storage | Saved run 97ab1750-0d41-4469-8a8d-14c0a1ff1ed3 with status=jd_analyzed
+2026-04-24 13:47:54 | INFO     | backend.api.main | POST /upload-resumes run_id=97ab1750-0d41-4469-8a8d-14c0a1ff1ed3 files=3
+2026-04-24 13:47:54 | INFO     | backend.api.main | Saved: uploads\97ab1750-0d41-4469-8a8d-14c0a1ff1ed3\Nandita Resume.pdf.pdf
+2026-04-24 13:47:54 | INFO     | backend.api.main | Saved: uploads\97ab1750-0d41-4469-8a8d-14c0a1ff1ed3\Niranjan patil resume new.pdf
+2026-04-24 13:47:54 | INFO     | backend.api.main | Saved: uploads\97ab1750-0d41-4469-8a8d-14c0a1ff1ed3\Omkar_final CV.pdf
+2026-04-24 13:47:54 | INFO     | backend.api.main | POST /rank run_id=97ab1750-0d41-4469-8a8d-14c0a1ff1ed3
+2026-04-24 13:47:54 | INFO     | backend.workflows.pipeline | Starting pipeline run_id=97ab1750-0d41-4469-8a8d-14c0a1ff1ed3 with 3 resumes
+2026-04-24 13:47:54 | INFO     | backend.services.storage | Saved run 97ab1750-0d41-4469-8a8d-14c0a1ff1ed3 with status=started
+2026-04-24 13:47:54 | INFO     | backend.workflows.pipeline | [Pipeline] Node: read_jd | run_id=97ab1750-0d41-4469-8a8d-14c0a1ff1ed3
+2026-04-24 13:47:54 | INFO     | backend.agents.jd_reader_agent | JD Reader Agent: starting extraction
+2026-04-24 13:47:54 | INFO     | backend.tools.jd_parser | Parsing JD with rule-based parser
+2026-04-24 13:47:54 | INFO     | backend.tools.jd_parser | JD parsed: role='Junior Software Developer / Full Stack Developer**' type=RoleType.ENGINEERING must_have=15 preferred=29 min_exp=0.0 max_exp=None
+2026-04-24 13:48:30 | INFO     | backend.agents.jd_reader_agent | [JD:parsed] role='Junior Software Developer / Full Stack Developer' type=RoleType.ENGINEERING must_have=24 preferred=30 min_exp=0.0 max_exp=None edu_req=2 certs=0
+2026-04-24 13:48:30 | INFO     | backend.workflows.pipeline | [Pipeline:jd_parsed] run_id=97ab1750-0d41-4469-8a8d-14c0a1ff1ed3 role='Junior Software Developer / Full Stack Developer' type=RoleType.ENGINEERING must_have=24 preferred=30 min_exp=0.0
+2026-04-24 13:48:30 | INFO     | backend.workflows.pipeline | [Pipeline] Node: parse_resumes | run_id=97ab1750-0d41-4469-8a8d-14c0a1ff1ed3
+2026-04-24 13:48:30 | INFO     | backend.agents.resume_parser_agent | Resume Parser Agent: processing 3 files
+2026-04-24 13:48:30 | INFO     | backend.agents.resume_parser_agent | Parsing: Nandita Resume.pdf.pdf (id=c9e5a27d-ed60-47c7-94a8-7c11ca0adba5)
+2026-04-24 13:48:30 | INFO     | backend.tools.resume_parser | Parsing resume: Nandita Resume.pdf.pdf
+2026-04-24 13:48:30 | INFO     | backend.tools.resume_parser | [PARSE:resume] id=c9e5a27d-ed60-47c7-94a8-7c11ca0adba5 name=SUBANANDIDA THEVAR skills=22 exp_years=0.0 projects=1 edu=1 certs=1 confidence=0.8 status=ParseStatus.SUCCESS
+2026-04-24 13:48:30 | INFO     | backend.agents.resume_parser_agent | Parsed Nandita Resume.pdf.pdf: confidence=80%, skills=22
+2026-04-24 13:48:30 | INFO     | backend.agents.resume_parser_agent | Parsing: Niranjan patil resume new.pdf (id=58e8dc2c-fd59-4bfd-b2f9-cdaff04ee435)
+2026-04-24 13:48:30 | INFO     | backend.tools.resume_parser | Parsing resume: Niranjan patil resume new.pdf
+2026-04-24 13:48:30 | INFO     | backend.tools.resume_parser | [PARSE:resume] id=58e8dc2c-fd59-4bfd-b2f9-cdaff04ee435 name=Niranjan Patil skills=35 exp_years=0.0 projects=1 edu=1 certs=1 confidence=0.8 status=ParseStatus.SUCCESS
+2026-04-24 13:48:30 | INFO     | backend.agents.resume_parser_agent | Parsed Niranjan patil resume new.pdf: confidence=80%, skills=35
+2026-04-24 13:48:30 | INFO     | backend.agents.resume_parser_agent | Parsing: Omkar_final CV.pdf (id=88033de1-990f-42f2-bde3-0a1c3fb17b87)
+2026-04-24 13:48:30 | INFO     | backend.tools.resume_parser | Parsing resume: Omkar_final CV.pdf
+2026-04-24 13:48:31 | INFO     | backend.tools.resume_parser | [PARSE:resume] id=88033de1-990f-42f2-bde3-0a1c3fb17b87 name=OMKAR HALPATRAO skills=18 exp_years=0.0 projects=1 edu=1 certs=0 confidence=0.8 status=ParseStatus.SUCCESS
+2026-04-24 13:48:31 | INFO     | backend.agents.resume_parser_agent | Parsed Omkar_final CV.pdf: confidence=80%, skills=18
+2026-04-24 13:48:31 | INFO     | backend.agents.resume_parser_agent | Resume Parser Agent: completed 3 profiles
+2026-04-24 13:48:31 | INFO     | backend.workflows.pipeline | [Pipeline:resumes_parsed] run_id=97ab1750-0d41-4469-8a8d-14c0a1ff1ed3 profiles=3 valid=3 failed=0
+2026-04-24 13:48:31 | INFO     | backend.workflows.pipeline | [Pipeline] Node: rank_candidates | run_id=97ab1750-0d41-4469-8a8d-14c0a1ff1ed3
+2026-04-24 13:48:31 | INFO     | backend.agents.ranking_agent | [RANKING:start] run_id=97ab1750-0d41-4469-8a8d-14c0a1ff1ed3 job='Junior Software Developer / Full Stack Developer' candidates=3
+2026-04-24 13:48:31 | INFO     | backend.tools.scorer | [SCORE:start] candidate=c9e5a27d-ed60-47c7-94a8-7c11ca0adba5 name=SUBANANDIDA THEVAR job=Junior Software Developer / Full Stack Developer type=RoleType.ENGINEERING must_skills=24 pref_skills=30 min_exp=0.0
+2026-04-24 13:48:31 | WARNING  | backend.services.embeddings | Similarity computation failed: Expected collection name that (1) contains 3-63 characters, (2) starts and ends with an alphanumeric character, (3) otherwise contains only alphanumeric characters, underscores or hyphens (-), (4) contains no two consecutive periods (..) and (5) is not a valid IPv4 address, got _temp_similarity_2480455428688
+2026-04-24 13:48:31 | INFO     | backend.tools.scorer | [SCORE:total] candidate=c9e5a27d-ed60-47c7-94a8-7c11ca0adba5 base=53.2 semantic_bonus=0.0 penalties=0.0 total=53.2
+2026-04-24 13:48:31 | INFO     | backend.agents.ranking_agent | [RANKING:scored] candidate=c9e5a27d-ed60-47c7-94a8-7c11ca0adba5 name=SUBANANDIDA THEVAR score=53.2 tiebreak=2.10
+2026-04-24 13:48:31 | INFO     | backend.tools.scorer | [SCORE:start] candidate=58e8dc2c-fd59-4bfd-b2f9-cdaff04ee435 name=Niranjan Patil job=Junior Software Developer / Full Stack Developer type=RoleType.ENGINEERING must_skills=24 pref_skills=30 min_exp=0.0
+2026-04-24 13:48:31 | WARNING  | backend.services.embeddings | Similarity computation failed: Expected collection name that (1) contains 3-63 characters, (2) starts and ends with an alphanumeric character, (3) otherwise contains only alphanumeric characters, underscores or hyphens (-), (4) contains no two consecutive periods (..) and (5) is not a valid IPv4 address, got _temp_similarity_2480455428688
+2026-04-24 13:48:31 | INFO     | backend.tools.scorer | [SCORE:total] candidate=58e8dc2c-fd59-4bfd-b2f9-cdaff04ee435 base=56.0 semantic_bonus=0.0 penalties=0.0 total=56.0
+2026-04-24 13:48:31 | INFO     | backend.agents.ranking_agent | [RANKING:scored] candidate=58e8dc2c-fd59-4bfd-b2f9-cdaff04ee435 name=Niranjan Patil score=56.0 tiebreak=2.10
+2026-04-24 13:48:31 | INFO     | backend.tools.scorer | [SCORE:start] candidate=88033de1-990f-42f2-bde3-0a1c3fb17b87 name=OMKAR HALPATRAO job=Junior Software Developer / Full Stack Developer type=RoleType.ENGINEERING must_skills=24 pref_skills=30 min_exp=0.0
+2026-04-24 13:48:31 | WARNING  | backend.services.embeddings | Similarity computation failed: Expected collection name that (1) contains 3-63 characters, (2) starts and ends with an alphanumeric character, (3) otherwise contains only alphanumeric characters, underscores or hyphens (-), (4) contains no two consecutive periods (..) and (5) is not a valid IPv4 address, got _temp_similarity_2480455428688
+2026-04-24 13:48:31 | INFO     | backend.tools.scorer | [SCORE:total] candidate=88033de1-990f-42f2-bde3-0a1c3fb17b87 base=41.5 semantic_bonus=0.0 penalties=0.0 total=41.5
+2026-04-24 13:48:31 | INFO     | backend.agents.ranking_agent | [RANKING:scored] candidate=88033de1-990f-42f2-bde3-0a1c3fb17b87 name=OMKAR HALPATRAO score=41.5 tiebreak=1.80
+2026-04-24 13:48:31 | INFO     | backend.agents.ranking_agent | [RANKING:done] ranked=3 top=56.0 bottom=41.5 shortlist=0 hold=2 reject=1
+2026-04-24 13:48:31 | INFO     | backend.workflows.pipeline | [Pipeline:ranked] run_id=97ab1750-0d41-4469-8a8d-14c0a1ff1ed3 scored=3 
+2026-04-24 13:48:31 | INFO     | backend.workflows.pipeline | [Pipeline] Node: generate_reasoning | run_id=97ab1750-0d41-4469-8a8d-14c0a1ff1ed3
+2026-04-24 13:48:31 | INFO     | backend.agents.reasoning_agent | [REASONING:start] candidates=3 llm=False
+2026-04-24 13:48:31 | INFO     | backend.agents.reasoning_agent | [REASONING:done] candidate=58e8dc2c-fd59-4bfd-b2f9-cdaff04ee435 score=56.0 rec=shortlist conf=64%
+2026-04-24 13:48:31 | INFO     | backend.agents.reasoning_agent | [REASONING:done] candidate=c9e5a27d-ed60-47c7-94a8-7c11ca0adba5 score=53.2 rec=hold conf=63%
+2026-04-24 13:48:31 | INFO     | backend.agents.reasoning_agent | [REASONING:done] candidate=88033de1-990f-42f2-bde3-0a1c3fb17b87 score=41.5 rec=hold conf=55%
+2026-04-24 13:48:31 | INFO     | backend.agents.reasoning_agent | [REASONING:complete]
+2026-04-24 13:48:31 | INFO     | backend.workflows.pipeline | [Pipeline:completed] run_id=97ab1750-0d41-4469-8a8d-14c0a1ff1ed3 shortlist=1 hold=2 reject=0
+2026-04-24 13:48:31 | INFO     | backend.services.storage | Saved run 97ab1750-0d41-4469-8a8d-14c0a1ff1ed3 with status=completed
+2026-04-24 13:48:31 | INFO     | backend.workflows.pipeline | Pipeline completed run_id=97ab1750-0d41-4469-8a8d-14c0a1ff1ed3 status=completed
+2026-04-24 13:48:31 | INFO     | backend.tools.exporter | Exported 3 candidates to CSV: exports\97ab1750-0d41-4469-8a8d-14c0a1ff1ed3_results.csv
+2026-04-24 13:48:31 | INFO     | backend.tools.exporter | Exported 3 candidates to JSON: exports\97ab1750-0d41-4469-8a8d-14c0a1ff1ed3_results.json
+2026-04-24 13:48:31 | INFO     | backend.tools.exporter | Shortlist report written: exports\97ab1750-0d41-4469-8a8d-14c0a1ff1ed3_shortlist_report.txt
+2026-04-24 13:51:22 | INFO     | backend.services.storage | Loaded 9 runs from uploads\runs_state.json
+2026-04-24 13:51:22 | INFO     | backend.workflows.pipeline | Starting pipeline run_id=debug-eval-001 with 3 resumes
+2026-04-24 13:51:22 | INFO     | backend.services.storage | Saved run debug-eval-001 with status=started
+2026-04-24 13:51:23 | INFO     | backend.workflows.pipeline | [Pipeline] Node: read_jd | run_id=debug-eval-001
+2026-04-24 13:51:23 | INFO     | backend.agents.jd_reader_agent | JD Reader Agent: starting extraction
+2026-04-24 13:51:23 | INFO     | backend.tools.jd_parser | Parsing JD with rule-based parser
+2026-04-24 13:51:23 | INFO     | backend.tools.jd_parser | JD parsed: role='Junior Software Developer to join our engineering team.' type=RoleType.ENGINEERING must_have=5 preferred=14 min_exp=0.0 max_exp=None
+2026-04-24 13:51:42 | WARNING  | backend.agents.jd_reader_agent | LLM JD extraction failed, using rule-based only: 1 validation error for JobProfile
+role_type
+  Input should be 'engineering', 'compliance', 'fresher', 'management', 'design', 'data_science', 'sales' or 'general' [type=enum, input_value='fresher|engineering', input_type=str]
+2026-04-24 13:51:42 | INFO     | backend.agents.jd_reader_agent | [JD:parsed] role='Junior Software Developer to join our engineering team.' type=RoleType.ENGINEERING must_have=5 preferred=14 min_exp=0.0 (rule-based fallback)
+2026-04-24 13:51:42 | INFO     | backend.workflows.pipeline | [Pipeline:jd_parsed] run_id=debug-eval-001 role='Junior Software Developer to join our engineering team.' type=RoleType.ENGINEERING must_have=5 preferred=14 min_exp=0.0
+2026-04-24 13:51:42 | INFO     | backend.workflows.pipeline | [Pipeline] Node: parse_resumes | run_id=debug-eval-001
+2026-04-24 13:51:42 | INFO     | backend.agents.resume_parser_agent | Resume Parser Agent: processing 3 files
+2026-04-24 13:51:42 | INFO     | backend.agents.resume_parser_agent | Parsing: Nandita Resume.pdf.pdf (id=046d8f88-e0a0-4a75-8cc2-bd3ca6b1f8b9)
+2026-04-24 13:51:42 | INFO     | backend.tools.resume_parser | Parsing resume: Nandita Resume.pdf.pdf
+2026-04-24 13:51:42 | INFO     | backend.tools.resume_parser | [PARSE:resume] id=046d8f88-e0a0-4a75-8cc2-bd3ca6b1f8b9 name=SUBANANDIDA THEVAR skills=22 exp_years=0.0 projects=1 edu=1 certs=1 confidence=0.8 status=ParseStatus.SUCCESS
+2026-04-24 13:51:42 | INFO     | backend.agents.resume_parser_agent | Parsed Nandita Resume.pdf.pdf: confidence=80%, skills=22
+2026-04-24 13:51:42 | INFO     | backend.agents.resume_parser_agent | Parsing: Niranjan patil resume new.pdf (id=01d15bc8-3b37-4e34-be5e-06fb3b5a3e1f)
+2026-04-24 13:51:42 | INFO     | backend.tools.resume_parser | Parsing resume: Niranjan patil resume new.pdf
+2026-04-24 13:51:42 | INFO     | backend.tools.resume_parser | [PARSE:resume] id=01d15bc8-3b37-4e34-be5e-06fb3b5a3e1f name=Niranjan Patil skills=35 exp_years=0.0 projects=1 edu=1 certs=1 confidence=0.8 status=ParseStatus.SUCCESS
+2026-04-24 13:51:42 | INFO     | backend.agents.resume_parser_agent | Parsed Niranjan patil resume new.pdf: confidence=80%, skills=35
+2026-04-24 13:51:42 | INFO     | backend.agents.resume_parser_agent | Parsing: Omkar_final CV.pdf (id=99c23237-7e67-41ce-81ae-6ed1fb9c9859)
+2026-04-24 13:51:42 | INFO     | backend.tools.resume_parser | Parsing resume: Omkar_final CV.pdf
+2026-04-24 13:51:42 | INFO     | backend.tools.resume_parser | [PARSE:resume] id=99c23237-7e67-41ce-81ae-6ed1fb9c9859 name=OMKAR HALPATRAO skills=18 exp_years=0.0 projects=1 edu=1 certs=0 confidence=0.8 status=ParseStatus.SUCCESS
+2026-04-24 13:51:42 | INFO     | backend.agents.resume_parser_agent | Parsed Omkar_final CV.pdf: confidence=80%, skills=18
+2026-04-24 13:51:42 | INFO     | backend.agents.resume_parser_agent | Resume Parser Agent: completed 3 profiles
+2026-04-24 13:51:42 | INFO     | backend.workflows.pipeline | [Pipeline:resumes_parsed] run_id=debug-eval-001 profiles=3 valid=3 failed=0
+2026-04-24 13:51:42 | INFO     | backend.workflows.pipeline | [Pipeline] Node: rank_candidates | run_id=debug-eval-001
+2026-04-24 13:51:42 | INFO     | backend.agents.ranking_agent | [RANKING:start] run_id=debug-eval-001 job='Junior Software Developer to join our engineering team.' candidates=3
+2026-04-24 13:51:43 | INFO     | backend.tools.scorer | [SCORE:start] candidate=046d8f88-e0a0-4a75-8cc2-bd3ca6b1f8b9 name=SUBANANDIDA THEVAR job=Junior Software Developer to join our engineering team. type=RoleType.ENGINEERING must_skills=5 pref_skills=14 min_exp=0.0
+2026-04-24 13:51:43 | WARNING  | backend.services.embeddings | Similarity computation failed: Expected collection name that (1) contains 3-63 characters, (2) starts and ends with an alphanumeric character, (3) otherwise contains only alphanumeric characters, underscores or hyphens (-), (4) contains no two consecutive periods (..) and (5) is not a valid IPv4 address, got _temp_similarity_3021782170448
+2026-04-24 13:51:43 | INFO     | backend.tools.scorer | [SCORE:total] candidate=046d8f88-e0a0-4a75-8cc2-bd3ca6b1f8b9 base=44.8 semantic_bonus=0.0 penalties=0.0 total=44.8
+2026-04-24 13:51:43 | INFO     | backend.agents.ranking_agent | [RANKING:scored] candidate=046d8f88-e0a0-4a75-8cc2-bd3ca6b1f8b9 name=SUBANANDIDA THEVAR score=44.8 tiebreak=2.10
+2026-04-24 13:51:43 | INFO     | backend.tools.scorer | [SCORE:start] candidate=01d15bc8-3b37-4e34-be5e-06fb3b5a3e1f name=Niranjan Patil job=Junior Software Developer to join our engineering team. type=RoleType.ENGINEERING must_skills=5 pref_skills=14 min_exp=0.0
+2026-04-24 13:51:43 | WARNING  | backend.services.embeddings | Similarity computation failed: Expected collection name that (1) contains 3-63 characters, (2) starts and ends with an alphanumeric character, (3) otherwise contains only alphanumeric characters, underscores or hyphens (-), (4) contains no two consecutive periods (..) and (5) is not a valid IPv4 address, got _temp_similarity_3021782170448
+2026-04-24 13:51:43 | INFO     | backend.tools.scorer | [SCORE:total] candidate=01d15bc8-3b37-4e34-be5e-06fb3b5a3e1f base=51.9 semantic_bonus=0.0 penalties=0.0 total=51.9
+2026-04-24 13:51:43 | INFO     | backend.agents.ranking_agent | [RANKING:scored] candidate=01d15bc8-3b37-4e34-be5e-06fb3b5a3e1f name=Niranjan Patil score=51.9 tiebreak=2.10
+2026-04-24 13:51:43 | INFO     | backend.tools.scorer | [SCORE:start] candidate=99c23237-7e67-41ce-81ae-6ed1fb9c9859 name=OMKAR HALPATRAO job=Junior Software Developer to join our engineering team. type=RoleType.ENGINEERING must_skills=5 pref_skills=14 min_exp=0.0
+2026-04-24 13:51:43 | WARNING  | backend.services.embeddings | Similarity computation failed: Expected collection name that (1) contains 3-63 characters, (2) starts and ends with an alphanumeric character, (3) otherwise contains only alphanumeric characters, underscores or hyphens (-), (4) contains no two consecutive periods (..) and (5) is not a valid IPv4 address, got _temp_similarity_3021782170448
+2026-04-24 13:51:43 | INFO     | backend.tools.scorer | [SCORE:total] candidate=99c23237-7e67-41ce-81ae-6ed1fb9c9859 base=40.2 semantic_bonus=0.0 penalties=0.0 total=40.1
+2026-04-24 13:51:43 | INFO     | backend.agents.ranking_agent | [RANKING:scored] candidate=99c23237-7e67-41ce-81ae-6ed1fb9c9859 name=OMKAR HALPATRAO score=40.1 tiebreak=1.80
+2026-04-24 13:51:43 | INFO     | backend.agents.ranking_agent | [RANKING:done] ranked=3 top=51.9 bottom=40.1 shortlist=0 hold=1 reject=2
+2026-04-24 13:51:43 | INFO     | backend.workflows.pipeline | [Pipeline:ranked] run_id=debug-eval-001 scored=3 
+2026-04-24 13:51:43 | INFO     | backend.workflows.pipeline | [Pipeline] Node: generate_reasoning | run_id=debug-eval-001
+2026-04-24 13:51:43 | INFO     | backend.agents.reasoning_agent | [REASONING:start] candidates=3 llm=False
+2026-04-24 13:51:43 | INFO     | backend.agents.reasoning_agent | [REASONING:done] candidate=01d15bc8-3b37-4e34-be5e-06fb3b5a3e1f score=51.9 rec=hold conf=62%
+2026-04-24 13:51:43 | INFO     | backend.agents.reasoning_agent | [REASONING:done] candidate=046d8f88-e0a0-4a75-8cc2-bd3ca6b1f8b9 score=44.8 rec=hold conf=57%
+2026-04-24 13:51:43 | INFO     | backend.agents.reasoning_agent | [REASONING:done] candidate=99c23237-7e67-41ce-81ae-6ed1fb9c9859 score=40.1 rec=hold conf=54%
+2026-04-24 13:51:43 | INFO     | backend.agents.reasoning_agent | [REASONING:complete]
+2026-04-24 13:51:43 | INFO     | backend.workflows.pipeline | [Pipeline:completed] run_id=debug-eval-001 shortlist=0 hold=3 reject=0
+2026-04-24 13:51:43 | INFO     | backend.services.storage | Saved run debug-eval-001 with status=completed
+2026-04-24 13:51:43 | INFO     | backend.workflows.pipeline | Pipeline completed run_id=debug-eval-001 status=completed
+2026-04-24 13:51:43 | INFO     | backend.tools.exporter | Exported 3 candidates to JSON: exports\debug-eval-001_results.json
+2026-04-24 13:51:43 | INFO     | backend.tools.exporter | Shortlist report written: exports\debug-eval-001_shortlist_report.txt
+2026-04-24 13:52:40 | INFO     | backend.tools.jd_parser | Parsing JD with rule-based parser
+2026-04-24 13:52:40 | INFO     | backend.tools.jd_parser | JD parsed: role='Junior Software Developer to join our engineering team.' type=RoleType.ENGINEERING must_have=5 preferred=14 min_exp=0.0 max_exp=None
+2026-04-24 13:54:35 | INFO     | backend.services.storage | Loaded 10 runs from uploads\runs_state.json
+2026-04-24 13:54:35 | INFO     | backend.workflows.pipeline | Starting pipeline run_id=debug-eval-001 with 3 resumes
+2026-04-24 13:54:35 | INFO     | backend.services.storage | Saved run debug-eval-001 with status=started
+2026-04-24 13:54:35 | INFO     | backend.workflows.pipeline | [Pipeline] Node: read_jd | run_id=debug-eval-001
+2026-04-24 13:54:35 | INFO     | backend.agents.jd_reader_agent | JD Reader Agent: starting extraction
+2026-04-24 13:54:35 | INFO     | backend.tools.jd_parser | Parsing JD with rule-based parser
+2026-04-24 13:54:35 | INFO     | backend.tools.jd_parser | JD parsed: role='Junior Software Developer to join our engineering team.' type=RoleType.ENGINEERING must_have=5 preferred=14 min_exp=0.0 max_exp=None
+2026-04-24 13:54:54 | INFO     | backend.agents.jd_reader_agent | [JD:parsed] role='Junior Software Developer' type=RoleType.FRESHER must_have=6 preferred=18 min_exp=0.0 max_exp=2.0 edu_req=2 certs=0
+2026-04-24 13:54:54 | INFO     | backend.workflows.pipeline | [Pipeline:jd_parsed] run_id=debug-eval-001 role='Junior Software Developer' type=RoleType.FRESHER must_have=6 preferred=18 min_exp=0.0
+2026-04-24 13:54:54 | INFO     | backend.workflows.pipeline | [Pipeline] Node: parse_resumes | run_id=debug-eval-001
+2026-04-24 13:54:54 | INFO     | backend.agents.resume_parser_agent | Resume Parser Agent: processing 3 files
+2026-04-24 13:54:54 | INFO     | backend.agents.resume_parser_agent | Parsing: Nandita Resume.pdf.pdf (id=3518ba0b-7713-4e67-b70f-3d524ed2fcaa)
+2026-04-24 13:54:54 | INFO     | backend.tools.resume_parser | Parsing resume: Nandita Resume.pdf.pdf
+2026-04-24 13:54:54 | INFO     | backend.tools.resume_parser | [PARSE:resume] id=3518ba0b-7713-4e67-b70f-3d524ed2fcaa name=SUBANANDIDA THEVAR skills=22 exp_years=0.0 projects=1 edu=1 certs=1 confidence=0.8 status=ParseStatus.SUCCESS
+2026-04-24 13:54:54 | INFO     | backend.agents.resume_parser_agent | Parsed Nandita Resume.pdf.pdf: confidence=80%, skills=22
+2026-04-24 13:54:54 | INFO     | backend.agents.resume_parser_agent | Parsing: Niranjan patil resume new.pdf (id=1184ca6d-04a4-4f0d-b027-82c41d1ce5af)
+2026-04-24 13:54:54 | INFO     | backend.tools.resume_parser | Parsing resume: Niranjan patil resume new.pdf
+2026-04-24 13:54:54 | INFO     | backend.tools.resume_parser | [PARSE:resume] id=1184ca6d-04a4-4f0d-b027-82c41d1ce5af name=Niranjan Patil skills=35 exp_years=0.0 projects=1 edu=1 certs=1 confidence=0.8 status=ParseStatus.SUCCESS
+2026-04-24 13:54:54 | INFO     | backend.agents.resume_parser_agent | Parsed Niranjan patil resume new.pdf: confidence=80%, skills=35
+2026-04-24 13:54:54 | INFO     | backend.agents.resume_parser_agent | Parsing: Omkar_final CV.pdf (id=94697612-5dd7-4eff-b4d2-76ad6117ac49)
+2026-04-24 13:54:54 | INFO     | backend.tools.resume_parser | Parsing resume: Omkar_final CV.pdf
+2026-04-24 13:54:55 | INFO     | backend.tools.resume_parser | [PARSE:resume] id=94697612-5dd7-4eff-b4d2-76ad6117ac49 name=OMKAR HALPATRAO skills=18 exp_years=0.0 projects=1 edu=1 certs=0 confidence=0.8 status=ParseStatus.SUCCESS
+2026-04-24 13:54:55 | INFO     | backend.agents.resume_parser_agent | Parsed Omkar_final CV.pdf: confidence=80%, skills=18
+2026-04-24 13:54:55 | INFO     | backend.agents.resume_parser_agent | Resume Parser Agent: completed 3 profiles
+2026-04-24 13:54:55 | INFO     | backend.workflows.pipeline | [Pipeline:resumes_parsed] run_id=debug-eval-001 profiles=3 valid=3 failed=0
+2026-04-24 13:54:55 | INFO     | backend.workflows.pipeline | [Pipeline] Node: rank_candidates | run_id=debug-eval-001
+2026-04-24 13:54:55 | INFO     | backend.agents.ranking_agent | [RANKING:start] run_id=debug-eval-001 job='Junior Software Developer' candidates=3
+2026-04-24 13:54:55 | INFO     | backend.tools.scorer | [SCORE:start] candidate=3518ba0b-7713-4e67-b70f-3d524ed2fcaa name=SUBANANDIDA THEVAR job=Junior Software Developer type=RoleType.FRESHER must_skills=6 pref_skills=18 min_exp=0.0
+2026-04-24 13:54:55 | ERROR    | backend.agents.ranking_agent | [RANKING:error] candidate=3518ba0b-7713-4e67-b70f-3d524ed2fcaa: name 're' is not defined
+2026-04-24 13:54:55 | INFO     | backend.tools.scorer | [SCORE:start] candidate=1184ca6d-04a4-4f0d-b027-82c41d1ce5af name=Niranjan Patil job=Junior Software Developer type=RoleType.FRESHER must_skills=6 pref_skills=18 min_exp=0.0
+2026-04-24 13:54:55 | ERROR    | backend.agents.ranking_agent | [RANKING:error] candidate=1184ca6d-04a4-4f0d-b027-82c41d1ce5af: name 're' is not defined
+2026-04-24 13:54:55 | INFO     | backend.tools.scorer | [SCORE:start] candidate=94697612-5dd7-4eff-b4d2-76ad6117ac49 name=OMKAR HALPATRAO job=Junior Software Developer type=RoleType.FRESHER must_skills=6 pref_skills=18 min_exp=0.0
+2026-04-24 13:54:55 | ERROR    | backend.agents.ranking_agent | [RANKING:error] candidate=94697612-5dd7-4eff-b4d2-76ad6117ac49: name 're' is not defined
+2026-04-24 13:54:55 | INFO     | backend.workflows.pipeline | [Pipeline:ranked] run_id=debug-eval-001 scored=0 
+2026-04-24 13:54:55 | INFO     | backend.workflows.pipeline | [Pipeline] Node: generate_reasoning | run_id=debug-eval-001
+2026-04-24 13:54:55 | INFO     | backend.agents.reasoning_agent | [REASONING:start] candidates=0 llm=False
+2026-04-24 13:54:55 | INFO     | backend.agents.reasoning_agent | [REASONING:complete]
+2026-04-24 13:54:55 | INFO     | backend.workflows.pipeline | [Pipeline:completed] run_id=debug-eval-001 shortlist=0 hold=0 reject=0
+2026-04-24 13:54:55 | INFO     | backend.services.storage | Saved run debug-eval-001 with status=completed
+2026-04-24 13:54:55 | INFO     | backend.workflows.pipeline | Pipeline completed run_id=debug-eval-001 status=completed
+2026-04-24 13:55:06 | INFO     | backend.services.storage | Loaded 10 runs from uploads\runs_state.json
+2026-04-24 13:55:06 | INFO     | backend.workflows.pipeline | Starting pipeline run_id=debug-eval-001 with 3 resumes
+2026-04-24 13:55:06 | INFO     | backend.services.storage | Saved run debug-eval-001 with status=started
+2026-04-24 13:55:06 | INFO     | backend.workflows.pipeline | [Pipeline] Node: read_jd | run_id=debug-eval-001
+2026-04-24 13:55:06 | INFO     | backend.agents.jd_reader_agent | JD Reader Agent: starting extraction
+2026-04-24 13:55:06 | INFO     | backend.tools.jd_parser | Parsing JD with rule-based parser
+2026-04-24 13:55:06 | INFO     | backend.tools.jd_parser | JD parsed: role='Junior Software Developer to join our engineering team.' type=RoleType.ENGINEERING must_have=5 preferred=14 min_exp=0.0 max_exp=None
+2026-04-24 13:55:25 | INFO     | backend.agents.jd_reader_agent | [JD:parsed] role='Junior Software Developer' type=RoleType.FRESHER must_have=6 preferred=18 min_exp=0.0 max_exp=2.0 edu_req=2 certs=0
+2026-04-24 13:55:25 | INFO     | backend.workflows.pipeline | [Pipeline:jd_parsed] run_id=debug-eval-001 role='Junior Software Developer' type=RoleType.FRESHER must_have=6 preferred=18 min_exp=0.0
+2026-04-24 13:55:25 | INFO     | backend.workflows.pipeline | [Pipeline] Node: parse_resumes | run_id=debug-eval-001
+2026-04-24 13:55:25 | INFO     | backend.agents.resume_parser_agent | Resume Parser Agent: processing 3 files
+2026-04-24 13:55:25 | INFO     | backend.agents.resume_parser_agent | Parsing: Nandita Resume.pdf.pdf (id=946dd350-decb-4688-b2d1-91b1be35b4e2)
+2026-04-24 13:55:25 | INFO     | backend.tools.resume_parser | Parsing resume: Nandita Resume.pdf.pdf
+2026-04-24 13:55:25 | INFO     | backend.tools.resume_parser | [PARSE:resume] id=946dd350-decb-4688-b2d1-91b1be35b4e2 name=SUBANANDIDA THEVAR skills=22 exp_years=0.0 projects=1 edu=1 certs=1 confidence=0.8 status=ParseStatus.SUCCESS
+2026-04-24 13:55:25 | INFO     | backend.agents.resume_parser_agent | Parsed Nandita Resume.pdf.pdf: confidence=80%, skills=22
+2026-04-24 13:55:25 | INFO     | backend.agents.resume_parser_agent | Parsing: Niranjan patil resume new.pdf (id=0414f505-ce8c-40c5-9b93-f9ce65e548f0)
+2026-04-24 13:55:25 | INFO     | backend.tools.resume_parser | Parsing resume: Niranjan patil resume new.pdf
+2026-04-24 13:55:25 | INFO     | backend.tools.resume_parser | [PARSE:resume] id=0414f505-ce8c-40c5-9b93-f9ce65e548f0 name=Niranjan Patil skills=35 exp_years=0.0 projects=1 edu=1 certs=1 confidence=0.8 status=ParseStatus.SUCCESS
+2026-04-24 13:55:25 | INFO     | backend.agents.resume_parser_agent | Parsed Niranjan patil resume new.pdf: confidence=80%, skills=35
+2026-04-24 13:55:25 | INFO     | backend.agents.resume_parser_agent | Parsing: Omkar_final CV.pdf (id=659abd38-33b7-4247-b221-5f755a261a20)
+2026-04-24 13:55:25 | INFO     | backend.tools.resume_parser | Parsing resume: Omkar_final CV.pdf
+2026-04-24 13:55:25 | INFO     | backend.tools.resume_parser | [PARSE:resume] id=659abd38-33b7-4247-b221-5f755a261a20 name=OMKAR HALPATRAO skills=18 exp_years=0.0 projects=1 edu=1 certs=0 confidence=0.8 status=ParseStatus.SUCCESS
+2026-04-24 13:55:25 | INFO     | backend.agents.resume_parser_agent | Parsed Omkar_final CV.pdf: confidence=80%, skills=18
+2026-04-24 13:55:25 | INFO     | backend.agents.resume_parser_agent | Resume Parser Agent: completed 3 profiles
+2026-04-24 13:55:25 | INFO     | backend.workflows.pipeline | [Pipeline:resumes_parsed] run_id=debug-eval-001 profiles=3 valid=3 failed=0
+2026-04-24 13:55:25 | INFO     | backend.workflows.pipeline | [Pipeline] Node: rank_candidates | run_id=debug-eval-001
+2026-04-24 13:55:25 | INFO     | backend.agents.ranking_agent | [RANKING:start] run_id=debug-eval-001 job='Junior Software Developer' candidates=3
+2026-04-24 13:55:26 | INFO     | backend.tools.scorer | [SCORE:start] candidate=946dd350-decb-4688-b2d1-91b1be35b4e2 name=SUBANANDIDA THEVAR job=Junior Software Developer type=RoleType.FRESHER must_skills=6 pref_skills=18 min_exp=0.0
+2026-04-24 13:55:26 | INFO     | backend.tools.scorer | [SCORE:total] candidate=946dd350-decb-4688-b2d1-91b1be35b4e2 base=61.2 semantic_bonus=3.3 penalties=0.0 total=64.5
+2026-04-24 13:55:26 | INFO     | backend.agents.ranking_agent | [RANKING:scored] candidate=946dd350-decb-4688-b2d1-91b1be35b4e2 name=SUBANANDIDA THEVAR score=64.5 tiebreak=2.10
+2026-04-24 13:55:26 | INFO     | backend.tools.scorer | [SCORE:start] candidate=0414f505-ce8c-40c5-9b93-f9ce65e548f0 name=Niranjan Patil job=Junior Software Developer type=RoleType.FRESHER must_skills=6 pref_skills=18 min_exp=0.0
+2026-04-24 13:55:26 | INFO     | backend.tools.scorer | [SCORE:total] candidate=0414f505-ce8c-40c5-9b93-f9ce65e548f0 base=65.7 semantic_bonus=3.4 penalties=0.0 total=69.1
+2026-04-24 13:55:26 | INFO     | backend.agents.ranking_agent | [RANKING:scored] candidate=0414f505-ce8c-40c5-9b93-f9ce65e548f0 name=Niranjan Patil score=69.1 tiebreak=2.10
+2026-04-24 13:55:26 | INFO     | backend.tools.scorer | [SCORE:start] candidate=659abd38-33b7-4247-b221-5f755a261a20 name=OMKAR HALPATRAO job=Junior Software Developer type=RoleType.FRESHER must_skills=6 pref_skills=18 min_exp=0.0
+2026-04-24 13:55:26 | INFO     | backend.tools.scorer | [SCORE:total] candidate=659abd38-33b7-4247-b221-5f755a261a20 base=25.0 semantic_bonus=3.4 penalties=0.0 total=28.5
+2026-04-24 13:55:26 | INFO     | backend.agents.ranking_agent | [RANKING:scored] candidate=659abd38-33b7-4247-b221-5f755a261a20 name=OMKAR HALPATRAO score=28.5 tiebreak=1.80
+2026-04-24 13:55:26 | INFO     | backend.agents.ranking_agent | [RANKING:done] ranked=3 top=69.1 bottom=28.5 shortlist=0 hold=2 reject=1
+2026-04-24 13:55:26 | INFO     | backend.workflows.pipeline | [Pipeline:ranked] run_id=debug-eval-001 scored=3 
+2026-04-24 13:55:26 | INFO     | backend.workflows.pipeline | [Pipeline] Node: generate_reasoning | run_id=debug-eval-001
+2026-04-24 13:55:26 | INFO     | backend.agents.reasoning_agent | [REASONING:start] candidates=3 llm=False
+2026-04-24 13:55:26 | INFO     | backend.agents.reasoning_agent | [REASONING:done] candidate=0414f505-ce8c-40c5-9b93-f9ce65e548f0 score=69.1 rec=shortlist conf=73%
+2026-04-24 13:55:26 | INFO     | backend.agents.reasoning_agent | [REASONING:done] candidate=946dd350-decb-4688-b2d1-91b1be35b4e2 score=64.5 rec=shortlist conf=70%
+2026-04-24 13:55:26 | INFO     | backend.agents.reasoning_agent | [REASONING:done] candidate=659abd38-33b7-4247-b221-5f755a261a20 score=28.5 rec=reject conf=47%
+2026-04-24 13:55:26 | INFO     | backend.agents.reasoning_agent | [REASONING:complete]
+2026-04-24 13:55:26 | INFO     | backend.workflows.pipeline | [Pipeline:completed] run_id=debug-eval-001 shortlist=2 hold=0 reject=1
+2026-04-24 13:55:26 | INFO     | backend.services.storage | Saved run debug-eval-001 with status=completed
+2026-04-24 13:55:26 | INFO     | backend.workflows.pipeline | Pipeline completed run_id=debug-eval-001 status=completed
+2026-04-24 13:55:26 | INFO     | backend.tools.exporter | Exported 3 candidates to JSON: exports\debug-eval-001_results.json
+2026-04-24 13:55:26 | INFO     | backend.tools.exporter | Shortlist report written: exports\debug-eval-001_shortlist_report.txt
+2026-04-24 13:55:56 | INFO     | backend.services.storage | Loaded 10 runs from uploads\runs_state.json
+2026-04-24 13:57:35 | INFO     | backend.services.storage | Loaded 10 runs from uploads\runs_state.json
+2026-04-24 13:58:45 | INFO     | backend.services.storage | Loaded 10 runs from uploads\runs_state.json
+2026-04-24 13:59:22 | INFO     | backend.services.storage | Loaded 10 runs from uploads\runs_state.json
+2026-04-24 13:59:22 | INFO     | backend.services.storage | Loaded 10 runs from uploads\runs_state.json
+2026-04-24 13:59:24 | INFO     | backend.services.storage | Loaded 10 runs from uploads\runs_state.json
+2026-04-24 13:59:24 | INFO     | backend.services.storage | Loaded 10 runs from uploads\runs_state.json
+2026-04-24 13:59:56 | INFO     | backend.api.main | POST /analyze-job run_id=78e919b1-9187-4660-909f-e689595e92cf
+2026-04-24 13:59:56 | INFO     | backend.agents.jd_reader_agent | JD Reader Agent: starting extraction
+2026-04-24 13:59:56 | INFO     | backend.tools.jd_parser | Parsing JD with rule-based parser
+2026-04-24 13:59:56 | INFO     | backend.tools.jd_parser | JD parsed: role='Junior Software Developer / Full Stack Developer**' type=RoleType.ENGINEERING must_have=15 preferred=29 min_exp=0.0 max_exp=None
+2026-04-24 14:00:31 | INFO     | backend.agents.jd_reader_agent | [JD:parsed] role='Junior Software Developer / Full Stack Developer' type=RoleType.ENGINEERING must_have=24 preferred=30 min_exp=0.0 max_exp=None edu_req=2 certs=0
+2026-04-24 14:00:31 | INFO     | backend.services.storage | Saved run 78e919b1-9187-4660-909f-e689595e92cf with status=jd_analyzed
+2026-04-24 14:00:31 | INFO     | backend.api.main | POST /upload-resumes run_id=78e919b1-9187-4660-909f-e689595e92cf files=3
+2026-04-24 14:00:31 | INFO     | backend.api.main | Saved: uploads\78e919b1-9187-4660-909f-e689595e92cf\Nandita Resume.pdf.pdf
+2026-04-24 14:00:31 | INFO     | backend.api.main | Saved: uploads\78e919b1-9187-4660-909f-e689595e92cf\Niranjan patil resume new.pdf
+2026-04-24 14:00:31 | INFO     | backend.api.main | Saved: uploads\78e919b1-9187-4660-909f-e689595e92cf\Omkar_final CV.pdf
+2026-04-24 14:00:31 | INFO     | backend.api.main | POST /rank run_id=78e919b1-9187-4660-909f-e689595e92cf
+2026-04-24 14:00:31 | INFO     | backend.workflows.pipeline | Starting pipeline run_id=78e919b1-9187-4660-909f-e689595e92cf with 3 resumes
+2026-04-24 14:00:31 | INFO     | backend.services.storage | Saved run 78e919b1-9187-4660-909f-e689595e92cf with status=started
+2026-04-24 14:00:31 | INFO     | backend.workflows.pipeline | [Pipeline] Node: read_jd | run_id=78e919b1-9187-4660-909f-e689595e92cf
+2026-04-24 14:00:31 | INFO     | backend.agents.jd_reader_agent | JD Reader Agent: starting extraction
+2026-04-24 14:00:31 | INFO     | backend.tools.jd_parser | Parsing JD with rule-based parser
+2026-04-24 14:00:31 | INFO     | backend.tools.jd_parser | JD parsed: role='Junior Software Developer / Full Stack Developer**' type=RoleType.ENGINEERING must_have=15 preferred=29 min_exp=0.0 max_exp=None
+2026-04-24 14:01:08 | INFO     | backend.agents.jd_reader_agent | [JD:parsed] role='Junior Software Developer / Full Stack Developer' type=RoleType.ENGINEERING must_have=24 preferred=30 min_exp=0.0 max_exp=None edu_req=2 certs=0
+2026-04-24 14:01:08 | INFO     | backend.workflows.pipeline | [Pipeline:jd_parsed] run_id=78e919b1-9187-4660-909f-e689595e92cf role='Junior Software Developer / Full Stack Developer' type=RoleType.ENGINEERING must_have=24 preferred=30 min_exp=0.0
+2026-04-24 14:01:08 | INFO     | backend.workflows.pipeline | [Pipeline] Node: parse_resumes | run_id=78e919b1-9187-4660-909f-e689595e92cf
+2026-04-24 14:01:08 | INFO     | backend.agents.resume_parser_agent | Resume Parser Agent: processing 3 files
+2026-04-24 14:01:08 | INFO     | backend.agents.resume_parser_agent | Parsing: Nandita Resume.pdf.pdf (id=2adbcb82-14f6-46aa-a73e-35ed50b45069)
+2026-04-24 14:01:08 | INFO     | backend.tools.resume_parser | Parsing resume: Nandita Resume.pdf.pdf
+2026-04-24 14:01:09 | INFO     | backend.tools.resume_parser | [PARSE:resume] id=2adbcb82-14f6-46aa-a73e-35ed50b45069 name=SUBANANDIDA THEVAR skills=22 exp_years=0.0 projects=1 edu=1 certs=1 confidence=0.8 status=ParseStatus.SUCCESS
+2026-04-24 14:01:09 | INFO     | backend.agents.resume_parser_agent | Parsed Nandita Resume.pdf.pdf: confidence=80%, skills=22
+2026-04-24 14:01:09 | INFO     | backend.agents.resume_parser_agent | Parsing: Niranjan patil resume new.pdf (id=ffcf994b-2ce8-48ae-8c37-17b61ee61711)
+2026-04-24 14:01:09 | INFO     | backend.tools.resume_parser | Parsing resume: Niranjan patil resume new.pdf
+2026-04-24 14:01:09 | INFO     | backend.tools.resume_parser | [PARSE:resume] id=ffcf994b-2ce8-48ae-8c37-17b61ee61711 name=Niranjan Patil skills=35 exp_years=0.0 projects=1 edu=1 certs=1 confidence=0.8 status=ParseStatus.SUCCESS
+2026-04-24 14:01:09 | INFO     | backend.agents.resume_parser_agent | Parsed Niranjan patil resume new.pdf: confidence=80%, skills=35
+2026-04-24 14:01:09 | INFO     | backend.agents.resume_parser_agent | Parsing: Omkar_final CV.pdf (id=8ada25ca-a92e-453f-938c-73392bf9d61a)
+2026-04-24 14:01:09 | INFO     | backend.tools.resume_parser | Parsing resume: Omkar_final CV.pdf
+2026-04-24 14:01:09 | INFO     | backend.tools.resume_parser | [PARSE:resume] id=8ada25ca-a92e-453f-938c-73392bf9d61a name=OMKAR HALPATRAO skills=18 exp_years=0.0 projects=1 edu=1 certs=0 confidence=0.8 status=ParseStatus.SUCCESS
+2026-04-24 14:01:09 | INFO     | backend.agents.resume_parser_agent | Parsed Omkar_final CV.pdf: confidence=80%, skills=18
+2026-04-24 14:01:09 | INFO     | backend.agents.resume_parser_agent | Resume Parser Agent: completed 3 profiles
+2026-04-24 14:01:09 | INFO     | backend.workflows.pipeline | [Pipeline:resumes_parsed] run_id=78e919b1-9187-4660-909f-e689595e92cf profiles=3 valid=3 failed=0
+2026-04-24 14:01:09 | INFO     | backend.workflows.pipeline | [Pipeline] Node: rank_candidates | run_id=78e919b1-9187-4660-909f-e689595e92cf
+2026-04-24 14:01:09 | INFO     | backend.agents.ranking_agent | [RANKING:start] run_id=78e919b1-9187-4660-909f-e689595e92cf job='Junior Software Developer / Full Stack Developer' candidates=3
+2026-04-24 14:01:10 | INFO     | backend.tools.scorer | [SCORE:start] candidate=2adbcb82-14f6-46aa-a73e-35ed50b45069 name=SUBANANDIDA THEVAR job=Junior Software Developer / Full Stack Developer type=RoleType.ENGINEERING must_skills=24 pref_skills=30 min_exp=0.0
+2026-04-24 14:01:10 | INFO     | backend.tools.scorer | [SCORE:total] candidate=2adbcb82-14f6-46aa-a73e-35ed50b45069 base=53.2 semantic_bonus=3.0 penalties=0.0 total=56.2
+2026-04-24 14:01:10 | INFO     | backend.agents.ranking_agent | [RANKING:scored] candidate=2adbcb82-14f6-46aa-a73e-35ed50b45069 name=SUBANANDIDA THEVAR score=56.2 tiebreak=2.10
+2026-04-24 14:01:10 | INFO     | backend.tools.scorer | [SCORE:start] candidate=ffcf994b-2ce8-48ae-8c37-17b61ee61711 name=Niranjan Patil job=Junior Software Developer / Full Stack Developer type=RoleType.ENGINEERING must_skills=24 pref_skills=30 min_exp=0.0
+2026-04-24 14:01:10 | INFO     | backend.tools.scorer | [SCORE:total] candidate=ffcf994b-2ce8-48ae-8c37-17b61ee61711 base=56.0 semantic_bonus=3.2 penalties=0.0 total=59.1
+2026-04-24 14:01:10 | INFO     | backend.agents.ranking_agent | [RANKING:scored] candidate=ffcf994b-2ce8-48ae-8c37-17b61ee61711 name=Niranjan Patil score=59.1 tiebreak=2.10
+2026-04-24 14:01:10 | INFO     | backend.tools.scorer | [SCORE:start] candidate=8ada25ca-a92e-453f-938c-73392bf9d61a name=OMKAR HALPATRAO job=Junior Software Developer / Full Stack Developer type=RoleType.ENGINEERING must_skills=24 pref_skills=30 min_exp=0.0
+2026-04-24 14:01:10 | INFO     | backend.tools.scorer | [SCORE:total] candidate=8ada25ca-a92e-453f-938c-73392bf9d61a base=41.5 semantic_bonus=3.4 penalties=0.0 total=44.9
+2026-04-24 14:01:10 | INFO     | backend.agents.ranking_agent | [RANKING:scored] candidate=8ada25ca-a92e-453f-938c-73392bf9d61a name=OMKAR HALPATRAO score=44.9 tiebreak=1.80
+2026-04-24 14:01:10 | INFO     | backend.agents.ranking_agent | [RANKING:done] ranked=3 top=59.1 bottom=44.9 shortlist=0 hold=2 reject=1
+2026-04-24 14:01:10 | INFO     | backend.workflows.pipeline | [Pipeline:ranked] run_id=78e919b1-9187-4660-909f-e689595e92cf scored=3 
+2026-04-24 14:01:10 | INFO     | backend.workflows.pipeline | [Pipeline] Node: generate_reasoning | run_id=78e919b1-9187-4660-909f-e689595e92cf
+2026-04-24 14:01:10 | INFO     | backend.agents.reasoning_agent | [REASONING:start] candidates=3 llm=False
+2026-04-24 14:01:10 | INFO     | backend.agents.reasoning_agent | [REASONING:done] candidate=ffcf994b-2ce8-48ae-8c37-17b61ee61711 score=59.1 rec=shortlist conf=66%
+2026-04-24 14:01:10 | INFO     | backend.agents.reasoning_agent | [REASONING:done] candidate=2adbcb82-14f6-46aa-a73e-35ed50b45069 score=56.2 rec=shortlist conf=65%
+2026-04-24 14:01:10 | INFO     | backend.agents.reasoning_agent | [REASONING:done] candidate=8ada25ca-a92e-453f-938c-73392bf9d61a score=44.9 rec=hold conf=57%
+2026-04-24 14:01:10 | INFO     | backend.agents.reasoning_agent | [REASONING:complete]
+2026-04-24 14:01:10 | INFO     | backend.workflows.pipeline | [Pipeline:completed] run_id=78e919b1-9187-4660-909f-e689595e92cf shortlist=2 hold=1 reject=0
+2026-04-24 14:01:10 | INFO     | backend.services.storage | Saved run 78e919b1-9187-4660-909f-e689595e92cf with status=completed
+2026-04-24 14:01:10 | INFO     | backend.workflows.pipeline | Pipeline completed run_id=78e919b1-9187-4660-909f-e689595e92cf status=completed
+2026-04-24 14:01:10 | INFO     | backend.tools.exporter | Exported 3 candidates to CSV: exports\78e919b1-9187-4660-909f-e689595e92cf_results.csv
+2026-04-24 14:01:10 | INFO     | backend.tools.exporter | Exported 3 candidates to JSON: exports\78e919b1-9187-4660-909f-e689595e92cf_results.json
+2026-04-24 14:01:10 | INFO     | backend.tools.exporter | Shortlist report written: exports\78e919b1-9187-4660-909f-e689595e92cf_shortlist_report.txt
+2026-04-24 14:01:13 | INFO     | backend.api.main | GET /results/78e919b1-9187-4660-909f-e689595e92cf
+2026-04-24 14:01:22 | INFO     | backend.api.main | GET /results/78e919b1-9187-4660-909f-e689595e92cf
+2026-04-24 14:01:22 | INFO     | backend.api.main | GET /results/78e919b1-9187-4660-909f-e689595e92cf
+2026-04-24 14:01:32 | INFO     | backend.api.main | GET /results/78e919b1-9187-4660-909f-e689595e92cf
+2026-04-24 14:01:32 | INFO     | backend.api.main | GET /results/78e919b1-9187-4660-909f-e689595e92cf
+2026-04-24 14:01:38 | INFO     | backend.api.main | GET /results/78e919b1-9187-4660-909f-e689595e92cf
+2026-04-24 14:01:38 | INFO     | backend.api.main | GET /results/78e919b1-9187-4660-909f-e689595e92cf
+2026-04-24 14:02:07 | INFO     | backend.api.main | GET /results/78e919b1-9187-4660-909f-e689595e92cf
+2026-04-24 14:02:07 | INFO     | backend.api.main | GET /results/78e919b1-9187-4660-909f-e689595e92cf
+2026-04-24 14:02:13 | INFO     | backend.api.main | GET /results/78e919b1-9187-4660-909f-e689595e92cf
+2026-04-24 14:02:13 | INFO     | backend.api.main | GET /results/78e919b1-9187-4660-909f-e689595e92cf
+2026-04-24 14:02:22 | INFO     | backend.api.main | GET /results/78e919b1-9187-4660-909f-e689595e92cf
+2026-04-24 14:02:22 | INFO     | backend.api.main | GET /results/78e919b1-9187-4660-909f-e689595e92cf
+2026-04-24 14:03:25 | INFO     | backend.api.main | GET /download/78e919b1-9187-4660-909f-e689595e92cf format=csv
+2026-04-24 14:03:25 | INFO     | backend.tools.exporter | Exported 3 candidates to CSV: exports\78e919b1-9187-4660-909f-e689595e92cf_results.csv
+2026-04-24 14:03:34 | INFO     | backend.api.main | GET /download/78e919b1-9187-4660-909f-e689595e92cf format=report
+2026-04-24 14:03:34 | INFO     | backend.tools.exporter | Shortlist report written: exports\78e919b1-9187-4660-909f-e689595e92cf_shortlist_report.txt
+2026-04-24 14:03:54 | INFO     | backend.api.main | GET /download/78e919b1-9187-4660-909f-e689595e92cf format=csv
+2026-04-24 14:03:54 | INFO     | backend.tools.exporter | Exported 3 candidates to CSV: exports\78e919b1-9187-4660-909f-e689595e92cf_results.csv
+2026-04-24 14:04:37 | INFO     | backend.api.main | GET /download/78e919b1-9187-4660-909f-e689595e92cf format=json
+2026-04-24 14:04:37 | INFO     | backend.tools.exporter | Exported 3 candidates to JSON: exports\78e919b1-9187-4660-909f-e689595e92cf_results.json
+2026-04-24 14:05:21 | INFO     | backend.api.main | POST /analyze-job run_id=cc59227a-c6d2-4a69-974a-f9fa9631a119
+2026-04-24 14:05:21 | INFO     | backend.agents.jd_reader_agent | JD Reader Agent: starting extraction
+2026-04-24 14:05:21 | INFO     | backend.tools.jd_parser | Parsing JD with rule-based parser
+2026-04-24 14:05:21 | INFO     | backend.tools.jd_parser | JD parsed: role='Junior Software Developer / Full Stack Developer**' type=RoleType.ENGINEERING must_have=15 preferred=29 min_exp=0.0 max_exp=None
+2026-04-24 14:05:55 | INFO     | backend.agents.jd_reader_agent | [JD:parsed] role='Junior Software Developer / Full Stack Developer' type=RoleType.ENGINEERING must_have=24 preferred=30 min_exp=0.0 max_exp=None edu_req=2 certs=0
+2026-04-24 14:05:55 | INFO     | backend.services.storage | Saved run cc59227a-c6d2-4a69-974a-f9fa9631a119 with status=jd_analyzed
+2026-04-24 14:05:55 | INFO     | backend.api.main | POST /upload-resumes run_id=cc59227a-c6d2-4a69-974a-f9fa9631a119 files=3
+2026-04-24 14:05:55 | INFO     | backend.api.main | Saved: uploads\cc59227a-c6d2-4a69-974a-f9fa9631a119\Nandita Resume.pdf.pdf
+2026-04-24 14:05:55 | INFO     | backend.api.main | Saved: uploads\cc59227a-c6d2-4a69-974a-f9fa9631a119\Niranjan patil resume new.pdf
+2026-04-24 14:05:55 | INFO     | backend.api.main | Saved: uploads\cc59227a-c6d2-4a69-974a-f9fa9631a119\Omkar_final CV.pdf
+2026-04-24 14:05:55 | INFO     | backend.api.main | POST /rank run_id=cc59227a-c6d2-4a69-974a-f9fa9631a119
+2026-04-24 14:05:55 | INFO     | backend.workflows.pipeline | Starting pipeline run_id=cc59227a-c6d2-4a69-974a-f9fa9631a119 with 3 resumes
+2026-04-24 14:05:55 | INFO     | backend.services.storage | Saved run cc59227a-c6d2-4a69-974a-f9fa9631a119 with status=started
+2026-04-24 14:05:55 | INFO     | backend.workflows.pipeline | [Pipeline] Node: read_jd | run_id=cc59227a-c6d2-4a69-974a-f9fa9631a119
+2026-04-24 14:05:55 | INFO     | backend.agents.jd_reader_agent | JD Reader Agent: starting extraction
+2026-04-24 14:05:55 | INFO     | backend.tools.jd_parser | Parsing JD with rule-based parser
+2026-04-24 14:05:55 | INFO     | backend.tools.jd_parser | JD parsed: role='Junior Software Developer / Full Stack Developer**' type=RoleType.ENGINEERING must_have=15 preferred=29 min_exp=0.0 max_exp=None
+2026-04-24 14:06:32 | INFO     | backend.agents.jd_reader_agent | [JD:parsed] role='Junior Software Developer / Full Stack Developer' type=RoleType.ENGINEERING must_have=24 preferred=30 min_exp=0.0 max_exp=None edu_req=2 certs=0
+2026-04-24 14:06:32 | INFO     | backend.workflows.pipeline | [Pipeline:jd_parsed] run_id=cc59227a-c6d2-4a69-974a-f9fa9631a119 role='Junior Software Developer / Full Stack Developer' type=RoleType.ENGINEERING must_have=24 preferred=30 min_exp=0.0
+2026-04-24 14:06:32 | INFO     | backend.workflows.pipeline | [Pipeline] Node: parse_resumes | run_id=cc59227a-c6d2-4a69-974a-f9fa9631a119
+2026-04-24 14:06:32 | INFO     | backend.agents.resume_parser_agent | Resume Parser Agent: processing 3 files
+2026-04-24 14:06:32 | INFO     | backend.agents.resume_parser_agent | Parsing: Nandita Resume.pdf.pdf (id=8ae12b5e-0bec-44a1-9e1f-da044b4d119c)
+2026-04-24 14:06:32 | INFO     | backend.tools.resume_parser | Parsing resume: Nandita Resume.pdf.pdf
+2026-04-24 14:06:32 | INFO     | backend.tools.resume_parser | [PARSE:resume] id=8ae12b5e-0bec-44a1-9e1f-da044b4d119c name=SUBANANDIDA THEVAR skills=22 exp_years=0.0 projects=1 edu=1 certs=1 confidence=0.8 status=ParseStatus.SUCCESS
+2026-04-24 14:06:32 | INFO     | backend.agents.resume_parser_agent | Parsed Nandita Resume.pdf.pdf: confidence=80%, skills=22
+2026-04-24 14:06:32 | INFO     | backend.agents.resume_parser_agent | Parsing: Niranjan patil resume new.pdf (id=f213730f-a7df-465c-9f4b-028720774681)
+2026-04-24 14:06:32 | INFO     | backend.tools.resume_parser | Parsing resume: Niranjan patil resume new.pdf
+2026-04-24 14:06:32 | INFO     | backend.tools.resume_parser | [PARSE:resume] id=f213730f-a7df-465c-9f4b-028720774681 name=Niranjan Patil skills=35 exp_years=0.0 projects=1 edu=1 certs=1 confidence=0.8 status=ParseStatus.SUCCESS
+2026-04-24 14:06:32 | INFO     | backend.agents.resume_parser_agent | Parsed Niranjan patil resume new.pdf: confidence=80%, skills=35
+2026-04-24 14:06:32 | INFO     | backend.agents.resume_parser_agent | Parsing: Omkar_final CV.pdf (id=c25d15e7-a33a-4a69-9bdc-a2ff5e7ce763)
+2026-04-24 14:06:32 | INFO     | backend.tools.resume_parser | Parsing resume: Omkar_final CV.pdf
+2026-04-24 14:06:32 | INFO     | backend.tools.resume_parser | [PARSE:resume] id=c25d15e7-a33a-4a69-9bdc-a2ff5e7ce763 name=OMKAR HALPATRAO skills=18 exp_years=0.0 projects=1 edu=1 certs=0 confidence=0.8 status=ParseStatus.SUCCESS
+2026-04-24 14:06:32 | INFO     | backend.agents.resume_parser_agent | Parsed Omkar_final CV.pdf: confidence=80%, skills=18
+2026-04-24 14:06:32 | INFO     | backend.agents.resume_parser_agent | Resume Parser Agent: completed 3 profiles
+2026-04-24 14:06:32 | INFO     | backend.workflows.pipeline | [Pipeline:resumes_parsed] run_id=cc59227a-c6d2-4a69-974a-f9fa9631a119 profiles=3 valid=3 failed=0
+2026-04-24 14:06:32 | INFO     | backend.workflows.pipeline | [Pipeline] Node: rank_candidates | run_id=cc59227a-c6d2-4a69-974a-f9fa9631a119
+2026-04-24 14:06:32 | INFO     | backend.agents.ranking_agent | [RANKING:start] run_id=cc59227a-c6d2-4a69-974a-f9fa9631a119 job='Junior Software Developer / Full Stack Developer' candidates=3
+2026-04-24 14:06:33 | INFO     | backend.tools.scorer | [SCORE:start] candidate=8ae12b5e-0bec-44a1-9e1f-da044b4d119c name=SUBANANDIDA THEVAR job=Junior Software Developer / Full Stack Developer type=RoleType.ENGINEERING must_skills=24 pref_skills=30 min_exp=0.0
+2026-04-24 14:06:33 | INFO     | backend.tools.scorer | [SCORE:total] candidate=8ae12b5e-0bec-44a1-9e1f-da044b4d119c base=53.2 semantic_bonus=3.0 penalties=0.0 total=56.2
+2026-04-24 14:06:33 | INFO     | backend.agents.ranking_agent | [RANKING:scored] candidate=8ae12b5e-0bec-44a1-9e1f-da044b4d119c name=SUBANANDIDA THEVAR score=56.2 tiebreak=2.10
+2026-04-24 14:06:33 | INFO     | backend.tools.scorer | [SCORE:start] candidate=f213730f-a7df-465c-9f4b-028720774681 name=Niranjan Patil job=Junior Software Developer / Full Stack Developer type=RoleType.ENGINEERING must_skills=24 pref_skills=30 min_exp=0.0
+2026-04-24 14:06:33 | INFO     | backend.tools.scorer | [SCORE:total] candidate=f213730f-a7df-465c-9f4b-028720774681 base=56.0 semantic_bonus=3.2 penalties=0.0 total=59.1
+2026-04-24 14:06:33 | INFO     | backend.agents.ranking_agent | [RANKING:scored] candidate=f213730f-a7df-465c-9f4b-028720774681 name=Niranjan Patil score=59.1 tiebreak=2.10
+2026-04-24 14:06:33 | INFO     | backend.tools.scorer | [SCORE:start] candidate=c25d15e7-a33a-4a69-9bdc-a2ff5e7ce763 name=OMKAR HALPATRAO job=Junior Software Developer / Full Stack Developer type=RoleType.ENGINEERING must_skills=24 pref_skills=30 min_exp=0.0
+2026-04-24 14:06:33 | INFO     | backend.tools.scorer | [SCORE:total] candidate=c25d15e7-a33a-4a69-9bdc-a2ff5e7ce763 base=41.5 semantic_bonus=3.4 penalties=0.0 total=44.9
+2026-04-24 14:06:33 | INFO     | backend.agents.ranking_agent | [RANKING:scored] candidate=c25d15e7-a33a-4a69-9bdc-a2ff5e7ce763 name=OMKAR HALPATRAO score=44.9 tiebreak=1.80
+2026-04-24 14:06:33 | INFO     | backend.agents.ranking_agent | [RANKING:done] ranked=3 top=59.1 bottom=44.9 shortlist=0 hold=2 reject=1
+2026-04-24 14:06:33 | INFO     | backend.workflows.pipeline | [Pipeline:ranked] run_id=cc59227a-c6d2-4a69-974a-f9fa9631a119 scored=3 
+2026-04-24 14:06:33 | INFO     | backend.workflows.pipeline | [Pipeline] Node: generate_reasoning | run_id=cc59227a-c6d2-4a69-974a-f9fa9631a119
+2026-04-24 14:06:33 | INFO     | backend.agents.reasoning_agent | [REASONING:start] candidates=3 llm=False
+2026-04-24 14:06:33 | INFO     | backend.agents.reasoning_agent | [REASONING:done] candidate=f213730f-a7df-465c-9f4b-028720774681 score=59.1 rec=shortlist conf=66%
+2026-04-24 14:06:33 | INFO     | backend.agents.reasoning_agent | [REASONING:done] candidate=8ae12b5e-0bec-44a1-9e1f-da044b4d119c score=56.2 rec=shortlist conf=65%
+2026-04-24 14:06:33 | INFO     | backend.agents.reasoning_agent | [REASONING:done] candidate=c25d15e7-a33a-4a69-9bdc-a2ff5e7ce763 score=44.9 rec=hold conf=57%
+2026-04-24 14:06:33 | INFO     | backend.agents.reasoning_agent | [REASONING:complete]
+2026-04-24 14:06:33 | INFO     | backend.workflows.pipeline | [Pipeline:completed] run_id=cc59227a-c6d2-4a69-974a-f9fa9631a119 shortlist=2 hold=1 reject=0
+2026-04-24 14:06:33 | INFO     | backend.services.storage | Saved run cc59227a-c6d2-4a69-974a-f9fa9631a119 with status=completed
+2026-04-24 14:06:33 | INFO     | backend.workflows.pipeline | Pipeline completed run_id=cc59227a-c6d2-4a69-974a-f9fa9631a119 status=completed
+2026-04-24 14:06:33 | INFO     | backend.tools.exporter | Exported 3 candidates to CSV: exports\cc59227a-c6d2-4a69-974a-f9fa9631a119_results.csv
+2026-04-24 14:06:33 | INFO     | backend.tools.exporter | Exported 3 candidates to JSON: exports\cc59227a-c6d2-4a69-974a-f9fa9631a119_results.json
+2026-04-24 14:06:33 | INFO     | backend.tools.exporter | Shortlist report written: exports\cc59227a-c6d2-4a69-974a-f9fa9631a119_shortlist_report.txt
+2026-04-24 14:06:34 | INFO     | backend.api.main | GET /results/cc59227a-c6d2-4a69-974a-f9fa9631a119
+2026-04-24 14:06:37 | INFO     | backend.api.main | POST /analyze-job run_id=3758892e-1646-4065-805b-fbe6d4d6f16e
+2026-04-24 14:06:37 | INFO     | backend.agents.jd_reader_agent | JD Reader Agent: starting extraction
+2026-04-24 14:06:37 | INFO     | backend.tools.jd_parser | Parsing JD with rule-based parser
+2026-04-24 14:06:37 | INFO     | backend.tools.jd_parser | JD parsed: role='Junior Software Developer / Full Stack Developer**' type=RoleType.ENGINEERING must_have=15 preferred=29 min_exp=0.0 max_exp=None
+2026-04-24 14:07:14 | INFO     | backend.agents.jd_reader_agent | [JD:parsed] role='Junior Software Developer / Full Stack Developer' type=RoleType.ENGINEERING must_have=24 preferred=30 min_exp=0.0 max_exp=None edu_req=2 certs=0
+2026-04-24 14:07:14 | INFO     | backend.services.storage | Saved run 3758892e-1646-4065-805b-fbe6d4d6f16e with status=jd_analyzed
+2026-04-24 14:07:14 | INFO     | backend.api.main | POST /upload-resumes run_id=3758892e-1646-4065-805b-fbe6d4d6f16e files=3
+2026-04-24 14:07:14 | INFO     | backend.api.main | Saved: uploads\3758892e-1646-4065-805b-fbe6d4d6f16e\Nandita Resume.pdf.pdf
+2026-04-24 14:07:14 | INFO     | backend.api.main | Saved: uploads\3758892e-1646-4065-805b-fbe6d4d6f16e\Niranjan patil resume new.pdf
+2026-04-24 14:07:14 | INFO     | backend.api.main | Saved: uploads\3758892e-1646-4065-805b-fbe6d4d6f16e\Omkar_final CV.pdf
+2026-04-24 14:07:14 | INFO     | backend.api.main | POST /rank run_id=3758892e-1646-4065-805b-fbe6d4d6f16e
+2026-04-24 14:07:14 | INFO     | backend.workflows.pipeline | Starting pipeline run_id=3758892e-1646-4065-805b-fbe6d4d6f16e with 3 resumes
+2026-04-24 14:07:14 | INFO     | backend.services.storage | Saved run 3758892e-1646-4065-805b-fbe6d4d6f16e with status=started
+2026-04-24 14:07:14 | INFO     | backend.workflows.pipeline | [Pipeline] Node: read_jd | run_id=3758892e-1646-4065-805b-fbe6d4d6f16e
+2026-04-24 14:07:14 | INFO     | backend.agents.jd_reader_agent | JD Reader Agent: starting extraction
+2026-04-24 14:07:14 | INFO     | backend.tools.jd_parser | Parsing JD with rule-based parser
+2026-04-24 14:07:14 | INFO     | backend.tools.jd_parser | JD parsed: role='Junior Software Developer / Full Stack Developer**' type=RoleType.ENGINEERING must_have=15 preferred=29 min_exp=0.0 max_exp=None
+2026-04-24 14:07:52 | INFO     | backend.agents.jd_reader_agent | [JD:parsed] role='Junior Software Developer / Full Stack Developer' type=RoleType.ENGINEERING must_have=24 preferred=30 min_exp=0.0 max_exp=None edu_req=2 certs=0
+2026-04-24 14:07:52 | INFO     | backend.workflows.pipeline | [Pipeline:jd_parsed] run_id=3758892e-1646-4065-805b-fbe6d4d6f16e role='Junior Software Developer / Full Stack Developer' type=RoleType.ENGINEERING must_have=24 preferred=30 min_exp=0.0
+2026-04-24 14:07:52 | INFO     | backend.workflows.pipeline | [Pipeline] Node: parse_resumes | run_id=3758892e-1646-4065-805b-fbe6d4d6f16e
+2026-04-24 14:07:52 | INFO     | backend.agents.resume_parser_agent | Resume Parser Agent: processing 3 files
+2026-04-24 14:07:52 | INFO     | backend.agents.resume_parser_agent | Parsing: Nandita Resume.pdf.pdf (id=67c21db3-5aa2-482e-b832-a33314a4f06b)
+2026-04-24 14:07:52 | INFO     | backend.tools.resume_parser | Parsing resume: Nandita Resume.pdf.pdf
+2026-04-24 14:07:53 | INFO     | backend.tools.resume_parser | [PARSE:resume] id=67c21db3-5aa2-482e-b832-a33314a4f06b name=SUBANANDIDA THEVAR skills=22 exp_years=0.0 projects=1 edu=1 certs=1 confidence=0.8 status=ParseStatus.SUCCESS
+2026-04-24 14:07:53 | INFO     | backend.agents.resume_parser_agent | Parsed Nandita Resume.pdf.pdf: confidence=80%, skills=22
+2026-04-24 14:07:53 | INFO     | backend.agents.resume_parser_agent | Parsing: Niranjan patil resume new.pdf (id=a4b51def-6fe8-466e-8a5e-4f74f750b759)
+2026-04-24 14:07:53 | INFO     | backend.tools.resume_parser | Parsing resume: Niranjan patil resume new.pdf
+2026-04-24 14:07:53 | INFO     | backend.tools.resume_parser | [PARSE:resume] id=a4b51def-6fe8-466e-8a5e-4f74f750b759 name=Niranjan Patil skills=35 exp_years=0.0 projects=1 edu=1 certs=1 confidence=0.8 status=ParseStatus.SUCCESS
+2026-04-24 14:07:53 | INFO     | backend.agents.resume_parser_agent | Parsed Niranjan patil resume new.pdf: confidence=80%, skills=35
+2026-04-24 14:07:53 | INFO     | backend.agents.resume_parser_agent | Parsing: Omkar_final CV.pdf (id=8e17a9fb-92bb-4f46-b4cf-e9aedfe63b41)
+2026-04-24 14:07:53 | INFO     | backend.tools.resume_parser | Parsing resume: Omkar_final CV.pdf
+2026-04-24 14:07:53 | INFO     | backend.tools.resume_parser | [PARSE:resume] id=8e17a9fb-92bb-4f46-b4cf-e9aedfe63b41 name=OMKAR HALPATRAO skills=18 exp_years=0.0 projects=1 edu=1 certs=0 confidence=0.8 status=ParseStatus.SUCCESS
+2026-04-24 14:07:53 | INFO     | backend.agents.resume_parser_agent | Parsed Omkar_final CV.pdf: confidence=80%, skills=18
+2026-04-24 14:07:53 | INFO     | backend.agents.resume_parser_agent | Resume Parser Agent: completed 3 profiles
+2026-04-24 14:07:53 | INFO     | backend.workflows.pipeline | [Pipeline:resumes_parsed] run_id=3758892e-1646-4065-805b-fbe6d4d6f16e profiles=3 valid=3 failed=0
+2026-04-24 14:07:53 | INFO     | backend.workflows.pipeline | [Pipeline] Node: rank_candidates | run_id=3758892e-1646-4065-805b-fbe6d4d6f16e
+2026-04-24 14:07:53 | INFO     | backend.agents.ranking_agent | [RANKING:start] run_id=3758892e-1646-4065-805b-fbe6d4d6f16e job='Junior Software Developer / Full Stack Developer' candidates=3
+2026-04-24 14:07:53 | INFO     | backend.tools.scorer | [SCORE:start] candidate=67c21db3-5aa2-482e-b832-a33314a4f06b name=SUBANANDIDA THEVAR job=Junior Software Developer / Full Stack Developer type=RoleType.ENGINEERING must_skills=24 pref_skills=30 min_exp=0.0
+2026-04-24 14:07:53 | INFO     | backend.tools.scorer | [SCORE:total] candidate=67c21db3-5aa2-482e-b832-a33314a4f06b base=53.2 semantic_bonus=3.0 penalties=0.0 total=56.2
+2026-04-24 14:07:53 | INFO     | backend.agents.ranking_agent | [RANKING:scored] candidate=67c21db3-5aa2-482e-b832-a33314a4f06b name=SUBANANDIDA THEVAR score=56.2 tiebreak=2.10
+2026-04-24 14:07:53 | INFO     | backend.tools.scorer | [SCORE:start] candidate=a4b51def-6fe8-466e-8a5e-4f74f750b759 name=Niranjan Patil job=Junior Software Developer / Full Stack Developer type=RoleType.ENGINEERING must_skills=24 pref_skills=30 min_exp=0.0
+2026-04-24 14:07:54 | INFO     | backend.tools.scorer | [SCORE:total] candidate=a4b51def-6fe8-466e-8a5e-4f74f750b759 base=56.0 semantic_bonus=3.2 penalties=0.0 total=59.1
+2026-04-24 14:07:54 | INFO     | backend.agents.ranking_agent | [RANKING:scored] candidate=a4b51def-6fe8-466e-8a5e-4f74f750b759 name=Niranjan Patil score=59.1 tiebreak=2.10
+2026-04-24 14:07:54 | INFO     | backend.tools.scorer | [SCORE:start] candidate=8e17a9fb-92bb-4f46-b4cf-e9aedfe63b41 name=OMKAR HALPATRAO job=Junior Software Developer / Full Stack Developer type=RoleType.ENGINEERING must_skills=24 pref_skills=30 min_exp=0.0
+2026-04-24 14:07:54 | INFO     | backend.tools.scorer | [SCORE:total] candidate=8e17a9fb-92bb-4f46-b4cf-e9aedfe63b41 base=41.5 semantic_bonus=3.4 penalties=0.0 total=44.9
+2026-04-24 14:07:54 | INFO     | backend.agents.ranking_agent | [RANKING:scored] candidate=8e17a9fb-92bb-4f46-b4cf-e9aedfe63b41 name=OMKAR HALPATRAO score=44.9 tiebreak=1.80
+2026-04-24 14:07:54 | INFO     | backend.agents.ranking_agent | [RANKING:done] ranked=3 top=59.1 bottom=44.9 shortlist=0 hold=2 reject=1
+2026-04-24 14:07:54 | INFO     | backend.workflows.pipeline | [Pipeline:ranked] run_id=3758892e-1646-4065-805b-fbe6d4d6f16e scored=3 
+2026-04-24 14:07:54 | INFO     | backend.workflows.pipeline | [Pipeline] Node: generate_reasoning | run_id=3758892e-1646-4065-805b-fbe6d4d6f16e
+2026-04-24 14:07:54 | INFO     | backend.agents.reasoning_agent | [REASONING:start] candidates=3 llm=False
+2026-04-24 14:07:54 | INFO     | backend.agents.reasoning_agent | [REASONING:done] candidate=a4b51def-6fe8-466e-8a5e-4f74f750b759 score=59.1 rec=shortlist conf=66%
+2026-04-24 14:07:54 | INFO     | backend.agents.reasoning_agent | [REASONING:done] candidate=67c21db3-5aa2-482e-b832-a33314a4f06b score=56.2 rec=shortlist conf=65%
+2026-04-24 14:07:54 | INFO     | backend.agents.reasoning_agent | [REASONING:done] candidate=8e17a9fb-92bb-4f46-b4cf-e9aedfe63b41 score=44.9 rec=hold conf=57%
+2026-04-24 14:07:54 | INFO     | backend.agents.reasoning_agent | [REASONING:complete]
+2026-04-24 14:07:54 | INFO     | backend.workflows.pipeline | [Pipeline:completed] run_id=3758892e-1646-4065-805b-fbe6d4d6f16e shortlist=2 hold=1 reject=0
+2026-04-24 14:07:54 | INFO     | backend.services.storage | Saved run 3758892e-1646-4065-805b-fbe6d4d6f16e with status=completed
+2026-04-24 14:07:54 | INFO     | backend.workflows.pipeline | Pipeline completed run_id=3758892e-1646-4065-805b-fbe6d4d6f16e status=completed
+2026-04-24 14:07:54 | INFO     | backend.tools.exporter | Exported 3 candidates to CSV: exports\3758892e-1646-4065-805b-fbe6d4d6f16e_results.csv
+2026-04-24 14:07:54 | INFO     | backend.tools.exporter | Exported 3 candidates to JSON: exports\3758892e-1646-4065-805b-fbe6d4d6f16e_results.json
+2026-04-24 14:07:54 | INFO     | backend.tools.exporter | Shortlist report written: exports\3758892e-1646-4065-805b-fbe6d4d6f16e_shortlist_report.txt
+2026-04-24 14:07:55 | INFO     | backend.api.main | GET /results/3758892e-1646-4065-805b-fbe6d4d6f16e
+2026-04-24 14:08:07 | INFO     | backend.api.main | GET /results/3758892e-1646-4065-805b-fbe6d4d6f16e
+2026-04-24 14:08:07 | INFO     | backend.api.main | GET /results/3758892e-1646-4065-805b-fbe6d4d6f16e
+2026-04-24 14:09:10 | INFO     | backend.api.main | POST /analyze-job run_id=4b922ff3-152d-46a5-88dd-1549467f9e84
+2026-04-24 14:09:10 | INFO     | backend.agents.jd_reader_agent | JD Reader Agent: starting extraction
+2026-04-24 14:09:10 | INFO     | backend.tools.jd_parser | Parsing JD with rule-based parser
+2026-04-24 14:09:10 | INFO     | backend.tools.jd_parser | JD parsed: role='Junior Software Developer / Full Stack Developer**' type=RoleType.ENGINEERING must_have=15 preferred=29 min_exp=0.0 max_exp=None
+2026-04-24 14:09:47 | INFO     | backend.agents.jd_reader_agent | [JD:parsed] role='Junior Software Developer / Full Stack Developer' type=RoleType.ENGINEERING must_have=24 preferred=30 min_exp=0.0 max_exp=None edu_req=2 certs=0
+2026-04-24 14:09:47 | INFO     | backend.services.storage | Saved run 4b922ff3-152d-46a5-88dd-1549467f9e84 with status=jd_analyzed
+2026-04-24 14:09:47 | INFO     | backend.api.main | POST /upload-resumes run_id=4b922ff3-152d-46a5-88dd-1549467f9e84 files=6
+2026-04-24 14:09:47 | INFO     | backend.api.main | Saved: uploads\4b922ff3-152d-46a5-88dd-1549467f9e84\CV_25.pdf
+2026-04-24 14:09:47 | INFO     | backend.api.main | Saved: uploads\4b922ff3-152d-46a5-88dd-1549467f9e84\MCA2560Cv.pdf
+2026-04-24 14:09:47 | INFO     | backend.api.main | Saved: uploads\4b922ff3-152d-46a5-88dd-1549467f9e84\DOC-20250407-WA0002..pdf
+2026-04-24 14:09:47 | INFO     | backend.api.main | Saved: uploads\4b922ff3-152d-46a5-88dd-1549467f9e84\Nandita Resume.pdf.pdf
+2026-04-24 14:09:47 | INFO     | backend.api.main | Saved: uploads\4b922ff3-152d-46a5-88dd-1549467f9e84\Niranjan patil resume new.pdf
+2026-04-24 14:09:47 | INFO     | backend.api.main | Saved: uploads\4b922ff3-152d-46a5-88dd-1549467f9e84\Omkar_final CV.pdf
+2026-04-24 14:09:47 | INFO     | backend.api.main | POST /rank run_id=4b922ff3-152d-46a5-88dd-1549467f9e84
+2026-04-24 14:09:47 | INFO     | backend.workflows.pipeline | Starting pipeline run_id=4b922ff3-152d-46a5-88dd-1549467f9e84 with 6 resumes
+2026-04-24 14:09:47 | INFO     | backend.services.storage | Saved run 4b922ff3-152d-46a5-88dd-1549467f9e84 with status=started
+2026-04-24 14:09:47 | INFO     | backend.workflows.pipeline | [Pipeline] Node: read_jd | run_id=4b922ff3-152d-46a5-88dd-1549467f9e84
+2026-04-24 14:09:47 | INFO     | backend.agents.jd_reader_agent | JD Reader Agent: starting extraction
+2026-04-24 14:09:47 | INFO     | backend.tools.jd_parser | Parsing JD with rule-based parser
+2026-04-24 14:09:47 | INFO     | backend.tools.jd_parser | JD parsed: role='Junior Software Developer / Full Stack Developer**' type=RoleType.ENGINEERING must_have=15 preferred=29 min_exp=0.0 max_exp=None
+2026-04-24 14:10:24 | INFO     | backend.agents.jd_reader_agent | [JD:parsed] role='Junior Software Developer / Full Stack Developer' type=RoleType.ENGINEERING must_have=24 preferred=30 min_exp=0.0 max_exp=None edu_req=2 certs=0
+2026-04-24 14:10:24 | INFO     | backend.workflows.pipeline | [Pipeline:jd_parsed] run_id=4b922ff3-152d-46a5-88dd-1549467f9e84 role='Junior Software Developer / Full Stack Developer' type=RoleType.ENGINEERING must_have=24 preferred=30 min_exp=0.0
+2026-04-24 14:10:24 | INFO     | backend.workflows.pipeline | [Pipeline] Node: parse_resumes | run_id=4b922ff3-152d-46a5-88dd-1549467f9e84
+2026-04-24 14:10:24 | INFO     | backend.agents.resume_parser_agent | Resume Parser Agent: processing 6 files
+2026-04-24 14:10:24 | INFO     | backend.agents.resume_parser_agent | Parsing: CV_25.pdf (id=02dfbcd5-a222-414f-a4cc-c08c07df0b61)
+2026-04-24 14:10:24 | INFO     | backend.tools.resume_parser | Parsing resume: CV_25.pdf
+2026-04-24 14:10:25 | INFO     | backend.tools.resume_parser | [PARSE:resume] id=02dfbcd5-a222-414f-a4cc-c08c07df0b61 name=SURAJ GORAKH NAIKWADE skills=17 exp_years=0.0 projects=0 edu=0 certs=0 confidence=0.6 status=ParseStatus.SUCCESS
+2026-04-24 14:10:42 | INFO     | backend.agents.resume_parser_agent | Parsed CV_25.pdf: confidence=60%, skills=22
+2026-04-24 14:10:42 | INFO     | backend.agents.resume_parser_agent | Parsing: MCA2560Cv.pdf (id=0d3de725-29d2-4b4a-85c3-d331df48a255)
+2026-04-24 14:10:42 | INFO     | backend.tools.resume_parser | Parsing resume: MCA2560Cv.pdf
+2026-04-24 14:10:42 | INFO     | backend.tools.resume_parser | [PARSE:resume] id=0d3de725-29d2-4b4a-85c3-d331df48a255 name=CV Format skills=18 exp_years=0.0 projects=1 edu=1 certs=0 confidence=0.8 status=ParseStatus.SUCCESS
+2026-04-24 14:10:42 | INFO     | backend.agents.resume_parser_agent | Parsed MCA2560Cv.pdf: confidence=80%, skills=18
+2026-04-24 14:10:42 | INFO     | backend.agents.resume_parser_agent | Parsing: DOC-20250407-WA0002..pdf (id=b493489c-c57c-469b-8a19-dab0103bad8f)
+2026-04-24 14:10:42 | INFO     | backend.tools.resume_parser | Parsing resume: DOC-20250407-WA0002..pdf
+2026-04-24 14:10:44 | INFO     | backend.tools.resume_parser | Falling back to OCR for uploads\4b922ff3-152d-46a5-88dd-1549467f9e84\DOC-20250407-WA0002..pdf
+2026-04-24 14:10:46 | ERROR    | backend.tools.resume_parser | OCR failed: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-04-24 14:10:46 | INFO     | backend.agents.resume_parser_agent | Parsed DOC-20250407-WA0002..pdf: confidence=0%, skills=0
+2026-04-24 14:10:46 | INFO     | backend.agents.resume_parser_agent | Parsing: Nandita Resume.pdf.pdf (id=5746cce8-a415-4f1b-b86e-fa8947e674f9)
+2026-04-24 14:10:46 | INFO     | backend.tools.resume_parser | Parsing resume: Nandita Resume.pdf.pdf
+2026-04-24 14:10:47 | INFO     | backend.tools.resume_parser | [PARSE:resume] id=5746cce8-a415-4f1b-b86e-fa8947e674f9 name=SUBANANDIDA THEVAR skills=22 exp_years=0.0 projects=1 edu=1 certs=1 confidence=0.8 status=ParseStatus.SUCCESS
+2026-04-24 14:10:47 | INFO     | backend.agents.resume_parser_agent | Parsed Nandita Resume.pdf.pdf: confidence=80%, skills=22
+2026-04-24 14:10:47 | INFO     | backend.agents.resume_parser_agent | Parsing: Niranjan patil resume new.pdf (id=204b0f7d-d3bd-47bf-9dbb-28777840d292)
+2026-04-24 14:10:47 | INFO     | backend.tools.resume_parser | Parsing resume: Niranjan patil resume new.pdf
+2026-04-24 14:10:47 | INFO     | backend.tools.resume_parser | [PARSE:resume] id=204b0f7d-d3bd-47bf-9dbb-28777840d292 name=Niranjan Patil skills=35 exp_years=0.0 projects=1 edu=1 certs=1 confidence=0.8 status=ParseStatus.SUCCESS
+2026-04-24 14:10:47 | INFO     | backend.agents.resume_parser_agent | Parsed Niranjan patil resume new.pdf: confidence=80%, skills=35
+2026-04-24 14:10:47 | INFO     | backend.agents.resume_parser_agent | Parsing: Omkar_final CV.pdf (id=0f07d486-6446-4f5c-bd6f-5d24ffd7ffde)
+2026-04-24 14:10:47 | INFO     | backend.tools.resume_parser | Parsing resume: Omkar_final CV.pdf
+2026-04-24 14:10:47 | INFO     | backend.tools.resume_parser | [PARSE:resume] id=0f07d486-6446-4f5c-bd6f-5d24ffd7ffde name=OMKAR HALPATRAO skills=18 exp_years=0.0 projects=1 edu=1 certs=0 confidence=0.8 status=ParseStatus.SUCCESS
+2026-04-24 14:10:47 | INFO     | backend.agents.resume_parser_agent | Parsed Omkar_final CV.pdf: confidence=80%, skills=18
+2026-04-24 14:10:47 | INFO     | backend.agents.resume_parser_agent | Resume Parser Agent: completed 6 profiles
+2026-04-24 14:10:47 | INFO     | backend.workflows.pipeline | [Pipeline:resumes_parsed] run_id=4b922ff3-152d-46a5-88dd-1549467f9e84 profiles=6 valid=5 failed=1
+2026-04-24 14:10:47 | INFO     | backend.workflows.pipeline | [Pipeline] Node: rank_candidates | run_id=4b922ff3-152d-46a5-88dd-1549467f9e84
+2026-04-24 14:10:47 | INFO     | backend.agents.ranking_agent | [RANKING:start] run_id=4b922ff3-152d-46a5-88dd-1549467f9e84 job='Junior Software Developer / Full Stack Developer' candidates=6
+2026-04-24 14:10:47 | INFO     | backend.tools.scorer | [SCORE:start] candidate=02dfbcd5-a222-414f-a4cc-c08c07df0b61 name=SURAJ GORAKH NAIKWADE job=Junior Software Developer / Full Stack Developer type=RoleType.ENGINEERING must_skills=24 pref_skills=30 min_exp=0.0
+2026-04-24 14:10:47 | INFO     | backend.tools.scorer | [SCORE:total] candidate=02dfbcd5-a222-414f-a4cc-c08c07df0b61 base=58.3 semantic_bonus=3.2 penalties=0.0 total=61.5
+2026-04-24 14:10:47 | INFO     | backend.agents.ranking_agent | [RANKING:scored] candidate=02dfbcd5-a222-414f-a4cc-c08c07df0b61 name=SURAJ GORAKH NAIKWADE score=61.5 tiebreak=1.20
+2026-04-24 14:10:47 | INFO     | backend.tools.scorer | [SCORE:start] candidate=0d3de725-29d2-4b4a-85c3-d331df48a255 name=CV Format job=Junior Software Developer / Full Stack Developer type=RoleType.ENGINEERING must_skills=24 pref_skills=30 min_exp=0.0
+2026-04-24 14:10:48 | INFO     | backend.tools.scorer | [SCORE:total] candidate=0d3de725-29d2-4b4a-85c3-d331df48a255 base=46.8 semantic_bonus=3.3 penalties=0.0 total=50.0
+2026-04-24 14:10:48 | INFO     | backend.agents.ranking_agent | [RANKING:scored] candidate=0d3de725-29d2-4b4a-85c3-d331df48a255 name=CV Format score=50.0 tiebreak=1.80
+2026-04-24 14:10:48 | INFO     | backend.tools.scorer | [SCORE:start] candidate=b493489c-c57c-469b-8a19-dab0103bad8f name=Unknown job=Junior Software Developer / Full Stack Developer type=RoleType.ENGINEERING must_skills=24 pref_skills=30 min_exp=0.0
+2026-04-24 14:10:48 | INFO     | backend.tools.scorer | [SCORE:penalties] candidate=b493489c-c57c-469b-8a19-dab0103bad8f penalties=1.0 reasons=['Low parse confidence: 0%']
+2026-04-24 14:10:48 | INFO     | backend.tools.scorer | [SCORE:total] candidate=b493489c-c57c-469b-8a19-dab0103bad8f base=20.0 semantic_bonus=0.4 penalties=1.0 total=19.4
+2026-04-24 14:10:48 | INFO     | backend.agents.ranking_agent | [RANKING:scored] candidate=b493489c-c57c-469b-8a19-dab0103bad8f name=Unknown score=19.4 tiebreak=0.00
+2026-04-24 14:10:48 | INFO     | backend.tools.scorer | [SCORE:start] candidate=5746cce8-a415-4f1b-b86e-fa8947e674f9 name=SUBANANDIDA THEVAR job=Junior Software Developer / Full Stack Developer type=RoleType.ENGINEERING must_skills=24 pref_skills=30 min_exp=0.0
+2026-04-24 14:10:48 | INFO     | backend.tools.scorer | [SCORE:total] candidate=5746cce8-a415-4f1b-b86e-fa8947e674f9 base=53.2 semantic_bonus=3.0 penalties=0.0 total=56.2
+2026-04-24 14:10:48 | INFO     | backend.agents.ranking_agent | [RANKING:scored] candidate=5746cce8-a415-4f1b-b86e-fa8947e674f9 name=SUBANANDIDA THEVAR score=56.2 tiebreak=2.10
+2026-04-24 14:10:48 | INFO     | backend.tools.scorer | [SCORE:start] candidate=204b0f7d-d3bd-47bf-9dbb-28777840d292 name=Niranjan Patil job=Junior Software Developer / Full Stack Developer type=RoleType.ENGINEERING must_skills=24 pref_skills=30 min_exp=0.0
+2026-04-24 14:10:48 | INFO     | backend.tools.scorer | [SCORE:total] candidate=204b0f7d-d3bd-47bf-9dbb-28777840d292 base=56.0 semantic_bonus=3.2 penalties=0.0 total=59.1
+2026-04-24 14:10:48 | INFO     | backend.agents.ranking_agent | [RANKING:scored] candidate=204b0f7d-d3bd-47bf-9dbb-28777840d292 name=Niranjan Patil score=59.1 tiebreak=2.10
+2026-04-24 14:10:48 | INFO     | backend.tools.scorer | [SCORE:start] candidate=0f07d486-6446-4f5c-bd6f-5d24ffd7ffde name=OMKAR HALPATRAO job=Junior Software Developer / Full Stack Developer type=RoleType.ENGINEERING must_skills=24 pref_skills=30 min_exp=0.0
+2026-04-24 14:10:48 | INFO     | backend.tools.scorer | [SCORE:total] candidate=0f07d486-6446-4f5c-bd6f-5d24ffd7ffde base=41.5 semantic_bonus=3.4 penalties=0.0 total=44.9
+2026-04-24 14:10:48 | INFO     | backend.agents.ranking_agent | [RANKING:scored] candidate=0f07d486-6446-4f5c-bd6f-5d24ffd7ffde name=OMKAR HALPATRAO score=44.9 tiebreak=1.80
+2026-04-24 14:10:48 | INFO     | backend.agents.ranking_agent | [RANKING:done] ranked=6 top=61.5 bottom=19.4 shortlist=0 hold=4 reject=2
+2026-04-24 14:10:48 | INFO     | backend.workflows.pipeline | [Pipeline:ranked] run_id=4b922ff3-152d-46a5-88dd-1549467f9e84 scored=6 
+2026-04-24 14:10:48 | INFO     | backend.workflows.pipeline | [Pipeline] Node: generate_reasoning | run_id=4b922ff3-152d-46a5-88dd-1549467f9e84
+2026-04-24 14:10:48 | INFO     | backend.agents.reasoning_agent | [REASONING:start] candidates=6 llm=False
+2026-04-24 14:10:48 | INFO     | backend.agents.reasoning_agent | [REASONING:done] candidate=02dfbcd5-a222-414f-a4cc-c08c07df0b61 score=61.5 rec=shortlist conf=61%
+2026-04-24 14:10:48 | INFO     | backend.agents.reasoning_agent | [REASONING:done] candidate=204b0f7d-d3bd-47bf-9dbb-28777840d292 score=59.1 rec=shortlist conf=66%
+2026-04-24 14:10:48 | INFO     | backend.agents.reasoning_agent | [REASONING:done] candidate=5746cce8-a415-4f1b-b86e-fa8947e674f9 score=56.2 rec=shortlist conf=65%
+2026-04-24 14:10:48 | INFO     | backend.agents.reasoning_agent | [REASONING:done] candidate=0d3de725-29d2-4b4a-85c3-d331df48a255 score=50.0 rec=hold conf=61%
+2026-04-24 14:10:48 | INFO     | backend.agents.reasoning_agent | [REASONING:done] candidate=0f07d486-6446-4f5c-bd6f-5d24ffd7ffde score=44.9 rec=hold conf=57%
+2026-04-24 14:10:48 | INFO     | backend.agents.reasoning_agent | [REASONING:done] candidate=b493489c-c57c-469b-8a19-dab0103bad8f score=19.4 rec=reject conf=13%
+2026-04-24 14:10:48 | INFO     | backend.agents.reasoning_agent | [REASONING:complete]
+2026-04-24 14:10:48 | INFO     | backend.workflows.pipeline | [Pipeline:completed] run_id=4b922ff3-152d-46a5-88dd-1549467f9e84 shortlist=3 hold=2 reject=1
+2026-04-24 14:10:48 | INFO     | backend.services.storage | Saved run 4b922ff3-152d-46a5-88dd-1549467f9e84 with status=completed
+2026-04-24 14:10:48 | INFO     | backend.workflows.pipeline | Pipeline completed run_id=4b922ff3-152d-46a5-88dd-1549467f9e84 status=completed
+2026-04-24 14:10:48 | INFO     | backend.tools.exporter | Exported 6 candidates to CSV: exports\4b922ff3-152d-46a5-88dd-1549467f9e84_results.csv
+2026-04-24 14:10:48 | INFO     | backend.tools.exporter | Exported 6 candidates to JSON: exports\4b922ff3-152d-46a5-88dd-1549467f9e84_results.json
+2026-04-24 14:10:48 | INFO     | backend.tools.exporter | Shortlist report written: exports\4b922ff3-152d-46a5-88dd-1549467f9e84_shortlist_report.txt
+2026-04-24 14:10:49 | INFO     | backend.api.main | GET /results/4b922ff3-152d-46a5-88dd-1549467f9e84
+2026-04-24 14:11:21 | INFO     | backend.api.main | GET /results/4b922ff3-152d-46a5-88dd-1549467f9e84
+2026-04-24 14:11:21 | INFO     | backend.api.main | GET /results/4b922ff3-152d-46a5-88dd-1549467f9e84
+2026-04-24 14:11:30 | INFO     | backend.api.main | GET /results/4b922ff3-152d-46a5-88dd-1549467f9e84
+2026-04-24 14:11:30 | INFO     | backend.api.main | GET /results/4b922ff3-152d-46a5-88dd-1549467f9e84
+2026-04-24 14:13:24 | INFO     | backend.api.main | POST /analyze-job run_id=4aa6eead-7a44-4dce-a0d2-3f5a5081b711
+2026-04-24 14:13:24 | INFO     | backend.agents.jd_reader_agent | JD Reader Agent: starting extraction
+2026-04-24 14:13:24 | INFO     | backend.tools.jd_parser | Parsing JD with rule-based parser
+2026-04-24 14:13:24 | INFO     | backend.tools.jd_parser | JD parsed: role='Junior Software Developer / Full Stack Developer**' type=RoleType.ENGINEERING must_have=15 preferred=29 min_exp=0.0 max_exp=None
+2026-04-24 14:14:05 | INFO     | backend.agents.jd_reader_agent | [JD:parsed] role='Junior Software Developer / Full Stack Developer' type=RoleType.ENGINEERING must_have=24 preferred=30 min_exp=0.0 max_exp=None edu_req=2 certs=0
+2026-04-24 14:14:05 | INFO     | backend.services.storage | Saved run 4aa6eead-7a44-4dce-a0d2-3f5a5081b711 with status=jd_analyzed
+2026-04-24 14:14:05 | INFO     | backend.api.main | POST /upload-resumes run_id=4aa6eead-7a44-4dce-a0d2-3f5a5081b711 files=6
+2026-04-24 14:14:05 | INFO     | backend.api.main | Saved: uploads\4aa6eead-7a44-4dce-a0d2-3f5a5081b711\CV_25.pdf
+2026-04-24 14:14:05 | INFO     | backend.api.main | Saved: uploads\4aa6eead-7a44-4dce-a0d2-3f5a5081b711\MCA2560Cv.pdf
+2026-04-24 14:14:05 | INFO     | backend.api.main | Saved: uploads\4aa6eead-7a44-4dce-a0d2-3f5a5081b711\DOC-20250407-WA0002..pdf
+2026-04-24 14:14:05 | INFO     | backend.api.main | Saved: uploads\4aa6eead-7a44-4dce-a0d2-3f5a5081b711\Nandita Resume.pdf.pdf
+2026-04-24 14:14:05 | INFO     | backend.api.main | Saved: uploads\4aa6eead-7a44-4dce-a0d2-3f5a5081b711\Niranjan patil resume new.pdf
+2026-04-24 14:14:05 | INFO     | backend.api.main | Saved: uploads\4aa6eead-7a44-4dce-a0d2-3f5a5081b711\Omkar_final CV.pdf
+2026-04-24 14:14:05 | INFO     | backend.api.main | POST /rank run_id=4aa6eead-7a44-4dce-a0d2-3f5a5081b711
+2026-04-24 14:14:05 | INFO     | backend.workflows.pipeline | Starting pipeline run_id=4aa6eead-7a44-4dce-a0d2-3f5a5081b711 with 6 resumes
+2026-04-24 14:14:05 | INFO     | backend.services.storage | Saved run 4aa6eead-7a44-4dce-a0d2-3f5a5081b711 with status=started
+2026-04-24 14:14:05 | INFO     | backend.workflows.pipeline | [Pipeline] Node: read_jd | run_id=4aa6eead-7a44-4dce-a0d2-3f5a5081b711
+2026-04-24 14:14:05 | INFO     | backend.agents.jd_reader_agent | JD Reader Agent: starting extraction
+2026-04-24 14:14:05 | INFO     | backend.tools.jd_parser | Parsing JD with rule-based parser
+2026-04-24 14:14:05 | INFO     | backend.tools.jd_parser | JD parsed: role='Junior Software Developer / Full Stack Developer**' type=RoleType.ENGINEERING must_have=15 preferred=29 min_exp=0.0 max_exp=None
+2026-04-24 14:14:42 | INFO     | backend.agents.jd_reader_agent | [JD:parsed] role='Junior Software Developer / Full Stack Developer' type=RoleType.ENGINEERING must_have=24 preferred=30 min_exp=0.0 max_exp=None edu_req=2 certs=0
+2026-04-24 14:14:42 | INFO     | backend.workflows.pipeline | [Pipeline:jd_parsed] run_id=4aa6eead-7a44-4dce-a0d2-3f5a5081b711 role='Junior Software Developer / Full Stack Developer' type=RoleType.ENGINEERING must_have=24 preferred=30 min_exp=0.0
+2026-04-24 14:14:42 | INFO     | backend.workflows.pipeline | [Pipeline] Node: parse_resumes | run_id=4aa6eead-7a44-4dce-a0d2-3f5a5081b711
+2026-04-24 14:14:42 | INFO     | backend.agents.resume_parser_agent | Resume Parser Agent: processing 6 files
+2026-04-24 14:14:42 | INFO     | backend.agents.resume_parser_agent | Parsing: CV_25.pdf (id=7ead5daf-ae28-419f-b96b-fbda9b0d3f00)
+2026-04-24 14:14:42 | INFO     | backend.tools.resume_parser | Parsing resume: CV_25.pdf
+2026-04-24 14:14:42 | INFO     | backend.tools.resume_parser | [PARSE:resume] id=7ead5daf-ae28-419f-b96b-fbda9b0d3f00 name=SURAJ GORAKH NAIKWADE skills=17 exp_years=0.0 projects=0 edu=0 certs=0 confidence=0.6 status=ParseStatus.SUCCESS
+2026-04-24 14:15:00 | INFO     | backend.agents.resume_parser_agent | Parsed CV_25.pdf: confidence=60%, skills=22
+2026-04-24 14:15:00 | INFO     | backend.agents.resume_parser_agent | Parsing: MCA2560Cv.pdf (id=36f48dda-46d1-489b-89d4-274d8f78337a)
+2026-04-24 14:15:00 | INFO     | backend.tools.resume_parser | Parsing resume: MCA2560Cv.pdf
+2026-04-24 14:15:00 | INFO     | backend.tools.resume_parser | [PARSE:resume] id=36f48dda-46d1-489b-89d4-274d8f78337a name=CV Format skills=18 exp_years=0.0 projects=1 edu=1 certs=0 confidence=0.8 status=ParseStatus.SUCCESS
+2026-04-24 14:15:00 | INFO     | backend.agents.resume_parser_agent | Parsed MCA2560Cv.pdf: confidence=80%, skills=18
+2026-04-24 14:15:00 | INFO     | backend.agents.resume_parser_agent | Parsing: DOC-20250407-WA0002..pdf (id=f1cd0ffb-e3eb-4227-98f7-6302659352ea)
+2026-04-24 14:15:00 | INFO     | backend.tools.resume_parser | Parsing resume: DOC-20250407-WA0002..pdf
+2026-04-24 14:15:02 | INFO     | backend.tools.resume_parser | Falling back to OCR for uploads\4aa6eead-7a44-4dce-a0d2-3f5a5081b711\DOC-20250407-WA0002..pdf
+2026-04-24 14:15:03 | ERROR    | backend.tools.resume_parser | OCR failed: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-04-24 14:15:03 | INFO     | backend.agents.resume_parser_agent | Parsed DOC-20250407-WA0002..pdf: confidence=0%, skills=0
+2026-04-24 14:15:03 | INFO     | backend.agents.resume_parser_agent | Parsing: Nandita Resume.pdf.pdf (id=8ba77f3e-0f80-4b93-b311-741e9f4df0d3)
+2026-04-24 14:15:03 | INFO     | backend.tools.resume_parser | Parsing resume: Nandita Resume.pdf.pdf
+2026-04-24 14:15:03 | INFO     | backend.tools.resume_parser | [PARSE:resume] id=8ba77f3e-0f80-4b93-b311-741e9f4df0d3 name=SUBANANDIDA THEVAR skills=22 exp_years=0.0 projects=1 edu=1 certs=1 confidence=0.8 status=ParseStatus.SUCCESS
+2026-04-24 14:15:03 | INFO     | backend.agents.resume_parser_agent | Parsed Nandita Resume.pdf.pdf: confidence=80%, skills=22
+2026-04-24 14:15:03 | INFO     | backend.agents.resume_parser_agent | Parsing: Niranjan patil resume new.pdf (id=f89a733c-b66a-496c-97b5-486f5b82380d)
+2026-04-24 14:15:03 | INFO     | backend.tools.resume_parser | Parsing resume: Niranjan patil resume new.pdf
+2026-04-24 14:15:03 | INFO     | backend.tools.resume_parser | [PARSE:resume] id=f89a733c-b66a-496c-97b5-486f5b82380d name=Niranjan Patil skills=35 exp_years=0.0 projects=1 edu=1 certs=1 confidence=0.8 status=ParseStatus.SUCCESS
+2026-04-24 14:15:03 | INFO     | backend.agents.resume_parser_agent | Parsed Niranjan patil resume new.pdf: confidence=80%, skills=35
+2026-04-24 14:15:03 | INFO     | backend.agents.resume_parser_agent | Parsing: Omkar_final CV.pdf (id=a8cfbef4-5461-433a-a1e1-68ec55e43b36)
+2026-04-24 14:15:03 | INFO     | backend.tools.resume_parser | Parsing resume: Omkar_final CV.pdf
+2026-04-24 14:15:03 | INFO     | backend.tools.resume_parser | [PARSE:resume] id=a8cfbef4-5461-433a-a1e1-68ec55e43b36 name=OMKAR HALPATRAO skills=18 exp_years=0.0 projects=1 edu=1 certs=0 confidence=0.8 status=ParseStatus.SUCCESS
+2026-04-24 14:15:03 | INFO     | backend.agents.resume_parser_agent | Parsed Omkar_final CV.pdf: confidence=80%, skills=18
+2026-04-24 14:15:03 | INFO     | backend.agents.resume_parser_agent | Resume Parser Agent: completed 6 profiles
+2026-04-24 14:15:03 | INFO     | backend.workflows.pipeline | [Pipeline:resumes_parsed] run_id=4aa6eead-7a44-4dce-a0d2-3f5a5081b711 profiles=6 valid=5 failed=1
+2026-04-24 14:15:03 | INFO     | backend.workflows.pipeline | [Pipeline] Node: rank_candidates | run_id=4aa6eead-7a44-4dce-a0d2-3f5a5081b711
+2026-04-24 14:15:03 | INFO     | backend.agents.ranking_agent | [RANKING:start] run_id=4aa6eead-7a44-4dce-a0d2-3f5a5081b711 job='Junior Software Developer / Full Stack Developer' candidates=6
+2026-04-24 14:15:04 | INFO     | backend.tools.scorer | [SCORE:start] candidate=7ead5daf-ae28-419f-b96b-fbda9b0d3f00 name=SURAJ GORAKH NAIKWADE job=Junior Software Developer / Full Stack Developer type=RoleType.ENGINEERING must_skills=24 pref_skills=30 min_exp=0.0
+2026-04-24 14:15:04 | INFO     | backend.tools.scorer | [SCORE:total] candidate=7ead5daf-ae28-419f-b96b-fbda9b0d3f00 base=58.3 semantic_bonus=3.2 penalties=0.0 total=61.5
+2026-04-24 14:15:04 | INFO     | backend.agents.ranking_agent | [RANKING:scored] candidate=7ead5daf-ae28-419f-b96b-fbda9b0d3f00 name=SURAJ GORAKH NAIKWADE score=61.5 tiebreak=1.20
+2026-04-24 14:15:04 | INFO     | backend.tools.scorer | [SCORE:start] candidate=36f48dda-46d1-489b-89d4-274d8f78337a name=CV Format job=Junior Software Developer / Full Stack Developer type=RoleType.ENGINEERING must_skills=24 pref_skills=30 min_exp=0.0
+2026-04-24 14:15:04 | INFO     | backend.tools.scorer | [SCORE:total] candidate=36f48dda-46d1-489b-89d4-274d8f78337a base=46.8 semantic_bonus=3.3 penalties=0.0 total=50.0
+2026-04-24 14:15:04 | INFO     | backend.agents.ranking_agent | [RANKING:scored] candidate=36f48dda-46d1-489b-89d4-274d8f78337a name=CV Format score=50.0 tiebreak=1.80
+2026-04-24 14:15:04 | INFO     | backend.tools.scorer | [SCORE:start] candidate=f1cd0ffb-e3eb-4227-98f7-6302659352ea name=Unknown job=Junior Software Developer / Full Stack Developer type=RoleType.ENGINEERING must_skills=24 pref_skills=30 min_exp=0.0
+2026-04-24 14:15:05 | INFO     | backend.tools.scorer | [SCORE:penalties] candidate=f1cd0ffb-e3eb-4227-98f7-6302659352ea penalties=1.0 reasons=['Low parse confidence: 0%']
+2026-04-24 14:15:05 | INFO     | backend.tools.scorer | [SCORE:total] candidate=f1cd0ffb-e3eb-4227-98f7-6302659352ea base=20.0 semantic_bonus=0.4 penalties=1.0 total=19.4
+2026-04-24 14:15:05 | INFO     | backend.agents.ranking_agent | [RANKING:scored] candidate=f1cd0ffb-e3eb-4227-98f7-6302659352ea name=Unknown score=19.4 tiebreak=0.00
+2026-04-24 14:15:05 | INFO     | backend.tools.scorer | [SCORE:start] candidate=8ba77f3e-0f80-4b93-b311-741e9f4df0d3 name=SUBANANDIDA THEVAR job=Junior Software Developer / Full Stack Developer type=RoleType.ENGINEERING must_skills=24 pref_skills=30 min_exp=0.0
+2026-04-24 14:15:05 | INFO     | backend.tools.scorer | [SCORE:total] candidate=8ba77f3e-0f80-4b93-b311-741e9f4df0d3 base=53.2 semantic_bonus=3.0 penalties=0.0 total=56.2
+2026-04-24 14:15:05 | INFO     | backend.agents.ranking_agent | [RANKING:scored] candidate=8ba77f3e-0f80-4b93-b311-741e9f4df0d3 name=SUBANANDIDA THEVAR score=56.2 tiebreak=2.10
+2026-04-24 14:15:05 | INFO     | backend.tools.scorer | [SCORE:start] candidate=f89a733c-b66a-496c-97b5-486f5b82380d name=Niranjan Patil job=Junior Software Developer / Full Stack Developer type=RoleType.ENGINEERING must_skills=24 pref_skills=30 min_exp=0.0
+2026-04-24 14:15:05 | INFO     | backend.tools.scorer | [SCORE:total] candidate=f89a733c-b66a-496c-97b5-486f5b82380d base=56.0 semantic_bonus=3.2 penalties=0.0 total=59.1
+2026-04-24 14:15:05 | INFO     | backend.agents.ranking_agent | [RANKING:scored] candidate=f89a733c-b66a-496c-97b5-486f5b82380d name=Niranjan Patil score=59.1 tiebreak=2.10
+2026-04-24 14:15:05 | INFO     | backend.tools.scorer | [SCORE:start] candidate=a8cfbef4-5461-433a-a1e1-68ec55e43b36 name=OMKAR HALPATRAO job=Junior Software Developer / Full Stack Developer type=RoleType.ENGINEERING must_skills=24 pref_skills=30 min_exp=0.0
+2026-04-24 14:15:05 | INFO     | backend.tools.scorer | [SCORE:total] candidate=a8cfbef4-5461-433a-a1e1-68ec55e43b36 base=41.5 semantic_bonus=3.4 penalties=0.0 total=44.9
+2026-04-24 14:15:05 | INFO     | backend.agents.ranking_agent | [RANKING:scored] candidate=a8cfbef4-5461-433a-a1e1-68ec55e43b36 name=OMKAR HALPATRAO score=44.9 tiebreak=1.80
+2026-04-24 14:15:05 | INFO     | backend.agents.ranking_agent | [RANKING:done] ranked=6 top=61.5 bottom=19.4 shortlist=0 hold=4 reject=2
+2026-04-24 14:15:05 | INFO     | backend.workflows.pipeline | [Pipeline:ranked] run_id=4aa6eead-7a44-4dce-a0d2-3f5a5081b711 scored=6 
+2026-04-24 14:15:05 | INFO     | backend.workflows.pipeline | [Pipeline] Node: generate_reasoning | run_id=4aa6eead-7a44-4dce-a0d2-3f5a5081b711
+2026-04-24 14:15:05 | INFO     | backend.agents.reasoning_agent | [REASONING:start] candidates=6 llm=False
+2026-04-24 14:15:05 | INFO     | backend.agents.reasoning_agent | [REASONING:done] candidate=7ead5daf-ae28-419f-b96b-fbda9b0d3f00 score=61.5 rec=shortlist conf=61%
+2026-04-24 14:15:05 | INFO     | backend.agents.reasoning_agent | [REASONING:done] candidate=f89a733c-b66a-496c-97b5-486f5b82380d score=59.1 rec=shortlist conf=66%
+2026-04-24 14:15:05 | INFO     | backend.agents.reasoning_agent | [REASONING:done] candidate=8ba77f3e-0f80-4b93-b311-741e9f4df0d3 score=56.2 rec=shortlist conf=65%
+2026-04-24 14:15:05 | INFO     | backend.agents.reasoning_agent | [REASONING:done] candidate=36f48dda-46d1-489b-89d4-274d8f78337a score=50.0 rec=hold conf=61%
+2026-04-24 14:15:05 | INFO     | backend.agents.reasoning_agent | [REASONING:done] candidate=a8cfbef4-5461-433a-a1e1-68ec55e43b36 score=44.9 rec=hold conf=57%
+2026-04-24 14:15:05 | INFO     | backend.agents.reasoning_agent | [REASONING:done] candidate=f1cd0ffb-e3eb-4227-98f7-6302659352ea score=19.4 rec=reject conf=13%
+2026-04-24 14:15:05 | INFO     | backend.agents.reasoning_agent | [REASONING:complete]
+2026-04-24 14:15:05 | INFO     | backend.workflows.pipeline | [Pipeline:completed] run_id=4aa6eead-7a44-4dce-a0d2-3f5a5081b711 shortlist=3 hold=2 reject=1
+2026-04-24 14:15:05 | INFO     | backend.services.storage | Saved run 4aa6eead-7a44-4dce-a0d2-3f5a5081b711 with status=completed
+2026-04-24 14:15:05 | INFO     | backend.workflows.pipeline | Pipeline completed run_id=4aa6eead-7a44-4dce-a0d2-3f5a5081b711 status=completed
+2026-04-24 14:15:05 | INFO     | backend.tools.exporter | Exported 6 candidates to CSV: exports\4aa6eead-7a44-4dce-a0d2-3f5a5081b711_results.csv
+2026-04-24 14:15:05 | INFO     | backend.tools.exporter | Exported 6 candidates to JSON: exports\4aa6eead-7a44-4dce-a0d2-3f5a5081b711_results.json
+2026-04-24 14:15:05 | INFO     | backend.tools.exporter | Shortlist report written: exports\4aa6eead-7a44-4dce-a0d2-3f5a5081b711_shortlist_report.txt
+2026-04-24 14:15:08 | INFO     | backend.api.main | GET /results/4aa6eead-7a44-4dce-a0d2-3f5a5081b711
+2026-04-24 14:15:43 | INFO     | backend.api.main | GET /results/4aa6eead-7a44-4dce-a0d2-3f5a5081b711
+2026-04-24 14:15:43 | INFO     | backend.api.main | GET /results/4aa6eead-7a44-4dce-a0d2-3f5a5081b711
+2026-04-24 14:15:51 | INFO     | backend.api.main | GET /results/4aa6eead-7a44-4dce-a0d2-3f5a5081b711
+2026-04-24 14:15:51 | INFO     | backend.api.main | GET /results/4aa6eead-7a44-4dce-a0d2-3f5a5081b711
+2026-04-24 14:19:46 | INFO     | backend.api.main | POST /analyze-job run_id=31dcdb5d-aba8-48b5-afc7-40f916b95b65
+2026-04-24 14:19:46 | INFO     | backend.agents.jd_reader_agent | JD Reader Agent: starting extraction
+2026-04-24 14:19:46 | INFO     | backend.tools.jd_parser | Parsing JD with rule-based parser
+2026-04-24 14:19:46 | INFO     | backend.tools.jd_parser | JD parsed: role='Junior Software Developer / Full Stack Developer**' type=RoleType.ENGINEERING must_have=15 preferred=29 min_exp=0.0 max_exp=None
+2026-04-24 14:20:23 | INFO     | backend.agents.jd_reader_agent | [JD:parsed] role='Junior Software Developer / Full Stack Developer' type=RoleType.ENGINEERING must_have=24 preferred=30 min_exp=0.0 max_exp=None edu_req=2 certs=0
+2026-04-24 14:20:23 | INFO     | backend.services.storage | Saved run 31dcdb5d-aba8-48b5-afc7-40f916b95b65 with status=jd_analyzed
+2026-04-24 14:20:23 | INFO     | backend.api.main | POST /upload-resumes run_id=31dcdb5d-aba8-48b5-afc7-40f916b95b65 files=6
+2026-04-24 14:20:23 | INFO     | backend.api.main | Saved: uploads\31dcdb5d-aba8-48b5-afc7-40f916b95b65\CV_25.pdf
+2026-04-24 14:20:23 | INFO     | backend.api.main | Saved: uploads\31dcdb5d-aba8-48b5-afc7-40f916b95b65\MCA2560Cv.pdf
+2026-04-24 14:20:23 | INFO     | backend.api.main | Saved: uploads\31dcdb5d-aba8-48b5-afc7-40f916b95b65\DOC-20250407-WA0002..pdf
+2026-04-24 14:20:23 | INFO     | backend.api.main | Saved: uploads\31dcdb5d-aba8-48b5-afc7-40f916b95b65\Nandita Resume.pdf.pdf
+2026-04-24 14:20:23 | INFO     | backend.api.main | Saved: uploads\31dcdb5d-aba8-48b5-afc7-40f916b95b65\Niranjan patil resume new.pdf
+2026-04-24 14:20:23 | INFO     | backend.api.main | Saved: uploads\31dcdb5d-aba8-48b5-afc7-40f916b95b65\Omkar_final CV.pdf
+2026-04-24 14:20:23 | INFO     | backend.api.main | POST /rank run_id=31dcdb5d-aba8-48b5-afc7-40f916b95b65
+2026-04-24 14:20:24 | INFO     | backend.workflows.pipeline | Starting pipeline run_id=31dcdb5d-aba8-48b5-afc7-40f916b95b65 with 6 resumes
+2026-04-24 14:20:24 | INFO     | backend.services.storage | Saved run 31dcdb5d-aba8-48b5-afc7-40f916b95b65 with status=started
+2026-04-24 14:20:24 | INFO     | backend.workflows.pipeline | [Pipeline] Node: read_jd | run_id=31dcdb5d-aba8-48b5-afc7-40f916b95b65
+2026-04-24 14:20:24 | INFO     | backend.agents.jd_reader_agent | JD Reader Agent: starting extraction
+2026-04-24 14:20:24 | INFO     | backend.tools.jd_parser | Parsing JD with rule-based parser
+2026-04-24 14:20:24 | INFO     | backend.tools.jd_parser | JD parsed: role='Junior Software Developer / Full Stack Developer**' type=RoleType.ENGINEERING must_have=15 preferred=29 min_exp=0.0 max_exp=None
+2026-04-24 14:20:59 | INFO     | backend.agents.jd_reader_agent | [JD:parsed] role='Junior Software Developer / Full Stack Developer' type=RoleType.ENGINEERING must_have=24 preferred=30 min_exp=0.0 max_exp=None edu_req=2 certs=0
+2026-04-24 14:20:59 | INFO     | backend.workflows.pipeline | [Pipeline:jd_parsed] run_id=31dcdb5d-aba8-48b5-afc7-40f916b95b65 role='Junior Software Developer / Full Stack Developer' type=RoleType.ENGINEERING must_have=24 preferred=30 min_exp=0.0
+2026-04-24 14:20:59 | INFO     | backend.workflows.pipeline | [Pipeline] Node: parse_resumes | run_id=31dcdb5d-aba8-48b5-afc7-40f916b95b65
+2026-04-24 14:20:59 | INFO     | backend.agents.resume_parser_agent | Resume Parser Agent: processing 6 files
+2026-04-24 14:20:59 | INFO     | backend.agents.resume_parser_agent | Parsing: CV_25.pdf (id=e5f9d40c-d047-40bd-8997-5621187c8bcc)
+2026-04-24 14:20:59 | INFO     | backend.tools.resume_parser | Parsing resume: CV_25.pdf
+2026-04-24 14:20:59 | INFO     | backend.tools.resume_parser | [PARSE:resume] id=e5f9d40c-d047-40bd-8997-5621187c8bcc name=SURAJ GORAKH NAIKWADE skills=17 exp_years=0.0 projects=0 edu=0 certs=0 confidence=0.6 status=ParseStatus.SUCCESS
+2026-04-24 14:21:17 | INFO     | backend.agents.resume_parser_agent | Parsed CV_25.pdf: confidence=60%, skills=22
+2026-04-24 14:21:17 | INFO     | backend.agents.resume_parser_agent | Parsing: MCA2560Cv.pdf (id=bd417c8d-fd46-49dc-9ddb-65d412a491ec)
+2026-04-24 14:21:17 | INFO     | backend.tools.resume_parser | Parsing resume: MCA2560Cv.pdf
+2026-04-24 14:21:18 | INFO     | backend.tools.resume_parser | [PARSE:resume] id=bd417c8d-fd46-49dc-9ddb-65d412a491ec name=CV Format skills=18 exp_years=0.0 projects=1 edu=1 certs=0 confidence=0.8 status=ParseStatus.SUCCESS
+2026-04-24 14:21:18 | INFO     | backend.agents.resume_parser_agent | Parsed MCA2560Cv.pdf: confidence=80%, skills=18
+2026-04-24 14:21:18 | INFO     | backend.agents.resume_parser_agent | Parsing: DOC-20250407-WA0002..pdf (id=6ed19539-63b3-4c39-8ed7-903853e2c7af)
+2026-04-24 14:21:18 | INFO     | backend.tools.resume_parser | Parsing resume: DOC-20250407-WA0002..pdf
+2026-04-24 14:21:19 | INFO     | backend.tools.resume_parser | Falling back to OCR for uploads\31dcdb5d-aba8-48b5-afc7-40f916b95b65\DOC-20250407-WA0002..pdf
+2026-04-24 14:21:20 | ERROR    | backend.tools.resume_parser | OCR failed: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-04-24 14:21:20 | INFO     | backend.agents.resume_parser_agent | Parsed DOC-20250407-WA0002..pdf: confidence=0%, skills=0
+2026-04-24 14:21:20 | INFO     | backend.agents.resume_parser_agent | Parsing: Nandita Resume.pdf.pdf (id=76625962-4765-43ce-801b-1cde04112c90)
+2026-04-24 14:21:20 | INFO     | backend.tools.resume_parser | Parsing resume: Nandita Resume.pdf.pdf
+2026-04-24 14:21:20 | INFO     | backend.tools.resume_parser | [PARSE:resume] id=76625962-4765-43ce-801b-1cde04112c90 name=SUBANANDIDA THEVAR skills=22 exp_years=0.0 projects=1 edu=1 certs=1 confidence=0.8 status=ParseStatus.SUCCESS
+2026-04-24 14:21:20 | INFO     | backend.agents.resume_parser_agent | Parsed Nandita Resume.pdf.pdf: confidence=80%, skills=22
+2026-04-24 14:21:20 | INFO     | backend.agents.resume_parser_agent | Parsing: Niranjan patil resume new.pdf (id=2ff769ce-1bba-44a0-a2f8-a57b3d16a87a)
+2026-04-24 14:21:20 | INFO     | backend.tools.resume_parser | Parsing resume: Niranjan patil resume new.pdf
+2026-04-24 14:21:20 | INFO     | backend.tools.resume_parser | [PARSE:resume] id=2ff769ce-1bba-44a0-a2f8-a57b3d16a87a name=Niranjan Patil skills=35 exp_years=0.0 projects=1 edu=1 certs=1 confidence=0.8 status=ParseStatus.SUCCESS
+2026-04-24 14:21:20 | INFO     | backend.agents.resume_parser_agent | Parsed Niranjan patil resume new.pdf: confidence=80%, skills=35
+2026-04-24 14:21:20 | INFO     | backend.agents.resume_parser_agent | Parsing: Omkar_final CV.pdf (id=b54e97de-3836-49dc-a311-e76e555ec6cb)
+2026-04-24 14:21:20 | INFO     | backend.tools.resume_parser | Parsing resume: Omkar_final CV.pdf
+2026-04-24 14:21:20 | INFO     | backend.tools.resume_parser | [PARSE:resume] id=b54e97de-3836-49dc-a311-e76e555ec6cb name=OMKAR HALPATRAO skills=18 exp_years=0.0 projects=1 edu=1 certs=0 confidence=0.8 status=ParseStatus.SUCCESS
+2026-04-24 14:21:20 | INFO     | backend.agents.resume_parser_agent | Parsed Omkar_final CV.pdf: confidence=80%, skills=18
+2026-04-24 14:21:20 | INFO     | backend.agents.resume_parser_agent | Resume Parser Agent: completed 6 profiles
+2026-04-24 14:21:20 | INFO     | backend.workflows.pipeline | [Pipeline:resumes_parsed] run_id=31dcdb5d-aba8-48b5-afc7-40f916b95b65 profiles=6 valid=5 failed=1
+2026-04-24 14:21:20 | INFO     | backend.workflows.pipeline | [Pipeline] Node: rank_candidates | run_id=31dcdb5d-aba8-48b5-afc7-40f916b95b65
+2026-04-24 14:21:20 | INFO     | backend.agents.ranking_agent | [RANKING:start] run_id=31dcdb5d-aba8-48b5-afc7-40f916b95b65 job='Junior Software Developer / Full Stack Developer' candidates=6
+2026-04-24 14:21:21 | INFO     | backend.tools.scorer | [SCORE:start] candidate=e5f9d40c-d047-40bd-8997-5621187c8bcc name=SURAJ GORAKH NAIKWADE job=Junior Software Developer / Full Stack Developer type=RoleType.ENGINEERING must_skills=24 pref_skills=30 min_exp=0.0
+2026-04-24 14:21:21 | INFO     | backend.tools.scorer | [SCORE:total] candidate=e5f9d40c-d047-40bd-8997-5621187c8bcc base=58.3 semantic_bonus=3.2 penalties=0.0 total=61.5
+2026-04-24 14:21:21 | INFO     | backend.agents.ranking_agent | [RANKING:scored] candidate=e5f9d40c-d047-40bd-8997-5621187c8bcc name=SURAJ GORAKH NAIKWADE score=61.5 tiebreak=1.20
+2026-04-24 14:21:21 | INFO     | backend.tools.scorer | [SCORE:start] candidate=bd417c8d-fd46-49dc-9ddb-65d412a491ec name=CV Format job=Junior Software Developer / Full Stack Developer type=RoleType.ENGINEERING must_skills=24 pref_skills=30 min_exp=0.0
+2026-04-24 14:21:21 | INFO     | backend.tools.scorer | [SCORE:total] candidate=bd417c8d-fd46-49dc-9ddb-65d412a491ec base=46.8 semantic_bonus=3.3 penalties=0.0 total=50.0
+2026-04-24 14:21:21 | INFO     | backend.agents.ranking_agent | [RANKING:scored] candidate=bd417c8d-fd46-49dc-9ddb-65d412a491ec name=CV Format score=50.0 tiebreak=1.80
+2026-04-24 14:21:21 | INFO     | backend.tools.scorer | [SCORE:start] candidate=6ed19539-63b3-4c39-8ed7-903853e2c7af name=Unknown job=Junior Software Developer / Full Stack Developer type=RoleType.ENGINEERING must_skills=24 pref_skills=30 min_exp=0.0
+2026-04-24 14:21:21 | INFO     | backend.tools.scorer | [SCORE:penalties] candidate=6ed19539-63b3-4c39-8ed7-903853e2c7af penalties=1.0 reasons=['Low parse confidence: 0%']
+2026-04-24 14:21:21 | INFO     | backend.tools.scorer | [SCORE:total] candidate=6ed19539-63b3-4c39-8ed7-903853e2c7af base=20.0 semantic_bonus=0.4 penalties=1.0 total=19.4
+2026-04-24 14:21:21 | INFO     | backend.agents.ranking_agent | [RANKING:scored] candidate=6ed19539-63b3-4c39-8ed7-903853e2c7af name=Unknown score=19.4 tiebreak=0.00
+2026-04-24 14:21:21 | INFO     | backend.tools.scorer | [SCORE:start] candidate=76625962-4765-43ce-801b-1cde04112c90 name=SUBANANDIDA THEVAR job=Junior Software Developer / Full Stack Developer type=RoleType.ENGINEERING must_skills=24 pref_skills=30 min_exp=0.0
+2026-04-24 14:21:21 | INFO     | backend.tools.scorer | [SCORE:total] candidate=76625962-4765-43ce-801b-1cde04112c90 base=53.2 semantic_bonus=3.0 penalties=0.0 total=56.2
+2026-04-24 14:21:21 | INFO     | backend.agents.ranking_agent | [RANKING:scored] candidate=76625962-4765-43ce-801b-1cde04112c90 name=SUBANANDIDA THEVAR score=56.2 tiebreak=2.10
+2026-04-24 14:21:21 | INFO     | backend.tools.scorer | [SCORE:start] candidate=2ff769ce-1bba-44a0-a2f8-a57b3d16a87a name=Niranjan Patil job=Junior Software Developer / Full Stack Developer type=RoleType.ENGINEERING must_skills=24 pref_skills=30 min_exp=0.0
+2026-04-24 14:21:22 | INFO     | backend.tools.scorer | [SCORE:total] candidate=2ff769ce-1bba-44a0-a2f8-a57b3d16a87a base=56.0 semantic_bonus=3.2 penalties=0.0 total=59.1
+2026-04-24 14:21:22 | INFO     | backend.agents.ranking_agent | [RANKING:scored] candidate=2ff769ce-1bba-44a0-a2f8-a57b3d16a87a name=Niranjan Patil score=59.1 tiebreak=2.10
+2026-04-24 14:21:22 | INFO     | backend.tools.scorer | [SCORE:start] candidate=b54e97de-3836-49dc-a311-e76e555ec6cb name=OMKAR HALPATRAO job=Junior Software Developer / Full Stack Developer type=RoleType.ENGINEERING must_skills=24 pref_skills=30 min_exp=0.0
+2026-04-24 14:21:22 | INFO     | backend.tools.scorer | [SCORE:total] candidate=b54e97de-3836-49dc-a311-e76e555ec6cb base=41.5 semantic_bonus=3.4 penalties=0.0 total=44.9
+2026-04-24 14:21:22 | INFO     | backend.agents.ranking_agent | [RANKING:scored] candidate=b54e97de-3836-49dc-a311-e76e555ec6cb name=OMKAR HALPATRAO score=44.9 tiebreak=1.80
+2026-04-24 14:21:22 | INFO     | backend.agents.ranking_agent | [RANKING:done] ranked=6 top=61.5 bottom=19.4 shortlist=0 hold=4 reject=2
+2026-04-24 14:21:22 | INFO     | backend.workflows.pipeline | [Pipeline:ranked] run_id=31dcdb5d-aba8-48b5-afc7-40f916b95b65 scored=6 
+2026-04-24 14:21:22 | INFO     | backend.workflows.pipeline | [Pipeline] Node: generate_reasoning | run_id=31dcdb5d-aba8-48b5-afc7-40f916b95b65
+2026-04-24 14:21:22 | INFO     | backend.agents.reasoning_agent | [REASONING:start] candidates=6 llm=False
+2026-04-24 14:21:22 | INFO     | backend.agents.reasoning_agent | [REASONING:done] candidate=e5f9d40c-d047-40bd-8997-5621187c8bcc score=61.5 rec=shortlist conf=61%
+2026-04-24 14:21:22 | INFO     | backend.agents.reasoning_agent | [REASONING:done] candidate=2ff769ce-1bba-44a0-a2f8-a57b3d16a87a score=59.1 rec=shortlist conf=66%
+2026-04-24 14:21:22 | INFO     | backend.agents.reasoning_agent | [REASONING:done] candidate=76625962-4765-43ce-801b-1cde04112c90 score=56.2 rec=shortlist conf=65%
+2026-04-24 14:21:22 | INFO     | backend.agents.reasoning_agent | [REASONING:done] candidate=bd417c8d-fd46-49dc-9ddb-65d412a491ec score=50.0 rec=hold conf=61%
+2026-04-24 14:21:22 | INFO     | backend.agents.reasoning_agent | [REASONING:done] candidate=b54e97de-3836-49dc-a311-e76e555ec6cb score=44.9 rec=hold conf=57%
+2026-04-24 14:21:22 | INFO     | backend.agents.reasoning_agent | [REASONING:done] candidate=6ed19539-63b3-4c39-8ed7-903853e2c7af score=19.4 rec=reject conf=13%
+2026-04-24 14:21:22 | INFO     | backend.agents.reasoning_agent | [REASONING:complete]
+2026-04-24 14:21:22 | INFO     | backend.workflows.pipeline | [Pipeline:completed] run_id=31dcdb5d-aba8-48b5-afc7-40f916b95b65 shortlist=3 hold=2 reject=1
+2026-04-24 14:21:22 | INFO     | backend.services.storage | Saved run 31dcdb5d-aba8-48b5-afc7-40f916b95b65 with status=completed
+2026-04-24 14:21:22 | INFO     | backend.workflows.pipeline | Pipeline completed run_id=31dcdb5d-aba8-48b5-afc7-40f916b95b65 status=completed
+2026-04-24 14:21:22 | INFO     | backend.tools.exporter | Exported 6 candidates to CSV: exports\31dcdb5d-aba8-48b5-afc7-40f916b95b65_results.csv
+2026-04-24 14:21:22 | INFO     | backend.tools.exporter | Exported 6 candidates to JSON: exports\31dcdb5d-aba8-48b5-afc7-40f916b95b65_results.json
+2026-04-24 14:21:22 | INFO     | backend.tools.exporter | Shortlist report written: exports\31dcdb5d-aba8-48b5-afc7-40f916b95b65_shortlist_report.txt
+2026-04-24 14:21:23 | INFO     | backend.api.main | GET /results/31dcdb5d-aba8-48b5-afc7-40f916b95b65
+2026-04-24 14:22:23 | INFO     | backend.api.main | GET /results/31dcdb5d-aba8-48b5-afc7-40f916b95b65
+2026-04-24 14:22:23 | INFO     | backend.api.main | GET /results/31dcdb5d-aba8-48b5-afc7-40f916b95b65
+2026-04-24 14:28:44 | INFO     | backend.api.main | GET /results/31dcdb5d-aba8-48b5-afc7-40f916b95b65
+2026-04-24 14:28:44 | INFO     | backend.api.main | GET /results/31dcdb5d-aba8-48b5-afc7-40f916b95b65
+2026-04-24 14:56:22 | INFO     | backend.api.main | POST /analyze-job run_id=6d182e9c-4e79-4383-a643-782833eb37c9
+2026-04-24 14:56:22 | INFO     | backend.agents.jd_reader_agent | JD Reader Agent: starting extraction
+2026-04-24 14:56:22 | INFO     | backend.tools.jd_parser | Parsing JD with rule-based parser
+2026-04-24 14:56:22 | INFO     | backend.tools.jd_parser | JD parsed: role='motivated Junior Software Developer with skills in frontend, backend, databases, and problem-solving' type=RoleType.ENGINEERING must_have=0 preferred=29 min_exp=0.0 max_exp=None
+2026-04-24 14:57:49 | INFO     | backend.agents.jd_reader_agent | [JD:parsed] role='Junior Software Developer' type=RoleType.FRESHER must_have=8 preferred=30 min_exp=0.0 max_exp=None edu_req=2 certs=0
+2026-04-24 14:57:49 | INFO     | backend.services.storage | Saved run 6d182e9c-4e79-4383-a643-782833eb37c9 with status=jd_analyzed
+2026-04-24 15:01:31 | INFO     | backend.api.main | POST /analyze-job run_id=8dc5276b-f4ad-4879-9240-19f043768a68
+2026-04-24 15:01:31 | INFO     | backend.agents.jd_reader_agent | JD Reader Agent: starting extraction
+2026-04-24 15:01:31 | INFO     | backend.tools.jd_parser | Parsing JD with rule-based parser
+2026-04-24 15:01:31 | INFO     | backend.tools.jd_parser | JD parsed: role='motivated Junior Software Developer with skills in frontend, backend, databases, and problem-solving' type=RoleType.ENGINEERING must_have=0 preferred=29 min_exp=0.0 max_exp=None
+2026-04-24 15:01:54 | INFO     | backend.api.main | GET /results/31dcdb5d-aba8-48b5-afc7-40f916b95b65
+2026-04-24 15:01:54 | INFO     | backend.api.main | GET /results/31dcdb5d-aba8-48b5-afc7-40f916b95b65
+2026-04-24 15:02:28 | INFO     | backend.api.main | GET /results/31dcdb5d-aba8-48b5-afc7-40f916b95b65
+2026-04-24 15:02:28 | INFO     | backend.api.main | GET /results/31dcdb5d-aba8-48b5-afc7-40f916b95b65
+2026-04-24 15:02:42 | INFO     | backend.agents.jd_reader_agent | [JD:parsed] role='Junior Software Developer' type=RoleType.ENGINEERING must_have=8 preferred=30 min_exp=0.0 max_exp=None edu_req=2 certs=0
+2026-04-24 15:02:42 | INFO     | backend.services.storage | Saved run 8dc5276b-f4ad-4879-9240-19f043768a68 with status=jd_analyzed
+2026-04-24 15:04:00 | INFO     | backend.api.main | GET /download/31dcdb5d-aba8-48b5-afc7-40f916b95b65 format=csv
+2026-04-24 15:04:00 | INFO     | backend.tools.exporter | Exported 6 candidates to CSV: exports\31dcdb5d-aba8-48b5-afc7-40f916b95b65_results.csv
+2026-04-24 15:20:10 | INFO     | backend.api.main | GET /results/31dcdb5d-aba8-48b5-afc7-40f916b95b65
+2026-04-24 15:20:10 | INFO     | backend.api.main | GET /results/31dcdb5d-aba8-48b5-afc7-40f916b95b65
+2026-04-24 15:21:36 | INFO     | backend.api.main | POST /analyze-job run_id=cd434aad-7e5c-4d03-b8f8-ea201513a52c
+2026-04-24 15:21:36 | INFO     | backend.agents.jd_reader_agent | JD Reader Agent: starting extraction
+2026-04-24 15:21:36 | INFO     | backend.tools.jd_parser | Parsing JD with rule-based parser
+2026-04-24 15:21:36 | INFO     | backend.tools.jd_parser | JD parsed: role='motivated Junior Software Developer with skills in frontend, backend, databases, and problem-solving' type=RoleType.ENGINEERING must_have=0 preferred=29 min_exp=0.0 max_exp=None
+2026-04-24 15:23:05 | INFO     | backend.agents.jd_reader_agent | [JD:parsed] role='Junior Software Developer' type=RoleType.FRESHER must_have=8 preferred=30 min_exp=0.0 max_exp=None edu_req=2 certs=0
+2026-04-24 15:23:05 | INFO     | backend.services.storage | Saved run cd434aad-7e5c-4d03-b8f8-ea201513a52c with status=jd_analyzed
+2026-04-24 15:24:41 | INFO     | backend.services.storage | Loaded 19 runs from uploads\runs_state.json
+2026-04-24 15:25:34 | INFO     | backend.api.main | POST /analyze-job run_id=e464f4ca-4543-401b-b4bb-008d55159876
+2026-04-24 15:25:34 | INFO     | backend.agents.jd_reader_agent | JD Reader Agent: starting extraction
+2026-04-24 15:25:34 | INFO     | backend.tools.jd_parser | Parsing JD with rule-based parser
+2026-04-24 15:25:34 | INFO     | backend.tools.jd_parser | JD parsed: role='Junior Software Developer / Full Stack Developer**' type=RoleType.ENGINEERING must_have=15 preferred=29 min_exp=0.0 max_exp=None
+2026-04-24 15:26:09 | INFO     | backend.agents.jd_reader_agent | [JD:parsed] role='Junior Software Developer / Full Stack Developer' type=RoleType.ENGINEERING must_have=24 preferred=30 min_exp=0.0 max_exp=None edu_req=2 certs=0
+2026-04-24 15:26:09 | INFO     | backend.services.storage | Saved run e464f4ca-4543-401b-b4bb-008d55159876 with status=jd_analyzed
+2026-04-24 15:26:11 | INFO     | backend.services.storage | Loaded 20 runs from uploads\runs_state.json
+2026-04-24 15:26:11 | INFO     | backend.api.main | POST /upload-resumes run_id=e464f4ca-4543-401b-b4bb-008d55159876 files=6
+2026-04-24 15:26:11 | INFO     | backend.api.main | Saved: uploads\e464f4ca-4543-401b-b4bb-008d55159876\CV_25.pdf
+2026-04-24 15:26:11 | INFO     | backend.api.main | Saved: uploads\e464f4ca-4543-401b-b4bb-008d55159876\MCA2560Cv.pdf
+2026-04-24 15:26:11 | INFO     | backend.api.main | Saved: uploads\e464f4ca-4543-401b-b4bb-008d55159876\DOC-20250407-WA0002..pdf
+2026-04-24 15:26:11 | INFO     | backend.api.main | Saved: uploads\e464f4ca-4543-401b-b4bb-008d55159876\Nandita Resume.pdf.pdf
+2026-04-24 15:26:11 | INFO     | backend.api.main | Saved: uploads\e464f4ca-4543-401b-b4bb-008d55159876\Niranjan patil resume new.pdf
+2026-04-24 15:26:11 | INFO     | backend.api.main | Saved: uploads\e464f4ca-4543-401b-b4bb-008d55159876\Omkar_final CV.pdf
+2026-04-24 15:26:11 | INFO     | backend.api.main | POST /rank run_id=e464f4ca-4543-401b-b4bb-008d55159876
+2026-04-24 15:26:11 | INFO     | backend.workflows.pipeline | Starting pipeline run_id=e464f4ca-4543-401b-b4bb-008d55159876 with 6 resumes
+2026-04-24 15:26:11 | INFO     | backend.services.storage | Saved run e464f4ca-4543-401b-b4bb-008d55159876 with status=started
+2026-04-24 15:26:11 | INFO     | backend.workflows.pipeline | [Pipeline] Node: read_jd | run_id=e464f4ca-4543-401b-b4bb-008d55159876
+2026-04-24 15:26:11 | INFO     | backend.agents.jd_reader_agent | JD Reader Agent: starting extraction
+2026-04-24 15:26:11 | INFO     | backend.tools.jd_parser | Parsing JD with rule-based parser
+2026-04-24 15:26:11 | INFO     | backend.tools.jd_parser | JD parsed: role='Junior Software Developer / Full Stack Developer**' type=RoleType.ENGINEERING must_have=15 preferred=29 min_exp=0.0 max_exp=None
+2026-04-24 15:26:46 | INFO     | backend.agents.jd_reader_agent | [JD:parsed] role='Junior Software Developer / Full Stack Developer' type=RoleType.ENGINEERING must_have=23 preferred=29 min_exp=0.0 max_exp=None edu_req=2 certs=0
+2026-04-24 15:26:46 | INFO     | backend.workflows.pipeline | [Pipeline:jd_parsed] run_id=e464f4ca-4543-401b-b4bb-008d55159876 role='Junior Software Developer / Full Stack Developer' type=RoleType.ENGINEERING must_have=23 preferred=29 min_exp=0.0
+2026-04-24 15:26:46 | INFO     | backend.workflows.pipeline | [Pipeline] Node: parse_resumes | run_id=e464f4ca-4543-401b-b4bb-008d55159876
+2026-04-24 15:26:46 | INFO     | backend.agents.resume_parser_agent | Resume Parser Agent: processing 6 files
+2026-04-24 15:26:46 | INFO     | backend.agents.resume_parser_agent | Parsing: CV_25.pdf (id=a3434541-b08f-4898-8668-a2243ef23dae)
+2026-04-24 15:26:46 | INFO     | backend.tools.resume_parser | Parsing resume: CV_25.pdf
+2026-04-24 15:26:46 | INFO     | backend.tools.resume_parser | [PARSE:resume] id=a3434541-b08f-4898-8668-a2243ef23dae name=SURAJ GORAKH NAIKWADE skills=17 exp_years=0.0 projects=0 edu=0 certs=0 confidence=0.6 status=ParseStatus.SUCCESS
+2026-04-24 15:27:04 | INFO     | backend.agents.resume_parser_agent | Parsed CV_25.pdf: confidence=60%, skills=22
+2026-04-24 15:27:04 | INFO     | backend.agents.resume_parser_agent | Parsing: MCA2560Cv.pdf (id=0b449d72-7f09-4f0d-973e-c746b2791f00)
+2026-04-24 15:27:04 | INFO     | backend.tools.resume_parser | Parsing resume: MCA2560Cv.pdf
+2026-04-24 15:27:04 | INFO     | backend.tools.resume_parser | [PARSE:resume] id=0b449d72-7f09-4f0d-973e-c746b2791f00 name=CV Format skills=18 exp_years=0.0 projects=1 edu=1 certs=0 confidence=0.8 status=ParseStatus.SUCCESS
+2026-04-24 15:27:04 | INFO     | backend.agents.resume_parser_agent | Parsed MCA2560Cv.pdf: confidence=80%, skills=18
+2026-04-24 15:27:05 | INFO     | backend.agents.resume_parser_agent | Parsing: DOC-20250407-WA0002..pdf (id=2e40122b-fbbd-49e0-ab04-2ad215984c79)
+2026-04-24 15:27:05 | INFO     | backend.tools.resume_parser | Parsing resume: DOC-20250407-WA0002..pdf
+2026-04-24 15:27:09 | INFO     | backend.tools.resume_parser | Falling back to OCR for uploads\e464f4ca-4543-401b-b4bb-008d55159876\DOC-20250407-WA0002..pdf
+2026-04-24 15:27:10 | ERROR    | backend.tools.resume_parser | OCR failed: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-04-24 15:27:10 | INFO     | backend.agents.resume_parser_agent | Parsed DOC-20250407-WA0002..pdf: confidence=0%, skills=0
+2026-04-24 15:27:10 | INFO     | backend.agents.resume_parser_agent | Parsing: Nandita Resume.pdf.pdf (id=ab9213d0-54d7-42f7-8199-b6501750adb2)
+2026-04-24 15:27:10 | INFO     | backend.tools.resume_parser | Parsing resume: Nandita Resume.pdf.pdf
+2026-04-24 15:27:11 | INFO     | backend.tools.resume_parser | [PARSE:resume] id=ab9213d0-54d7-42f7-8199-b6501750adb2 name=SUBANANDIDA THEVAR skills=22 exp_years=0.0 projects=1 edu=1 certs=1 confidence=0.8 status=ParseStatus.SUCCESS
+2026-04-24 15:27:11 | INFO     | backend.agents.resume_parser_agent | Parsed Nandita Resume.pdf.pdf: confidence=80%, skills=22
+2026-04-24 15:27:11 | INFO     | backend.agents.resume_parser_agent | Parsing: Niranjan patil resume new.pdf (id=06697e99-0801-4bed-a088-d00b973b096d)
+2026-04-24 15:27:11 | INFO     | backend.tools.resume_parser | Parsing resume: Niranjan patil resume new.pdf
+2026-04-24 15:27:11 | INFO     | backend.tools.resume_parser | [PARSE:resume] id=06697e99-0801-4bed-a088-d00b973b096d name=Niranjan Patil skills=35 exp_years=0.0 projects=1 edu=1 certs=1 confidence=0.8 status=ParseStatus.SUCCESS
+2026-04-24 15:27:11 | INFO     | backend.agents.resume_parser_agent | Parsed Niranjan patil resume new.pdf: confidence=80%, skills=35
+2026-04-24 15:27:11 | INFO     | backend.agents.resume_parser_agent | Parsing: Omkar_final CV.pdf (id=d2eeb95c-c030-481a-8dd1-91fb0ed80925)
+2026-04-24 15:27:11 | INFO     | backend.tools.resume_parser | Parsing resume: Omkar_final CV.pdf
+2026-04-24 15:27:11 | INFO     | backend.tools.resume_parser | [PARSE:resume] id=d2eeb95c-c030-481a-8dd1-91fb0ed80925 name=OMKAR HALPATRAO skills=18 exp_years=0.0 projects=1 edu=1 certs=0 confidence=0.8 status=ParseStatus.SUCCESS
+2026-04-24 15:27:11 | INFO     | backend.agents.resume_parser_agent | Parsed Omkar_final CV.pdf: confidence=80%, skills=18
+2026-04-24 15:27:11 | INFO     | backend.agents.resume_parser_agent | Resume Parser Agent: completed 6 profiles
+2026-04-24 15:27:11 | INFO     | backend.workflows.pipeline | [Pipeline:resumes_parsed] run_id=e464f4ca-4543-401b-b4bb-008d55159876 profiles=6 valid=5 failed=1
+2026-04-24 15:27:11 | INFO     | backend.workflows.pipeline | [Pipeline] Node: rank_candidates | run_id=e464f4ca-4543-401b-b4bb-008d55159876
+2026-04-24 15:27:11 | INFO     | backend.agents.ranking_agent | [RANKING:start] run_id=e464f4ca-4543-401b-b4bb-008d55159876 job='Junior Software Developer / Full Stack Developer' candidates=6
+2026-04-24 15:27:12 | INFO     | backend.tools.scorer | [SCORE:start] candidate=a3434541-b08f-4898-8668-a2243ef23dae name=SURAJ GORAKH NAIKWADE job=Junior Software Developer / Full Stack Developer type=RoleType.ENGINEERING must_skills=23 pref_skills=29 min_exp=0.0
+2026-04-24 15:27:12 | INFO     | backend.tools.scorer | [SCORE:total] candidate=a3434541-b08f-4898-8668-a2243ef23dae base=58.1 semantic_bonus=3.2 penalties=0.0 total=61.3
+2026-04-24 15:27:12 | INFO     | backend.agents.ranking_agent | [RANKING:scored] candidate=a3434541-b08f-4898-8668-a2243ef23dae name=SURAJ GORAKH NAIKWADE score=61.3 tiebreak=1.20
+2026-04-24 15:27:12 | INFO     | backend.tools.scorer | [SCORE:start] candidate=0b449d72-7f09-4f0d-973e-c746b2791f00 name=CV Format job=Junior Software Developer / Full Stack Developer type=RoleType.ENGINEERING must_skills=23 pref_skills=29 min_exp=0.0
+2026-04-24 15:27:12 | INFO     | backend.tools.scorer | [SCORE:total] candidate=0b449d72-7f09-4f0d-973e-c746b2791f00 base=46.7 semantic_bonus=3.1 penalties=0.0 total=49.8
+2026-04-24 15:27:12 | INFO     | backend.agents.ranking_agent | [RANKING:scored] candidate=0b449d72-7f09-4f0d-973e-c746b2791f00 name=CV Format score=49.8 tiebreak=1.80
+2026-04-24 15:27:12 | INFO     | backend.tools.scorer | [SCORE:start] candidate=2e40122b-fbbd-49e0-ab04-2ad215984c79 name=Unknown job=Junior Software Developer / Full Stack Developer type=RoleType.ENGINEERING must_skills=23 pref_skills=29 min_exp=0.0
+2026-04-24 15:27:13 | INFO     | backend.tools.scorer | [SCORE:penalties] candidate=2e40122b-fbbd-49e0-ab04-2ad215984c79 penalties=1.0 reasons=['Low parse confidence: 0%']
+2026-04-24 15:27:13 | INFO     | backend.tools.scorer | [SCORE:total] candidate=2e40122b-fbbd-49e0-ab04-2ad215984c79 base=20.0 semantic_bonus=0.4 penalties=1.0 total=19.4
+2026-04-24 15:27:13 | INFO     | backend.agents.ranking_agent | [RANKING:scored] candidate=2e40122b-fbbd-49e0-ab04-2ad215984c79 name=Unknown score=19.4 tiebreak=0.00
+2026-04-24 15:27:13 | INFO     | backend.tools.scorer | [SCORE:start] candidate=ab9213d0-54d7-42f7-8199-b6501750adb2 name=SUBANANDIDA THEVAR job=Junior Software Developer / Full Stack Developer type=RoleType.ENGINEERING must_skills=23 pref_skills=29 min_exp=0.0
+2026-04-24 15:27:13 | INFO     | backend.tools.scorer | [SCORE:total] candidate=ab9213d0-54d7-42f7-8199-b6501750adb2 base=53.0 semantic_bonus=2.9 penalties=0.0 total=55.9
+2026-04-24 15:27:13 | INFO     | backend.agents.ranking_agent | [RANKING:scored] candidate=ab9213d0-54d7-42f7-8199-b6501750adb2 name=SUBANANDIDA THEVAR score=55.9 tiebreak=2.10
+2026-04-24 15:27:13 | INFO     | backend.tools.scorer | [SCORE:start] candidate=06697e99-0801-4bed-a088-d00b973b096d name=Niranjan Patil job=Junior Software Developer / Full Stack Developer type=RoleType.ENGINEERING must_skills=23 pref_skills=29 min_exp=0.0
+2026-04-24 15:27:13 | INFO     | backend.tools.scorer | [SCORE:total] candidate=06697e99-0801-4bed-a088-d00b973b096d base=55.9 semantic_bonus=3.2 penalties=0.0 total=59.1
+2026-04-24 15:27:13 | INFO     | backend.agents.ranking_agent | [RANKING:scored] candidate=06697e99-0801-4bed-a088-d00b973b096d name=Niranjan Patil score=59.1 tiebreak=2.10
+2026-04-24 15:27:13 | INFO     | backend.tools.scorer | [SCORE:start] candidate=d2eeb95c-c030-481a-8dd1-91fb0ed80925 name=OMKAR HALPATRAO job=Junior Software Developer / Full Stack Developer type=RoleType.ENGINEERING must_skills=23 pref_skills=29 min_exp=0.0
+2026-04-24 15:27:13 | INFO     | backend.tools.scorer | [SCORE:total] candidate=d2eeb95c-c030-481a-8dd1-91fb0ed80925 base=41.2 semantic_bonus=3.5 penalties=0.0 total=44.7
+2026-04-24 15:27:13 | INFO     | backend.agents.ranking_agent | [RANKING:scored] candidate=d2eeb95c-c030-481a-8dd1-91fb0ed80925 name=OMKAR HALPATRAO score=44.7 tiebreak=1.80
+2026-04-24 15:27:13 | INFO     | backend.agents.ranking_agent | [RANKING:done] ranked=6 top=61.3 bottom=19.4 shortlist=0 hold=3 reject=3
+2026-04-24 15:27:13 | INFO     | backend.workflows.pipeline | [Pipeline:ranked] run_id=e464f4ca-4543-401b-b4bb-008d55159876 scored=6 
+2026-04-24 15:27:13 | INFO     | backend.workflows.pipeline | [Pipeline] Node: generate_reasoning | run_id=e464f4ca-4543-401b-b4bb-008d55159876
+2026-04-24 15:27:13 | INFO     | backend.agents.reasoning_agent | [REASONING:start] candidates=6 llm=False
+2026-04-24 15:27:13 | INFO     | backend.agents.reasoning_agent | [REASONING:done] candidate=a3434541-b08f-4898-8668-a2243ef23dae score=61.3 rec=shortlist conf=61%
+2026-04-24 15:27:13 | INFO     | backend.agents.reasoning_agent | [REASONING:done] candidate=06697e99-0801-4bed-a088-d00b973b096d score=59.1 rec=shortlist conf=66%
+2026-04-24 15:27:13 | INFO     | backend.agents.reasoning_agent | [REASONING:done] candidate=ab9213d0-54d7-42f7-8199-b6501750adb2 score=55.9 rec=shortlist conf=64%
+2026-04-24 15:27:13 | INFO     | backend.agents.reasoning_agent | [REASONING:done] candidate=0b449d72-7f09-4f0d-973e-c746b2791f00 score=49.8 rec=hold conf=60%
+2026-04-24 15:27:13 | INFO     | backend.agents.reasoning_agent | [REASONING:done] candidate=d2eeb95c-c030-481a-8dd1-91fb0ed80925 score=44.7 rec=hold conf=57%
+2026-04-24 15:27:13 | INFO     | backend.agents.reasoning_agent | [REASONING:done] candidate=2e40122b-fbbd-49e0-ab04-2ad215984c79 score=19.4 rec=reject conf=13%
+2026-04-24 15:27:13 | INFO     | backend.agents.reasoning_agent | [REASONING:complete]
+2026-04-24 15:27:13 | INFO     | backend.workflows.pipeline | [Pipeline:completed] run_id=e464f4ca-4543-401b-b4bb-008d55159876 shortlist=3 hold=2 reject=1
+2026-04-24 15:27:13 | INFO     | backend.services.storage | Saved run e464f4ca-4543-401b-b4bb-008d55159876 with status=completed
+2026-04-24 15:27:13 | INFO     | backend.workflows.pipeline | Pipeline completed run_id=e464f4ca-4543-401b-b4bb-008d55159876 status=completed
+2026-04-24 15:27:13 | INFO     | backend.tools.exporter | Exported 6 candidates to CSV: exports\e464f4ca-4543-401b-b4bb-008d55159876_results.csv
+2026-04-24 15:27:13 | INFO     | backend.tools.exporter | Exported 6 candidates to JSON: exports\e464f4ca-4543-401b-b4bb-008d55159876_results.json
+2026-04-24 15:27:13 | INFO     | backend.tools.exporter | Shortlist report written: exports\e464f4ca-4543-401b-b4bb-008d55159876_shortlist_report.txt
+2026-04-24 15:27:15 | INFO     | backend.api.main | GET /results/e464f4ca-4543-401b-b4bb-008d55159876

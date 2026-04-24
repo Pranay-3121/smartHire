@@ -1,0 +1,1092 @@
+{
+  "run_id": "e464f4ca-4543-401b-b4bb-008d55159876",
+  "job_title": "Junior Software Developer / Full Stack Developer",
+  "total_candidates": 6,
+  "candidates": [
+    {
+      "candidate": {
+        "candidate_id": "a3434541-b08f-4898-8668-a2243ef23dae",
+        "file_path": "uploads\\e464f4ca-4543-401b-b4bb-008d55159876\\CV_25.pdf",
+        "file_name": "CV_25.pdf",
+        "name": "SURAJ GORAKH NAIKWADE",
+        "email": "mca25_2526ics@met.edu",
+        "phone": "9119447777",
+        "location": null,
+        "skills": [
+          "html",
+          "sql",
+          "go",
+          "css",
+          "cad",
+          "java",
+          "mysql",
+          "r",
+          "rust",
+          "CSS",
+          "Problem-solving",
+          "SOFT SKILLS",
+          "Leadership",
+          "Teamwork",
+          "Communication",
+          "Time management",
+          "English Marathi Hindi",
+          "C",
+          "Java",
+          "HTML",
+          "MySQL",
+          "Windows"
+        ],
+        "work_experience": [],
+        "total_experience_years": 0.0,
+        "companies": [],
+        "projects": [],
+        "education": [],
+        "certifications": [],
+        "languages": [],
+        "summary": null,
+        "parse_status": "success",
+        "parse_confidence": 0.6,
+        "warning_flags": [],
+        "raw_text": "SURAJ GORAKH NAIKWADE\nPhone: 9119447777 Address: Indrawadhan Society, Padmabai\nCONTACT\nEmail: mca25_2526ics@met.edu Thakkar Road, Dadar West, Mumbai-400028\nMotivated and detail-oriented MCA student with a strong foundation in computer programming,\nCAREER\nweb development, and database management. Eager to apply my academic knowledge and\nOBJECTIVE\ntechnical skills in real-world environments while learning and growing in the IT industry. Seeking\nan entry-level position to contribute to the success of a dynamic team.\nEDUCATION MUMBAI EDUCATION TRUST'S INSTITUTE OF COMPUTER SCIENCE\nMCA Pursuing\nMODERN COLLEGE OF ARTS SCIENCE AND COMMERCE SHIVAJINAGAR, PUNE-05\nBCA 2022 - 2025\nDr.M.N. KHEDKAR COLLEGE OF SCIENCE\n2019 - 2021\n12th\nSANSKAR NIKETAN EK VAIDIK PATHSHALA,NASHIK\n2018-2019\n10th\nLanguages: C, Java\nTECHNICAL SKILLS\nWeb Technologies: HTML, CSS\nDatabase Management: MySQL\nOperating Systems: Windows\nProblem-solving\nSOFT SKILLS\nLeadership\nTeamwork\nCommunication\nTime management\nEnglish Marathi Hindi\nLANGUAGES\nGroup Leader: Lead a group in Youth Leadership Development Activity 2024 one-day camp in\nEXTRA-CURRICULAR\nPune and a 4-day Residential camp at Kolhapur by Vivekanand Kendra, Kanyakumari\nACTIVITIES\nI hereby declare that the information provided above is true and accurate to the best of my\nDECLARATION knowledge and belief.",
+        "is_duplicate": false,
+        "content_hash": "1386ce253266b9919bec015a8c7d6e1c511bc2a093d71fe69a2cfbb3e1d33925"
+      },
+      "score_breakdown": {
+        "role_experience": {
+          "raw_score": 80.35,
+          "weighted_score": 28.12,
+          "weight": 35.0,
+          "matched_items": [
+            "Job Title: Junior Software Developer",
+            "Full Stack Developer",
+            "Responsibilities:",
+            "and improve application performance",
+            "Create clean",
+            "and efficient code",
+            "Preferred Skills:",
+            "Python, Java, C++, SQL",
+            "HTML, CSS, JavaScript, React",
+            "Flask / Django / PHP",
+            "Problem-solving and teamwork",
+            "Java",
+            "C++",
+            "SQL",
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "React",
+            "Flask/Django",
+            "Java",
+            "C++",
+            "SQL",
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "React",
+            "Django",
+            "Excel",
+            "VS Code",
+            "Problem",
+            "solving and teamwork",
+            "Good to Have:",
+            "Experience in AI",
+            "ML projects",
+            "dashboards",
+            "travel planners",
+            "or management systems",
+            "Qualification:",
+            "Bachelor\u2019s degree in Computer Science",
+            "BCA",
+            "Related Field."
+          ],
+          "missing_items": [
+            "Debug",
+            "test",
+            "maintainable",
+            "Python"
+          ],
+          "notes": "Experience: 0.0y, Required: 0.0y"
+        },
+        "relevant_projects": {
+          "raw_score": 45.0,
+          "weighted_score": 18.0,
+          "weight": 40.0,
+          "matched_items": [],
+          "missing_items": [],
+          "notes": "No explicit projects; fallback based on experience/skills"
+        },
+        "certifications": {
+          "raw_score": 70.0,
+          "weighted_score": 7.0,
+          "weight": 10.0,
+          "matched_items": [],
+          "missing_items": [],
+          "notes": "No certifications required by job"
+        },
+        "education": {
+          "raw_score": 0.0,
+          "weighted_score": 0.0,
+          "weight": 10.0,
+          "matched_items": [],
+          "missing_items": [
+            "Bachelor\u2019s degree in Computer Science / IT / BCA / Related Field.",
+            "Bachelor's degree in Computer Science / IT / BCA / Related Field"
+          ],
+          "notes": ""
+        },
+        "soft_signals": {
+          "raw_score": 100.0,
+          "weighted_score": 5.0,
+          "weight": 5.0,
+          "matched_items": [
+            "communication",
+            "problem-solving",
+            "teamwork"
+          ],
+          "missing_items": [],
+          "notes": ""
+        },
+        "semantic_similarity": 0.6371,
+        "penalty_deductions": 0.0,
+        "total_score": 61.31
+      },
+      "reasoning": {
+        "summary": "SURAJ GORAKH NAIKWADE is a good fit for the Junior Software Developer / Full Stack Developer role with a score of 61.3/100 (41/45 required skills matched, 0.0y experience). Key strengths include matched 41 required skills: job title: junior software developer, full stack developer, responsibilities:, and improve application performance, create clean, and efficient code. Primary gap: missing 4 required skills: debug, test, maintainable, python.",
+        "strengths": [
+          "Matched 41 required skills: Job Title: Junior Software Developer, Full Stack Developer, Responsibilities:, and improve application performance, Create clean, and efficient code",
+          "Soft skills present: communication, problem-solving, teamwork",
+          "Strongest area: Technical skills (80/100)"
+        ],
+        "gaps": [
+          "Missing 4 required skills: Debug, test, maintainable, Python",
+          "No education details found; job requires: Bachelor\u2019s degree in Computer Science / IT / BCA / Related Field.",
+          "Weakest area: Education (0/100)"
+        ],
+        "risks": [],
+        "confidence_level": 0.61,
+        "recommendation": "shortlist",
+        "recommendation_reason": "Score 61.3/100 \u2014 41/45 required skills matched, 0.0y exp, missing: Debug, test, maintainable"
+      },
+      "rank": 1,
+      "tiebreak_score": 1.2
+    },
+    {
+      "candidate": {
+        "candidate_id": "06697e99-0801-4bed-a088-d00b973b096d",
+        "file_path": "uploads\\e464f4ca-4543-401b-b4bb-008d55159876\\Niranjan patil resume new.pdf",
+        "file_name": "Niranjan patil resume new.pdf",
+        "name": "Niranjan Patil",
+        "email": "niranjanpatil1516@gmail.com",
+        "phone": "+91-7709561516",
+        "location": null,
+        "skills": [
+          "html",
+          "sql",
+          "wordpress",
+          "git",
+          "javascript",
+          "make",
+          "word",
+          "go",
+          "sem",
+          "css",
+          "java",
+          "c++",
+          "python",
+          "c#",
+          "react",
+          "excel",
+          "tableau",
+          "jupyter",
+          "php",
+          "r",
+          "github",
+          "tailwind",
+          "C++",
+          "SQL",
+          "Python",
+          "HTML",
+          "CSS",
+          "SQL Plus",
+          "Tableau",
+          "Excel",
+          "Jupyter",
+          "WordPress",
+          "google Api\u2019s",
+          "GitHub",
+          "shadcn UI"
+        ],
+        "work_experience": [],
+        "total_experience_years": 0.0,
+        "companies": [],
+        "projects": [
+          {
+            "name": "Ai-travel-planner 11/24 \u2013 02/25",
+            "description": "\u2022 Ai \u2013 driven trip planner which suggest places to visit and hotel recommendation according budget using real data \u2022 We used javascript and little bit react.js for functions and html , tailwind css for designing purpose, and shadcn ui \u2022 Made easy to make plans on trip, and gives iternary for no of days, helpful for travel lovers to plan trips. Supreme Roadways 08/24 \u2013 09/24 \u2022 Created Supreme Roadways, a dynamic transportation website for businesses and individuals, featuring an admin panel with ",
+            "technologies": [
+              "html",
+              "sql",
+              "javascript",
+              "make",
+              "css",
+              "java",
+              "react",
+              "php",
+              "r",
+              "tailwind"
+            ],
+            "url": null
+          }
+        ],
+        "education": [
+          {
+            "institution": "Bachelor of Computer Applications 2022 \u2013 2025",
+            "degree": "Vivekanand College Kolhapur, India",
+            "field_of_study": null,
+            "graduation_year": 2022,
+            "gpa": null
+          }
+        ],
+        "certifications": [
+          "\u2022 SQL Bootcamp certificate \u2013 aug\u201923 (link)"
+        ],
+        "languages": [],
+        "summary": null,
+        "parse_status": "success",
+        "parse_confidence": 0.8,
+        "warning_flags": [],
+        "raw_text": "Niranjan Patil\n+91-7709561516 | niranjanpatil1516@gmail.com | github | linkedIn\nI am Niranjan Patil, A Bachelor of Computer Application student from Vivekanand College, Kolhapur. I am passionate about\ntechnology and eager to learn new things. I have strong foundational skills in C++ , java and SQL. I am calm, composed, and\nalways ready to contribute towards improving productivity in an organization.\nEDUCATION\nVivekanand College Kolhapur, India\nBachelor of Computer Applications 2022 \u2013 2025\n\u2022 CGPA \u2013 9.29\n\u2022 Among the top 5% of the department of BCA\n\u2022 Relevant coursework in [C++, Python, java , etc.]\nSKILLS\nTechnical: Java , C++, SQL, Python, HTML, CSS.\nTools: Vs Code, SQL Plus, Tableau, Excel, Jupyter, WordPress, google Api\u2019s, GitHub, shadcn UI,\nCERTIFICATIONS\n\u2022 Tata Data Visualisation job simulation \u2013 May\u201925 (link)\n\u2022 Data Analytics job simulation from Deloitte - April\u201925 (link)\n\u2022 Wordcamp Kolhapur \u2013 jan\u201925 (link)\n\u2022 C# foundational course \u2013 sep\u201924 (link)\n\u2022 SQL Bootcamp certificate \u2013 aug\u201923 (link)\nEXPERIENCE\nTata Data Visualisation: Empowering Business with Effective Insights Job Simulation on Forage May\u2019 25\n\u2022 Completed a simulation involving creating data visualizations for Tata Consultancy Services\n\u2022 Created visuals for data analysis to help executives with effective decision making.\nDeloitte - Virtual Internship program April\u2019 25\n\u2022 Fundamentals of data analytics, handling dataset, importing files, using queries\n\u2022 Understanding data visualization using tableau, writing queries in excel\nPROJECTS\nAi-travel-planner 11/24 \u2013 02/25\n\u2022 Ai \u2013 driven trip planner which suggest places to visit and hotel recommendation according budget using real data\n\u2022 We used javascript and little bit react.js for functions and html , tailwind css for designing purpose, and shadcn ui\n\u2022 Made easy to make plans on trip, and gives iternary for no of days, helpful for travel lovers to plan trips.\nSupreme Roadways 08/24 \u2013 09/24\n\u2022 Created Supreme Roadways, a dynamic transportation website for businesses and individuals, featuring an admin\npanel with interactive forms.\n\u2022 Technologies : HTML, CSS, js for frontend, and SQL,php for backend functionality.\nACHIEVEMENTS\n\u2022 Winner of national level debugging competition at Bharati Vidyapeeth Kolhapur, participated in different competitions\n\u2022 Wordcamp Kolhapur \u2013 A national level event where we won multiple competition and exciting prizes\n\u2022 In top 3 students, among all semester exams",
+        "is_duplicate": false,
+        "content_hash": "c22f96b6f8909f8860b34e19300278b3198b0b231933f475bd7cc613aa7735c6"
+      },
+      "score_breakdown": {
+        "role_experience": {
+          "raw_score": 81.96,
+          "weighted_score": 28.69,
+          "weight": 35.0,
+          "matched_items": [
+            "Job Title: Junior Software Developer",
+            "Full Stack Developer",
+            "Responsibilities:",
+            "and improve application performance",
+            "Create clean",
+            "Preferred Skills:",
+            "Python, Java, C++, SQL",
+            "HTML, CSS, JavaScript, React",
+            "Flask / Django / PHP",
+            "Problem-solving and teamwork",
+            "Python",
+            "Java",
+            "C++",
+            "SQL",
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "React",
+            "Flask/Django",
+            "Python",
+            "Java",
+            "C++",
+            "SQL",
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "React",
+            "Django",
+            "PHP",
+            "GitHub",
+            "Tableau",
+            "Excel",
+            "Problem",
+            "solving and teamwork",
+            "Good to Have:",
+            "Experience in AI",
+            "ML projects",
+            "dashboards",
+            "travel planners",
+            "or management systems",
+            "Bachelor\u2019s degree in Computer Science",
+            "IT",
+            "Related Field.",
+            "Flask"
+          ],
+          "missing_items": [
+            "Debug",
+            "test",
+            "maintainable",
+            "and efficient code"
+          ],
+          "notes": "Experience: 0.0y, Required: 0.0y"
+        },
+        "relevant_projects": {
+          "raw_score": 25.61,
+          "weighted_score": 10.24,
+          "weight": 40.0,
+          "matched_items": [
+            "php",
+            "css",
+            "r",
+            "react",
+            "java",
+            "html",
+            "javascript",
+            "tailwind",
+            "sql"
+          ],
+          "missing_items": [],
+          "notes": "1 projects found"
+        },
+        "certifications": {
+          "raw_score": 70.0,
+          "weighted_score": 7.0,
+          "weight": 10.0,
+          "matched_items": [],
+          "missing_items": [],
+          "notes": "No certifications required by job"
+        },
+        "education": {
+          "raw_score": 100.0,
+          "weighted_score": 10.0,
+          "weight": 10.0,
+          "matched_items": [
+            "Bachelor\u2019s degree in Computer Science / IT / BCA / Related Field.",
+            "Bachelor's degree in Computer Science / IT / BCA / Related Field"
+          ],
+          "missing_items": [],
+          "notes": ""
+        },
+        "soft_signals": {
+          "raw_score": 0.0,
+          "weighted_score": 0.0,
+          "weight": 5.0,
+          "matched_items": [],
+          "missing_items": [
+            "communication",
+            "problem-solving",
+            "teamwork"
+          ],
+          "notes": ""
+        },
+        "semantic_similarity": 0.6364,
+        "penalty_deductions": 0.0,
+        "total_score": 59.11
+      },
+      "reasoning": {
+        "summary": "Niranjan Patil is a good fit for the Junior Software Developer / Full Stack Developer role with a score of 59.1/100 (44/48 required skills matched, 0.0y experience). Key strengths include matched 44 required skills: job title: junior software developer, full stack developer, responsibilities:, and improve application performance, create clean, preferred skills:. Primary gap: missing 4 required skills: debug, test, maintainable, and efficient code.",
+        "strengths": [
+          "Matched 44 required skills: Job Title: Junior Software Developer, Full Stack Developer, Responsibilities:, and improve application performance, Create clean, Preferred Skills:",
+          "1 project(s) demonstrated using php, css, r, make, react",
+          "Certified: \u2022 SQL Bootcamp certificate \u2013 aug\u201923 (link)",
+          "Education matches requirements: Vivekanand College Kolhapur, India \u2014 Bachelor of Computer Applications 2022 \u2013 2025 (2022)",
+          "Strongest area: Education (100/100)"
+        ],
+        "gaps": [
+          "Missing 4 required skills: Debug, test, maintainable, and efficient code",
+          "Weakest area: Projects (26/100)"
+        ],
+        "risks": [],
+        "confidence_level": 0.66,
+        "recommendation": "shortlist",
+        "recommendation_reason": "Score 59.1/100 \u2014 44/48 required skills matched, 0.0y exp, missing: Debug, test, maintainable"
+      },
+      "rank": 2,
+      "tiebreak_score": 2.1
+    },
+    {
+      "candidate": {
+        "candidate_id": "ab9213d0-54d7-42f7-8199-b6501750adb2",
+        "file_path": "uploads\\e464f4ca-4543-401b-b4bb-008d55159876\\Nandita Resume.pdf.pdf",
+        "file_name": "Nandita Resume.pdf.pdf",
+        "name": "SUBANANDIDA THEVAR",
+        "email": "anandidat@gmail.com",
+        "phone": "992063008 0",
+        "location": null,
+        "skills": [
+          "machine learning",
+          "html",
+          "vite",
+          "sql",
+          "git",
+          "next.js",
+          "go",
+          "css",
+          "java",
+          "c++",
+          "python",
+          "excel",
+          "linux",
+          "php",
+          "mysql",
+          "r",
+          "spark",
+          "tailwind",
+          "Python",
+          "JAVA",
+          "C++",
+          "HTML"
+        ],
+        "work_experience": [],
+        "total_experience_years": 0.0,
+        "companies": [],
+        "projects": [
+          {
+            "name": "Percentage",
+            "description": "Guru Nanak Khalsa College Matunga 81.5 / 100 Emplo yee Management System",
+            "technologies": [
+              "r"
+            ],
+            "url": null
+          }
+        ],
+        "education": [
+          {
+            "institution": "Proficient",
+            "degree": "Bachelor of Computer Science",
+            "field_of_study": null,
+            "graduation_year": null,
+            "gpa": null
+          }
+        ],
+        "certifications": [
+          "Excel certifications, criterion, 07/2022"
+        ],
+        "languages": [],
+        "summary": null,
+        "parse_status": "success",
+        "parse_confidence": 0.8,
+        "warning_flags": [],
+        "raw_text": "SUBANANDIDA THEVAR\nSoftware Developer\nST\n992063008 0 sub anandidat@gmail.com Mum bai\nhttp://linkedin.com/in/subanandida-thevar-902240204\nSUMMARY LANGUAGES\nEnglish\nPursuing a Mast er's in Computer Science with expertise in\nProficient\nPython, JAVA, C++, HTML, and MySQL. Strong grasp of\nalgorithms and data structures, coupled with experience in\nHindi\nsoftware development. Skilled in tackling complex projects that Proficient\nenhance critical and creative thinking. Dedicated to ongoing\nlearning and embracing new technologies.\nMarathi\nProficient\nEDUCATION Tamil\nProficient\nBachelor of Computer Science\nSKILLS\nSGPA\nGuru Nanak Khalsa College Matunga\n8.68 / 10\nPHP SQL HTML Python C/C++\n2021 - 2025 Mumbai\nJava CSS Linux\nHigher Secondary Certificate PROJECTS\nPercentage\nGuru Nanak Khalsa College Matunga 81.5 / 100\nEmplo yee Management System\n201 9 - 2021 Mumba i Technologies : Java, MySql\nFace Recognition Attendance System\nSecondary School Certificate Percentage Software\n60.4 / 100\nCanossa Convent High School Technologies: Python, HTML Tkinter, MySql\n2019 Mumbai AI-powered Interview Mocker\nCERTIFICATIONS Technologies: Next.js, Clerk, Tailwindcss,\nGemini API, Drizzle\nACTIVITES\nExcel certifications, criterion, 07/2022\nInduction programs of financial literacy, cyber\nContributing and managing the\netiquette, communication skills, GNKC, 11/2022\nCSCORNERSunitarai website, with\nImperative programming in C Level, GNKC, 05/2023 over 50,000 subscribers on YouTube.\nFundamentals of full stack development, Excer,\n01/2024 Volunteered at E-Spark 24 Annual\nTech Fest in college, 2024.\nGraphics design and video editing, Udemy, 12/2024\nMedical coding, Excler, 01/2025\nMachine learning, Excler, 01/2025\nAce Coding Interviews: DSA Mastery with Java, 02/2025\nDigital marketing, Excler, 03/2025",
+        "is_duplicate": false,
+        "content_hash": "12dab9f6b379ce167205754aecb195980d9d6e9f62b0e24f6a129a6bb49cba41"
+      },
+      "score_breakdown": {
+        "role_experience": {
+          "raw_score": 81.34,
+          "weighted_score": 28.47,
+          "weight": 35.0,
+          "matched_items": [
+            "Job Title: Junior Software Developer",
+            "Full Stack Developer",
+            "Responsibilities:",
+            "and improve application performance",
+            "Create clean",
+            "Preferred Skills:",
+            "Python, Java, C++, SQL",
+            "HTML, CSS, JavaScript, React",
+            "Flask / Django / PHP",
+            "Problem-solving and teamwork",
+            "Python",
+            "Java",
+            "C++",
+            "SQL",
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "React",
+            "Flask/Django",
+            "Python",
+            "Java",
+            "C++",
+            "SQL",
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "React",
+            "Django",
+            "PHP",
+            "GitHub",
+            "Excel",
+            "Problem",
+            "solving and teamwork",
+            "Good to Have:",
+            "Experience in AI",
+            "ML projects",
+            "dashboards",
+            "travel planners",
+            "or management systems",
+            "Bachelor\u2019s degree in Computer Science",
+            "IT",
+            "Related Field.",
+            "Flask"
+          ],
+          "missing_items": [
+            "Debug",
+            "test",
+            "maintainable",
+            "and efficient code"
+          ],
+          "notes": "Experience: 0.0y, Required: 0.0y"
+        },
+        "relevant_projects": {
+          "raw_score": 14.7,
+          "weighted_score": 5.88,
+          "weight": 40.0,
+          "matched_items": [
+            "r"
+          ],
+          "missing_items": [],
+          "notes": "1 projects found"
+        },
+        "certifications": {
+          "raw_score": 70.0,
+          "weighted_score": 7.0,
+          "weight": 10.0,
+          "matched_items": [],
+          "missing_items": [],
+          "notes": "No certifications required by job"
+        },
+        "education": {
+          "raw_score": 100.0,
+          "weighted_score": 10.0,
+          "weight": 10.0,
+          "matched_items": [
+            "Bachelor\u2019s degree in Computer Science / IT / BCA / Related Field.",
+            "Bachelor's degree in Computer Science / IT / BCA / Related Field"
+          ],
+          "missing_items": [],
+          "notes": ""
+        },
+        "soft_signals": {
+          "raw_score": 33.33,
+          "weighted_score": 1.67,
+          "weight": 5.0,
+          "matched_items": [
+            "communication"
+          ],
+          "missing_items": [
+            "problem-solving",
+            "teamwork"
+          ],
+          "notes": ""
+        },
+        "semantic_similarity": 0.5843,
+        "penalty_deductions": 0.0,
+        "total_score": 55.94
+      },
+      "reasoning": {
+        "summary": "SUBANANDIDA THEVAR is a good fit for the Junior Software Developer / Full Stack Developer role with a score of 55.9/100 (43/47 required skills matched, 0.0y experience). Key strengths include matched 43 required skills: job title: junior software developer, full stack developer, responsibilities:, and improve application performance, create clean, preferred skills:. Primary gap: missing 4 required skills: debug, test, maintainable, and efficient code.",
+        "strengths": [
+          "Matched 43 required skills: Job Title: Junior Software Developer, Full Stack Developer, Responsibilities:, and improve application performance, Create clean, Preferred Skills:",
+          "1 project(s) demonstrated using r",
+          "Certified: Excel certifications, criterion, 07/2022",
+          "Education matches requirements: Bachelor of Computer Science \u2014 Proficient",
+          "Soft skills present: communication",
+          "Strongest area: Education (100/100)"
+        ],
+        "gaps": [
+          "Missing 4 required skills: Debug, test, maintainable, and efficient code",
+          "Weakest area: Projects (15/100)"
+        ],
+        "risks": [],
+        "confidence_level": 0.64,
+        "recommendation": "shortlist",
+        "recommendation_reason": "Score 55.9/100 \u2014 43/47 required skills matched, 0.0y exp, missing: Debug, test, maintainable"
+      },
+      "rank": 3,
+      "tiebreak_score": 2.1
+    },
+    {
+      "candidate": {
+        "candidate_id": "0b449d72-7f09-4f0d-973e-c746b2791f00",
+        "file_path": "uploads\\e464f4ca-4543-401b-b4bb-008d55159876\\MCA2560Cv.pdf",
+        "file_name": "MCA2560Cv.pdf",
+        "name": "CV Format",
+        "email": "wankhedekshitij43@gmail.com",
+        "phone": "9130329621",
+        "location": null,
+        "skills": [
+          "vercel",
+          "mongodb",
+          "html",
+          "sql",
+          "git",
+          "firebase",
+          "javascript",
+          "go",
+          "css",
+          "cad",
+          "java",
+          "python",
+          "react",
+          "mysql",
+          "r",
+          "rust",
+          "github",
+          "tailwind"
+        ],
+        "work_experience": [],
+        "total_experience_years": 0.0,
+        "companies": [],
+        "projects": [
+          {
+            "name": "Project Title: Floral Store \u2013 Ecommerce Site",
+            "description": "Technology: HTML, CSS, JavaScript, Firebase, React.js. Description: Development of ecommerce platform for selling a flower, bouquet and specialize gifts for your love ones\u2019, including filter options, add to cart and integrating razor pay API Project Title: Task Management: manages the task for students Technology: React.js, Tailwind CSS, HTML, JavaScript, Vercel, Firebase Description: Developed a task management system for students to analyze their productivity in a week they can prioritize the ",
+            "technologies": [
+              "vercel",
+              "html",
+              "firebase",
+              "javascript",
+              "css",
+              "java",
+              "react",
+              "r",
+              "tailwind"
+            ],
+            "url": null
+          }
+        ],
+        "education": [
+          {
+            "institution": "CGPA: 0.0/10",
+            "degree": "MCA: Mumbai Educational Trust (MET) -2027",
+            "field_of_study": null,
+            "graduation_year": 2027,
+            "gpa": 0.0
+          }
+        ],
+        "certifications": [],
+        "languages": [],
+        "summary": null,
+        "parse_status": "success",
+        "parse_confidence": 0.8,
+        "warning_flags": [],
+        "raw_text": "CV Format\nHeader\nName: Kshitij Prashant Wankhede\nContact No: 9130329621\nEmail: wankhedekshitij43@gmail.com\nLinkedIn: https://www.linkedin.com/in/kshitij-wankhede-68450b3b7/\nGitHub: https://github.com/kshitij60A\nLocation: (Mumbai, Maharashtra)\nCareer Objective:\nDedicated MCA graduate with solid foundation in Java, Python, HTML and DBMS. Aiming to begin a\ncareer as a Software Developer where I can utilize technical knowledge and contribute to developing\nefficient software solutions.\nEducation\nMCA: Mumbai Educational Trust (MET) -2027\nCGPA: 0.0/10\nBSc. Information Technology: VPM RZ Shah College- 2025\nCGPA: 8.2/10\nTechnical Skills:\nProgramming Languages: Java, Python\nWeb Technologies: HTML, CSS, JavaScript, React, Nodejs.\nDatabase: MySQL, MongoDB, Firebase\nTools: Git, VS Code\nOperating Systems: Windows\nAcademic / Major Projects\nProject Title: Floral Store \u2013 Ecommerce Site\nTechnology: HTML, CSS, JavaScript, Firebase, React.js.\nDescription: Development of ecommerce platform for selling a flower, bouquet and specialize gifts for\nyour love ones\u2019, including filter options, add to cart and integrating razor pay API\nProject Title: Task Management: manages the task for students\nTechnology: React.js, Tailwind CSS, HTML, JavaScript, Vercel, Firebase\nDescription: Developed a task management system for students to analyze their productivity in a week\nthey can prioritize the task and determine their efficiency in a week\nCertifications:\n\u25cf Digital Edge: nasscom (03/2026)\n\u25cf Gen Ai: (03/2026)\n\u25cf Marketing: Pepsico (05/2025)\nSoft Skills:\n\u25cf Problem Solving\n\u25cf Good Listener\n\u25cf Teamwork\n\u25cf Communication\n\u25cf Time Management\n\u25cf Multilingual",
+        "is_duplicate": false,
+        "content_hash": "19de871e100433330c5bafb2eae8db81865e851d1b8bca280cfff7f0f005fc4f"
+      },
+      "score_breakdown": {
+        "role_experience": {
+          "raw_score": 77.66,
+          "weighted_score": 27.18,
+          "weight": 35.0,
+          "matched_items": [
+            "Job Title: Junior Software Developer",
+            "Full Stack Developer",
+            "Responsibilities:",
+            "and improve application performance",
+            "Create clean",
+            "Preferred Skills:",
+            "Python, Java, C++, SQL",
+            "HTML, CSS, JavaScript, React",
+            "Flask / Django / PHP",
+            "Problem-solving and teamwork",
+            "Python",
+            "Java",
+            "SQL",
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "React",
+            "Flask/Django",
+            "Python",
+            "Java",
+            "SQL",
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "React",
+            "Django",
+            "GitHub",
+            "Problem",
+            "solving and teamwork",
+            "Good to Have:",
+            "Experience in AI",
+            "ML projects",
+            "dashboards",
+            "travel planners",
+            "or management systems",
+            "Bachelor\u2019s degree in Computer Science",
+            "IT",
+            "Related Field.",
+            "Flask"
+          ],
+          "missing_items": [
+            "Debug",
+            "test",
+            "maintainable",
+            "and efficient code",
+            "C++"
+          ],
+          "notes": "Experience: 0.0y, Required: 0.0y"
+        },
+        "relevant_projects": {
+          "raw_score": 22.88,
+          "weighted_score": 9.15,
+          "weight": 40.0,
+          "matched_items": [
+            "css",
+            "r",
+            "react",
+            "java",
+            "html",
+            "javascript",
+            "tailwind"
+          ],
+          "missing_items": [],
+          "notes": "1 projects found"
+        },
+        "certifications": {
+          "raw_score": 70.0,
+          "weighted_score": 7.0,
+          "weight": 10.0,
+          "matched_items": [],
+          "missing_items": [],
+          "notes": "No certifications required by job"
+        },
+        "education": {
+          "raw_score": 0.0,
+          "weighted_score": 0.0,
+          "weight": 10.0,
+          "matched_items": [],
+          "missing_items": [
+            "Bachelor\u2019s degree in Computer Science / IT / BCA / Related Field.",
+            "Bachelor's degree in Computer Science / IT / BCA / Related Field"
+          ],
+          "notes": ""
+        },
+        "soft_signals": {
+          "raw_score": 66.67,
+          "weighted_score": 3.33,
+          "weight": 5.0,
+          "matched_items": [
+            "communication",
+            "teamwork"
+          ],
+          "missing_items": [
+            "problem-solving"
+          ],
+          "notes": ""
+        },
+        "semantic_similarity": 0.6237,
+        "penalty_deductions": 0.0,
+        "total_score": 49.78
+      },
+      "reasoning": {
+        "summary": "CV Format is a partial fit for the Junior Software Developer / Full Stack Developer role with a score of 49.8/100 (39/44 required skills matched, 0.0y experience). Key strengths include matched 39 required skills: job title: junior software developer, full stack developer, responsibilities:, and improve application performance, create clean, preferred skills:. Primary gap: missing 5 required skills: debug, test, maintainable, and efficient code, c++.",
+        "strengths": [
+          "Matched 39 required skills: Job Title: Junior Software Developer, Full Stack Developer, Responsibilities:, and improve application performance, Create clean, Preferred Skills:",
+          "1 project(s) demonstrated using vercel, css, r, react, java",
+          "Soft skills present: communication, teamwork"
+        ],
+        "gaps": [
+          "Missing 5 required skills: Debug, test, maintainable, and efficient code, C++",
+          "Education may not fully meet requirements: MCA: Mumbai Educational Trust (MET) -2027 \u2014 CGPA: 0.0/10 (2027)",
+          "Weakest area: Education (0/100)"
+        ],
+        "risks": [],
+        "confidence_level": 0.6,
+        "recommendation": "hold",
+        "recommendation_reason": "Score 49.8/100 \u2014 39/44 required skills matched, 0.0y exp, missing: Debug, test, maintainable"
+      },
+      "rank": 4,
+      "tiebreak_score": 1.8
+    },
+    {
+      "candidate": {
+        "candidate_id": "d2eeb95c-c030-481a-8dd1-91fb0ed80925",
+        "file_path": "uploads\\e464f4ca-4543-401b-b4bb-008d55159876\\Omkar_final CV.pdf",
+        "file_name": "Omkar_final CV.pdf",
+        "name": "OMKAR HALPATRAO",
+        "email": "omkarhalptrao2004@gmail.com",
+        "phone": "7972274886",
+        "location": null,
+        "skills": [
+          "scala",
+          "sql",
+          "django",
+          "computer vision",
+          "go",
+          "visio",
+          "python",
+          "mpi",
+          "flask",
+          "mysql",
+          "r",
+          "writing",
+          "optimized queries",
+          "and ensuring data consistency",
+          "enabling smooth communication",
+          "tracing",
+          "modular architecture (MVC)",
+          "and adheres to"
+        ],
+        "work_experience": [],
+        "total_experience_years": 0.0,
+        "companies": [],
+        "projects": [
+          {
+            "name": "Carnival Event Management System",
+            "description": "A web application for managing carnival events with: User registration and login functionality. \u26ab Volunteer management portal. \u26ab Admin dashboard for event oversight. \u26ab Date validation and image verification features. \u26ab Separate interfaces for users, volunteers, and administrators. \u26ab Fitness Exercise Tracker Web Application web application that tracks and analyzes workout exercises Developed a Flask-based web application that tracks and analyzes workout exercises in real- \u26ab time using computer vi",
+            "technologies": [
+              "computer vision",
+              "visio",
+              "mpi",
+              "flask",
+              "r"
+            ],
+            "url": null
+          }
+        ],
+        "education": [
+          {
+            "institution": "Graduation Class XII Class X",
+            "degree": "Course: B.Voc.Cyber Security and forensic Board: Maharashtra State Board Board: Maharashtra State Bo",
+            "field_of_study": null,
+            "graduation_year": 2022,
+            "gpa": 60.0
+          }
+        ],
+        "certifications": [],
+        "languages": [],
+        "summary": null,
+        "parse_status": "success",
+        "parse_confidence": 0.8,
+        "warning_flags": [],
+        "raw_text": "OMKAR HALPATRAO\nAspiring Full-Stack Developer | Focused on Code Quality & User Experience\nEmail : omkarhalptrao2004@gmail.com Contact: 7972274886\nLinkedin :-https://www.linkedin.com/in/omkar-halpatrao-55968b26b\nA dedicated and detail-driven Computer Science graduate from B.K. Birla College, Kalyan (CGPA 7+), with a\npassion for backend development and building robust, scalable systems. Experienced in Python, MySQL,\nand core backend logic, I enjoy optimizing performance, managing databases, and developing clean APIs\nthat power efficient applications. Problem-solving mindset, I\u2019m eager to contribute to backend-focused\nroles and solve real-world challenges with clean, maintainable code.\nEDUCATION HISTORY\nGraduation Class XII Class X\nCourse: B.Voc.Cyber Security and forensic Board: Maharashtra State Board Board: Maharashtra State Board\nCollege: B.K.Birla College Kalyan - Mumbai Medium: English Medium: English\nUniversity Year of Passing: 2022 Year of Passing: 2020\nYear of Passing: 2025 Grade: 60% Grade: 73%\nAvg. Grade:- 7+/10\nPROFESSIONAL Skills\nBackend Programming: Proficient in server-side languages such as Python with the ability to design and\nimplement scalable backend logic and system workflows.\nDatabase Management: Skilled in using relational (MySQL) databases for designing schemas, writing\noptimized queries, and ensuring data consistency.\nAPI Development: Experienced in creating and managing RESTful APIs, enabling smooth communication\nbetween frontend interfaces and backend services.\nError Handling & Debugging: Capable of identifying, tracing, and resolving bugs efficiently using backend\nlogs and structured debugging techniques.\nCode Quality & Maintenance: Follows clean code principles, modular architecture (MVC), and adheres to\ndocumentation standards for long-term maintainability.\nLanguages Known Backend developer Skills\nPython\n\u26ab\nEnglish \u26ab\nMySQL\nHindi \u26ab\n\u26ab\nFlask / Django\nMarathi \u26ab\n\u26ab\n\u00b7 \u00b7 \u00b7\n\u26ab\n\u26ab\nPROJECTS\nCarnival Event Management System\nA web application for managing carnival events with:\nUser registration and login functionality.\n\u26ab\nVolunteer management portal.\n\u26ab\nAdmin dashboard for event oversight.\n\u26ab\nDate validation and image verification features.\n\u26ab\nSeparate interfaces for users, volunteers, and administrators.\n\u26ab\nFitness Exercise Tracker Web Application\nweb application that tracks and analyzes workout exercises\nDeveloped a Flask-based web application that tracks and analyzes workout exercises in real-\n\u26ab\ntime using computer vision.\nImplemented exercise-specific endpoints (bicep curls, squats,jumping jacks, lunges) with live\n\u26ab\nvideo feed processing.\nDesigned a responsive frontend interface to display exercisetracking results.\n\u26ab",
+        "is_duplicate": false,
+        "content_hash": "264d01bc179f3a80693bd36685b94cb9d270a7c2c015844199a0998ce30be525"
+      },
+      "score_breakdown": {
+        "role_experience": {
+          "raw_score": 69.94,
+          "weighted_score": 24.48,
+          "weight": 35.0,
+          "matched_items": [
+            "Job Title: Junior Software Developer",
+            "Full Stack Developer",
+            "Responsibilities:",
+            "and improve application performance",
+            "Create clean",
+            "Preferred Skills:",
+            "Python, Java, C++, SQL",
+            "HTML, CSS, JavaScript, React",
+            "Flask / Django / PHP",
+            "Problem-solving and teamwork",
+            "Python",
+            "SQL",
+            "JavaScript",
+            "React",
+            "Flask/Django",
+            "Python",
+            "SQL",
+            "JavaScript",
+            "React",
+            "Flask",
+            "Django",
+            "Problem",
+            "solving and teamwork",
+            "Good to Have:",
+            "Experience in AI",
+            "ML projects",
+            "dashboards",
+            "travel planners",
+            "or management systems",
+            "Bachelor\u2019s degree in Computer Science",
+            "IT",
+            "Related Field."
+          ],
+          "missing_items": [
+            "Debug",
+            "test",
+            "maintainable",
+            "and efficient code",
+            "Java",
+            "C++",
+            "HTML",
+            "CSS"
+          ],
+          "notes": "Experience: 0.0y, Required: 0.0y"
+        },
+        "relevant_projects": {
+          "raw_score": 16.06,
+          "weighted_score": 6.42,
+          "weight": 40.0,
+          "matched_items": [
+            "flask",
+            "r"
+          ],
+          "missing_items": [],
+          "notes": "1 projects found"
+        },
+        "certifications": {
+          "raw_score": 70.0,
+          "weighted_score": 7.0,
+          "weight": 10.0,
+          "matched_items": [],
+          "missing_items": [],
+          "notes": "No certifications required by job"
+        },
+        "education": {
+          "raw_score": 0.0,
+          "weighted_score": 0.0,
+          "weight": 10.0,
+          "matched_items": [],
+          "missing_items": [
+            "Bachelor\u2019s degree in Computer Science / IT / BCA / Related Field.",
+            "Bachelor's degree in Computer Science / IT / BCA / Related Field"
+          ],
+          "notes": ""
+        },
+        "soft_signals": {
+          "raw_score": 66.67,
+          "weighted_score": 3.33,
+          "weight": 5.0,
+          "matched_items": [
+            "communication",
+            "problem-solving"
+          ],
+          "missing_items": [
+            "teamwork"
+          ],
+          "notes": ""
+        },
+        "semantic_similarity": 0.6987,
+        "penalty_deductions": 0.0,
+        "total_score": 44.72
+      },
+      "reasoning": {
+        "summary": "OMKAR HALPATRAO is a partial fit for the Junior Software Developer / Full Stack Developer role with a score of 44.7/100 (32/40 required skills matched, 0.0y experience). Key strengths include matched 32 required skills: job title: junior software developer, full stack developer, responsibilities:, and improve application performance, create clean, preferred skills:. Primary gap: missing 8 required skills: debug, test, maintainable, and efficient code, java, c++.",
+        "strengths": [
+          "Matched 32 required skills: Job Title: Junior Software Developer, Full Stack Developer, Responsibilities:, and improve application performance, Create clean, Preferred Skills:",
+          "1 project(s) demonstrated using computer vision, r, visio, mpi, flask",
+          "Soft skills present: communication, problem-solving"
+        ],
+        "gaps": [
+          "Missing 8 required skills: Debug, test, maintainable, and efficient code, Java, C++",
+          "Education may not fully meet requirements: Course: B.Voc.Cyber Security and forensic Board: Maharashtra State Board Board: Maharashtra State Bo \u2014 Graduation Class XII Class X (2022)",
+          "Weakest area: Education (0/100)"
+        ],
+        "risks": [],
+        "confidence_level": 0.57,
+        "recommendation": "hold",
+        "recommendation_reason": "Score 44.7/100 \u2014 32/40 required skills matched, 0.0y exp, missing: Debug, test, maintainable"
+      },
+      "rank": 5,
+      "tiebreak_score": 1.8
+    },
+    {
+      "candidate": {
+        "candidate_id": "2e40122b-fbbd-49e0-ab04-2ad215984c79",
+        "file_path": "uploads\\e464f4ca-4543-401b-b4bb-008d55159876\\DOC-20250407-WA0002..pdf",
+        "file_name": "DOC-20250407-WA0002..pdf",
+        "name": null,
+        "email": null,
+        "phone": null,
+        "location": null,
+        "skills": [],
+        "work_experience": [],
+        "total_experience_years": 0.0,
+        "companies": [],
+        "projects": [],
+        "education": [],
+        "certifications": [],
+        "languages": [],
+        "summary": null,
+        "parse_status": "failed",
+        "parse_confidence": 0.0,
+        "warning_flags": [
+          "Failed to extract text from file"
+        ],
+        "raw_text": "",
+        "is_duplicate": false,
+        "content_hash": null
+      },
+      "score_breakdown": {
+        "role_experience": {
+          "raw_score": 20.0,
+          "weighted_score": 7.0,
+          "weight": 35.0,
+          "matched_items": [],
+          "missing_items": [
+            "Job Title: Junior Software Developer",
+            "Full Stack Developer",
+            "Responsibilities:",
+            "Debug",
+            "test",
+            "and improve application performance",
+            "Create clean",
+            "maintainable",
+            "and efficient code",
+            "Preferred Skills:",
+            "Python, Java, C++, SQL",
+            "HTML, CSS, JavaScript, React",
+            "Flask / Django / PHP",
+            "Problem-solving and teamwork",
+            "Python",
+            "Java",
+            "C++",
+            "SQL",
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "React",
+            "Flask/Django"
+          ],
+          "notes": "Experience: 0.0y, Required: 0.0y"
+        },
+        "relevant_projects": {
+          "raw_score": 15.0,
+          "weighted_score": 6.0,
+          "weight": 40.0,
+          "matched_items": [],
+          "missing_items": [],
+          "notes": "No explicit projects; fallback based on experience/skills"
+        },
+        "certifications": {
+          "raw_score": 70.0,
+          "weighted_score": 7.0,
+          "weight": 10.0,
+          "matched_items": [],
+          "missing_items": [],
+          "notes": "No certifications required by job"
+        },
+        "education": {
+          "raw_score": 0.0,
+          "weighted_score": 0.0,
+          "weight": 10.0,
+          "matched_items": [],
+          "missing_items": [
+            "Bachelor\u2019s degree in Computer Science / IT / BCA / Related Field.",
+            "Bachelor's degree in Computer Science / IT / BCA / Related Field"
+          ],
+          "notes": ""
+        },
+        "soft_signals": {
+          "raw_score": 0.0,
+          "weighted_score": 0.0,
+          "weight": 5.0,
+          "matched_items": [],
+          "missing_items": [
+            "communication",
+            "problem-solving",
+            "teamwork"
+          ],
+          "notes": ""
+        },
+        "semantic_similarity": 0.0851,
+        "penalty_deductions": 1.0,
+        "total_score": 19.43
+      },
+      "reasoning": {
+        "summary": "Candidate is a weak fit for the Junior Software Developer / Full Stack Developer role with a score of 19.4/100 (0/23 required skills matched, 0.0y experience).  Primary gap: missing 23 required skills: job title: junior software developer, full stack developer, responsibilities:, debug, test, and improve application performance.",
+        "strengths": [],
+        "gaps": [
+          "Missing 23 required skills: Job Title: Junior Software Developer, Full Stack Developer, Responsibilities:, Debug, test, and improve application performance",
+          "No projects found; hands-on work cannot be verified",
+          "No education details found; job requires: Bachelor\u2019s degree in Computer Science / IT / BCA / Related Field.",
+          "Weakest area: Education (0/100)"
+        ],
+        "risks": [
+          "Failed to extract text from file",
+          "Score reduced by 1.0 pts due to: Failed to extract text from file",
+          "Low resume parse confidence (0%) \u2014 some data may be missing"
+        ],
+        "confidence_level": 0.13,
+        "recommendation": "reject",
+        "recommendation_reason": "Score 19.4/100 \u2014 0/23 required skills matched, 0.0y exp, missing: Job Title: Junior Software Developer, Full Stack Developer, Responsibilities:"
+      },
+      "rank": 6,
+      "tiebreak_score": 0.0
+    }
+  ]
+}

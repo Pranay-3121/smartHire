@@ -1,0 +1,486 @@
+{
+  "run_id": "57b599a8-8830-4eca-8e83-b27d3074cf24",
+  "job_title": "Junior Python Developer to build backend applications, APIs, and database-driven systems. Freshers w",
+  "total_candidates": 3,
+  "candidates": [
+    {
+      "candidate": {
+        "candidate_id": "c14deb65-fd02-47de-aa47-f858c722f168",
+        "file_path": "uploads\\57b599a8-8830-4eca-8e83-b27d3074cf24\\Niranjan patil resume new.pdf",
+        "file_name": "Niranjan patil resume new.pdf",
+        "name": "Niranjan Patil",
+        "email": "niranjanpatil1516@gmail.com",
+        "phone": "+91-7709561516",
+        "location": null,
+        "skills": [
+          "html",
+          "css",
+          "c++",
+          "java",
+          "python",
+          "git",
+          "go",
+          "c#",
+          "javascript",
+          "tailwind",
+          "sql",
+          "react",
+          "technical: java",
+          "css.",
+          "tools: vs code",
+          "sql plus",
+          "tableau",
+          "excel",
+          "jupyter",
+          "wordpress",
+          "google api\u2019s",
+          "github",
+          "shadcn ui"
+        ],
+        "work_experience": [
+          {
+            "company": "\u2022 Completed a simulation involving creating data visualizations for Tata Consultancy Services",
+            "title": "Tata Data Visualisation: Empowering Business with Effective Insights Job Simulation on Forage May\u2019 2",
+            "start_date": null,
+            "end_date": null,
+            "duration_months": 0,
+            "description": "\u2022 Created visuals for data analysis to help executives with effective decision making. Deloitte - Virtual Internship program April\u2019 25 \u2022 Fundamentals of data analytics, handling dataset, importing files, using queries \u2022 Understanding data visualization using tableau, writing queries in excel",
+            "is_current": false
+          }
+        ],
+        "total_experience_years": 0.0,
+        "companies": [
+          "\u2022 Completed a simulation involving creating data visualizations for Tata Consultancy Services"
+        ],
+        "projects": [
+          {
+            "name": "Ai-travel-planner 11/24 \u2013 02/25",
+            "description": "\u2022 Ai \u2013 driven trip planner which suggest places to visit and hotel recommendation according budget using real data \u2022 We used javascript and little bit react.js for functions and html , tailwind css for designing purpose, and shadcn ui \u2022 Made easy to make plans on trip, and gives iternary for no of days, helpful for travel lovers to plan trips. Supreme Roadways 08/24 \u2013 09/24 \u2022 Created Supreme Roadways, a dynamic transportation website for businesses and individuals, featuring an admin panel with ",
+            "technologies": [
+              "html",
+              "css",
+              "java",
+              "javascript",
+              "tailwind",
+              "sql",
+              "react"
+            ],
+            "url": null
+          }
+        ],
+        "education": [
+          {
+            "institution": "Bachelor of Computer Applications 2022 \u2013 2025",
+            "degree": "Vivekanand College Kolhapur, India",
+            "field_of_study": null,
+            "graduation_year": 2022,
+            "gpa": null
+          }
+        ],
+        "certifications": [
+          "\u2022 SQL Bootcamp certificate \u2013 aug\u201923 (link)"
+        ],
+        "languages": [],
+        "summary": null,
+        "parse_status": "success",
+        "parse_confidence": 1.0,
+        "warning_flags": [],
+        "raw_text": "Niranjan Patil\n+91-7709561516 | niranjanpatil1516@gmail.com | github | linkedIn\nI am Niranjan Patil, A Bachelor of Computer Application student from Vivekanand College, Kolhapur. I am passionate about\ntechnology and eager to learn new things. I have strong foundational skills in C++ , java and SQL. I am calm, composed, and\nalways ready to contribute towards improving productivity in an organization.\nEDUCATION\nVivekanand College Kolhapur, India\nBachelor of Computer Applications 2022 \u2013 2025\n\u2022 CGPA \u2013 9.29\n\u2022 Among the top 5% of the department of BCA\n\u2022 Relevant coursework in [C++, Python, java , etc.]\nSKILLS\nTechnical: Java , C++, SQL, Python, HTML, CSS.\nTools: Vs Code, SQL Plus, Tableau, Excel, Jupyter, WordPress, google Api\u2019s, GitHub, shadcn UI,\nCERTIFICATIONS\n\u2022 Tata Data Visualisation job simulation \u2013 May\u201925 (link)\n\u2022 Data Analytics job simulation from Deloitte - April\u201925 (link)\n\u2022 Wordcamp Kolhapur \u2013 jan\u201925 (link)\n\u2022 C# foundational course \u2013 sep\u201924 (link)\n\u2022 SQL Bootcamp certificate \u2013 aug\u201923 (link)\nEXPERIENCE\nTata Data Visualisation: Empowering Business with Effective Insights Job Simulation on Forage May\u2019 25\n\u2022 Completed a simulation involving creating data visualizations for Tata Consultancy Services\n\u2022 Created visuals for data analysis to help executives with effective decision making.\nDeloitte - Virtual Internship program April\u2019 25\n\u2022 Fundamentals of data analytics, handling dataset, importing files, using queries\n\u2022 Understanding data visualization using tableau, writing queries in excel\nPROJECTS\nAi-travel-planner 11/24 \u2013 02/25\n\u2022 Ai \u2013 driven trip planner which suggest places to visit and hotel recommendation according budget using real data\n\u2022 We used javascript and little bit react.js for functions and html , tailwind css for designing purpose, and shadcn ui\n\u2022 Made easy to make plans on trip, and gives iternary for no of days, helpful for travel lovers to plan trips.\nSupreme Roadways 08/24 \u2013 09/24\n\u2022 Created Supreme Roadways, a dynamic transportation website for businesses and individuals, featuring an admin\npanel with interactive forms.\n\u2022 Technologies : HTML, CSS, js for frontend, and SQL,php for backend functionality.\nACHIEVEMENTS\n\u2022 Winner of national level debugging competition at Bharati Vidyapeeth Kolhapur, participated in different competitions\n\u2022 Wordcamp Kolhapur \u2013 A national level event where we won multiple competition and exciting prizes\n\u2022 In top 3 students, among all semester exams",
+        "is_duplicate": false,
+        "content_hash": "c22f96b6f8909f8860b34e19300278b3198b0b231933f475bd7cc613aa7735c6"
+      },
+      "score_breakdown": {
+        "role_experience": {
+          "raw_score": 51.85,
+          "weighted_score": 18.15,
+          "weight": 35.0,
+          "matched_items": [
+            "* Python",
+            "* SQL",
+            "MySQL",
+            "* HTML",
+            "CSS",
+            "JavaScript",
+            "* Git",
+            "GitHub",
+            "Django",
+            "* React.js",
+            "* Tailwind CSS"
+          ],
+          "missing_items": [
+            "* Basic DSA",
+            "* OOP concepts"
+          ],
+          "notes": "Experience: 0.0y, Required: 0.0y"
+        },
+        "relevant_projects": {
+          "raw_score": 16.86,
+          "weighted_score": 6.75,
+          "weight": 40.0,
+          "matched_items": [
+            "javascript",
+            "css"
+          ],
+          "missing_items": [],
+          "notes": "1 projects found"
+        },
+        "certifications": {
+          "raw_score": 50.0,
+          "weighted_score": 5.0,
+          "weight": 10.0,
+          "matched_items": [],
+          "missing_items": [],
+          "notes": ""
+        },
+        "education": {
+          "raw_score": 0.0,
+          "weighted_score": 0.0,
+          "weight": 10.0,
+          "matched_items": [],
+          "missing_items": [
+            "Mumbai / Remote",
+            "BCA / BSc CS / BTech / Related Degree"
+          ],
+          "notes": ""
+        },
+        "soft_signals": {
+          "raw_score": 0.0,
+          "weighted_score": 0.0,
+          "weight": 5.0,
+          "matched_items": [],
+          "missing_items": [
+            "communication",
+            "teamwork",
+            "problem solving"
+          ],
+          "notes": ""
+        },
+        "semantic_similarity": 0.0,
+        "penalty_deductions": 0.0,
+        "total_score": 29.9
+      },
+      "reasoning": {
+        "summary": "Niranjan Patil scored 29.9/100 for the Junior Python Developer to build backend applications, APIs, and database-driven systems. Freshers w role. Significant gaps identified.",
+        "strengths": [
+          "Matches key skills: * Python, * SQL, MySQL, * HTML",
+          "0.0y experience meets the 0.0y requirement",
+          "Holds certifications: \u2022 SQL Bootcamp certificate \u2013 aug\u201923 (link)",
+          "1 relevant projects demonstrated"
+        ],
+        "gaps": [
+          "Missing skills: * Basic DSA, * OOP concepts"
+        ],
+        "risks": [],
+        "confidence_level": 0.58,
+        "recommendation": "reject",
+        "recommendation_reason": "Score 29.9/100 \u2014 reject"
+      },
+      "rank": 1,
+      "tiebreak_score": 2.5
+    },
+    {
+      "candidate": {
+        "candidate_id": "fbb34a81-cadf-42a1-83e6-e1e421e49cda",
+        "file_path": "uploads\\57b599a8-8830-4eca-8e83-b27d3074cf24\\Nandita Resume.pdf.pdf",
+        "file_name": "Nandita Resume.pdf.pdf",
+        "name": "SUBANANDIDA THEVAR",
+        "email": "anandidat@gmail.com",
+        "phone": "992063008 0",
+        "location": null,
+        "skills": [
+          "html",
+          "css",
+          "c++",
+          "machine learning",
+          "java",
+          "python",
+          "git",
+          "go",
+          "linux",
+          "mysql",
+          "spark",
+          "tailwind",
+          "sql",
+          "proficient",
+          "and mysql. strong grasp of"
+        ],
+        "work_experience": [
+          {
+            "company": "software development. Skilled in tackling complex projects that Proficient",
+            "title": "Hindi",
+            "start_date": null,
+            "end_date": null,
+            "duration_months": 0,
+            "description": "enhance critical and creative thinking. Dedicated to ongoing",
+            "is_current": false
+          }
+        ],
+        "total_experience_years": 0.0,
+        "companies": [
+          "software development. Skilled in tackling complex projects that Proficient"
+        ],
+        "projects": [
+          {
+            "name": "Percentage",
+            "description": "Guru Nanak Khalsa College Matunga 81.5 / 100 Emplo yee Management System",
+            "technologies": [],
+            "url": null
+          }
+        ],
+        "education": [
+          {
+            "institution": "Bachelor of Computer Science",
+            "degree": "Proficient",
+            "field_of_study": null,
+            "graduation_year": null,
+            "gpa": null
+          }
+        ],
+        "certifications": [
+          "Excel certifications, criterion, 07/2022"
+        ],
+        "languages": [],
+        "summary": null,
+        "parse_status": "success",
+        "parse_confidence": 1.0,
+        "warning_flags": [],
+        "raw_text": "SUBANANDIDA THEVAR\nSoftware Developer\nST\n992063008 0 sub anandidat@gmail.com Mum bai\nhttp://linkedin.com/in/subanandida-thevar-902240204\nSUMMARY LANGUAGES\nEnglish\nPursuing a Mast er's in Computer Science with expertise in\nProficient\nPython, JAVA, C++, HTML, and MySQL. Strong grasp of\nalgorithms and data structures, coupled with experience in\nHindi\nsoftware development. Skilled in tackling complex projects that Proficient\nenhance critical and creative thinking. Dedicated to ongoing\nlearning and embracing new technologies.\nMarathi\nProficient\nEDUCATION Tamil\nProficient\nBachelor of Computer Science\nSKILLS\nSGPA\nGuru Nanak Khalsa College Matunga\n8.68 / 10\nPHP SQL HTML Python C/C++\n2021 - 2025 Mumbai\nJava CSS Linux\nHigher Secondary Certificate PROJECTS\nPercentage\nGuru Nanak Khalsa College Matunga 81.5 / 100\nEmplo yee Management System\n201 9 - 2021 Mumba i Technologies : Java, MySql\nFace Recognition Attendance System\nSecondary School Certificate Percentage Software\n60.4 / 100\nCanossa Convent High School Technologies: Python, HTML Tkinter, MySql\n2019 Mumbai AI-powered Interview Mocker\nCERTIFICATIONS Technologies: Next.js, Clerk, Tailwindcss,\nGemini API, Drizzle\nACTIVITES\nExcel certifications, criterion, 07/2022\nInduction programs of financial literacy, cyber\nContributing and managing the\netiquette, communication skills, GNKC, 11/2022\nCSCORNERSunitarai website, with\nImperative programming in C Level, GNKC, 05/2023 over 50,000 subscribers on YouTube.\nFundamentals of full stack development, Excer,\n01/2024 Volunteered at E-Spark 24 Annual\nTech Fest in college, 2024.\nGraphics design and video editing, Udemy, 12/2024\nMedical coding, Excler, 01/2025\nMachine learning, Excler, 01/2025\nAce Coding Interviews: DSA Mastery with Java, 02/2025\nDigital marketing, Excler, 03/2025",
+        "is_duplicate": false,
+        "content_hash": "12dab9f6b379ce167205754aecb195980d9d6e9f62b0e24f6a129a6bb49cba41"
+      },
+      "score_breakdown": {
+        "role_experience": {
+          "raw_score": 51.1,
+          "weighted_score": 17.89,
+          "weight": 35.0,
+          "matched_items": [
+            "* Python",
+            "* SQL",
+            "MySQL",
+            "* HTML",
+            "CSS",
+            "JavaScript",
+            "* Git",
+            "GitHub",
+            "Django",
+            "* Tailwind CSS"
+          ],
+          "missing_items": [
+            "* Basic DSA",
+            "* OOP concepts"
+          ],
+          "notes": "Experience: 0.0y, Required: 0.0y"
+        },
+        "relevant_projects": {
+          "raw_score": 13.33,
+          "weighted_score": 5.33,
+          "weight": 40.0,
+          "matched_items": [],
+          "missing_items": [],
+          "notes": "1 projects found"
+        },
+        "certifications": {
+          "raw_score": 50.0,
+          "weighted_score": 5.0,
+          "weight": 10.0,
+          "matched_items": [],
+          "missing_items": [],
+          "notes": ""
+        },
+        "education": {
+          "raw_score": 0.0,
+          "weighted_score": 0.0,
+          "weight": 10.0,
+          "matched_items": [],
+          "missing_items": [
+            "Mumbai / Remote",
+            "BCA / BSc CS / BTech / Related Degree"
+          ],
+          "notes": ""
+        },
+        "soft_signals": {
+          "raw_score": 33.33,
+          "weighted_score": 1.67,
+          "weight": 5.0,
+          "matched_items": [
+            "communication"
+          ],
+          "missing_items": [
+            "teamwork",
+            "problem solving"
+          ],
+          "notes": ""
+        },
+        "semantic_similarity": 0.0,
+        "penalty_deductions": 0.0,
+        "total_score": 29.89
+      },
+      "reasoning": {
+        "summary": "SUBANANDIDA THEVAR scored 29.9/100 for the Junior Python Developer to build backend applications, APIs, and database-driven systems. Freshers w role. Significant gaps identified.",
+        "strengths": [
+          "Matches key skills: * Python, * SQL, MySQL, * HTML",
+          "0.0y experience meets the 0.0y requirement",
+          "Holds certifications: Excel certifications, criterion, 07/2022",
+          "1 relevant projects demonstrated"
+        ],
+        "gaps": [
+          "Missing skills: * Basic DSA, * OOP concepts"
+        ],
+        "risks": [],
+        "confidence_level": 0.58,
+        "recommendation": "reject",
+        "recommendation_reason": "Score 29.9/100 \u2014 reject"
+      },
+      "rank": 2,
+      "tiebreak_score": 2.5
+    },
+    {
+      "candidate": {
+        "candidate_id": "0fdd2761-706e-4d68-bd3b-7a16560bcfe2",
+        "file_path": "uploads\\57b599a8-8830-4eca-8e83-b27d3074cf24\\Omkar_final CV.pdf",
+        "file_name": "Omkar_final CV.pdf",
+        "name": "OMKAR HALPATRAO",
+        "email": "omkarhalptrao2004@gmail.com",
+        "phone": "7972274886",
+        "location": null,
+        "skills": [
+          "python",
+          "go",
+          "flask",
+          "mysql",
+          "django",
+          "computer vision",
+          "sql",
+          "writing",
+          "optimized queries",
+          "and ensuring data consistency.",
+          "enabling smooth communication",
+          "tracing",
+          "modular architecture (mvc)",
+          "and adheres to",
+          "languages known backend developer skills",
+          "english \u26ab",
+          "hindi \u26ab",
+          "flask / django",
+          "marathi \u26ab"
+        ],
+        "work_experience": [],
+        "total_experience_years": 0.0,
+        "companies": [],
+        "projects": [
+          {
+            "name": "Carnival Event Management System",
+            "description": "A web application for managing carnival events with: User registration and login functionality. \u26ab Volunteer management portal. \u26ab Admin dashboard for event oversight. \u26ab Date validation and image verification features. \u26ab Separate interfaces for users, volunteers, and administrators. \u26ab Fitness Exercise Tracker Web Application web application that tracks and analyzes workout exercises Developed a Flask-based web application that tracks and analyzes workout exercises in real- \u26ab time using computer vi",
+            "technologies": [
+              "flask",
+              "computer vision"
+            ],
+            "url": null
+          }
+        ],
+        "education": [
+          {
+            "institution": "Course: B.Voc.Cyber Security and forensic Board: Maharashtra State Board Board: Maharashtra State Board",
+            "degree": "Graduation Class XII Class X",
+            "field_of_study": null,
+            "graduation_year": 2022,
+            "gpa": 60.0
+          }
+        ],
+        "certifications": [],
+        "languages": [],
+        "summary": null,
+        "parse_status": "success",
+        "parse_confidence": 0.8,
+        "warning_flags": [],
+        "raw_text": "OMKAR HALPATRAO\nAspiring Full-Stack Developer | Focused on Code Quality & User Experience\nEmail : omkarhalptrao2004@gmail.com Contact: 7972274886\nLinkedin :-https://www.linkedin.com/in/omkar-halpatrao-55968b26b\nA dedicated and detail-driven Computer Science graduate from B.K. Birla College, Kalyan (CGPA 7+), with a\npassion for backend development and building robust, scalable systems. Experienced in Python, MySQL,\nand core backend logic, I enjoy optimizing performance, managing databases, and developing clean APIs\nthat power efficient applications. Problem-solving mindset, I\u2019m eager to contribute to backend-focused\nroles and solve real-world challenges with clean, maintainable code.\nEDUCATION HISTORY\nGraduation Class XII Class X\nCourse: B.Voc.Cyber Security and forensic Board: Maharashtra State Board Board: Maharashtra State Board\nCollege: B.K.Birla College Kalyan - Mumbai Medium: English Medium: English\nUniversity Year of Passing: 2022 Year of Passing: 2020\nYear of Passing: 2025 Grade: 60% Grade: 73%\nAvg. Grade:- 7+/10\nPROFESSIONAL Skills\nBackend Programming: Proficient in server-side languages such as Python with the ability to design and\nimplement scalable backend logic and system workflows.\nDatabase Management: Skilled in using relational (MySQL) databases for designing schemas, writing\noptimized queries, and ensuring data consistency.\nAPI Development: Experienced in creating and managing RESTful APIs, enabling smooth communication\nbetween frontend interfaces and backend services.\nError Handling & Debugging: Capable of identifying, tracing, and resolving bugs efficiently using backend\nlogs and structured debugging techniques.\nCode Quality & Maintenance: Follows clean code principles, modular architecture (MVC), and adheres to\ndocumentation standards for long-term maintainability.\nLanguages Known Backend developer Skills\nPython\n\u26ab\nEnglish \u26ab\nMySQL\nHindi \u26ab\n\u26ab\nFlask / Django\nMarathi \u26ab\n\u26ab\n\u00b7 \u00b7 \u00b7\n\u26ab\n\u26ab\nPROJECTS\nCarnival Event Management System\nA web application for managing carnival events with:\nUser registration and login functionality.\n\u26ab\nVolunteer management portal.\n\u26ab\nAdmin dashboard for event oversight.\n\u26ab\nDate validation and image verification features.\n\u26ab\nSeparate interfaces for users, volunteers, and administrators.\n\u26ab\nFitness Exercise Tracker Web Application\nweb application that tracks and analyzes workout exercises\nDeveloped a Flask-based web application that tracks and analyzes workout exercises in real-\n\u26ab\ntime using computer vision.\nImplemented exercise-specific endpoints (bicep curls, squats,jumping jacks, lunges) with live\n\u26ab\nvideo feed processing.\nDesigned a responsive frontend interface to display exercisetracking results.\n\u26ab",
+        "is_duplicate": false,
+        "content_hash": "264d01bc179f3a80693bd36685b94cb9d270a7c2c015844199a0998ce30be525"
+      },
+      "score_breakdown": {
+        "role_experience": {
+          "raw_score": 30.1,
+          "weighted_score": 10.54,
+          "weight": 35.0,
+          "matched_items": [
+            "* Python",
+            "* SQL",
+            "MySQL",
+            "* Flask",
+            "Django"
+          ],
+          "missing_items": [
+            "* HTML",
+            "CSS",
+            "JavaScript",
+            "* Basic DSA",
+            "* OOP concepts",
+            "* Git",
+            "GitHub"
+          ],
+          "notes": "Experience: 0.0y, Required: 0.0y"
+        },
+        "relevant_projects": {
+          "raw_score": 13.33,
+          "weighted_score": 5.33,
+          "weight": 40.0,
+          "matched_items": [],
+          "missing_items": [],
+          "notes": "1 projects found"
+        },
+        "certifications": {
+          "raw_score": 20.0,
+          "weighted_score": 2.0,
+          "weight": 10.0,
+          "matched_items": [],
+          "missing_items": [],
+          "notes": ""
+        },
+        "education": {
+          "raw_score": 0.0,
+          "weighted_score": 0.0,
+          "weight": 10.0,
+          "matched_items": [],
+          "missing_items": [
+            "Mumbai / Remote",
+            "BCA / BSc CS / BTech / Related Degree"
+          ],
+          "notes": ""
+        },
+        "soft_signals": {
+          "raw_score": 33.33,
+          "weighted_score": 1.67,
+          "weight": 5.0,
+          "matched_items": [
+            "communication"
+          ],
+          "missing_items": [
+            "teamwork",
+            "problem solving"
+          ],
+          "notes": ""
+        },
+        "semantic_similarity": 0.0,
+        "penalty_deductions": 0.0,
+        "total_score": 19.54
+      },
+      "reasoning": {
+        "summary": "OMKAR HALPATRAO scored 19.5/100 for the Junior Python Developer to build backend applications, APIs, and database-driven systems. Freshers w role. Significant gaps identified.",
+        "strengths": [
+          "Matches key skills: * Python, * SQL, MySQL, * Flask",
+          "0.0y experience meets the 0.0y requirement",
+          "1 relevant projects demonstrated"
+        ],
+        "gaps": [
+          "Missing skills: * HTML, CSS, JavaScript, * Basic DSA"
+        ],
+        "risks": [],
+        "confidence_level": 0.44,
+        "recommendation": "reject",
+        "recommendation_reason": "Score 19.5/100 \u2014 reject"
+      },
+      "rank": 3,
+      "tiebreak_score": 1.8
+    }
+  ]
+}

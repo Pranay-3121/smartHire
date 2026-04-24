@@ -1,0 +1,25 @@
+SHORTLIST REPORT — Run ID: debug-eval-001
+Job Title: Junior Software Developer
+Total Candidates Evaluated: 3
+Shortlisted: 2
+============================================================
+
+Rank #1 — Niranjan Patil | Score: 69.1/100
+  Email: niranjanpatil1516@gmail.com | Phone: +91-7709561516
+  Experience: 0.0y | Skills: java, wordpress, tableau, c#, javascript, python, html, sql
+  Recommendation: SHORTLIST
+  Confidence: 73%
+  Strengths: Matched 18 required skills: Python, SQL, HTML, CSS, JavaScript, HTML/CSS; 1 project(s) demonstrated using css, make, sql, php, java; Certified: • SQL Bootcamp certificate – aug’23 (link)
+  Gaps: Weakest area: Projects (33/100)
+  Summary: Niranjan Patil is a good fit for the Junior Software Developer role with a score of 69.1/100 (18/18 required skills matched, 0.0y experience). Key strengths include matched 18 required skills: python, sql, html, css, javascript, html/css. Primary gap: weakest area: projects (33/100).
+------------------------------------------------------------
+
+Rank #2 — SUBANANDIDA THEVAR | Score: 64.5/100
+  Email: anandidat@gmail.com | Phone: 992063008 0
+  Experience: 0.0y | Skills: java, next.js, spark, python, machine learning, html, vite, sql
+  Recommendation: SHORTLIST
+  Confidence: 70%
+  Strengths: Matched 18 required skills: Python, SQL, HTML, CSS, JavaScript, HTML/CSS; 1 project(s) demonstrated using r; Certified: Excel certifications, criterion, 07/2022
+  Gaps: Weakest area: Projects (16/100)
+  Summary: SUBANANDIDA THEVAR is a good fit for the Junior Software Developer role with a score of 64.5/100 (18/18 required skills matched, 0.0y experience). Key strengths include matched 18 required skills: python, sql, html, css, javascript, html/css. Primary gap: weakest area: projects (16/100).
+------------------------------------------------------------

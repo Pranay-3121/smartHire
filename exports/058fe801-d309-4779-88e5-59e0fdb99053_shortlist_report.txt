@@ -1,0 +1,25 @@
+SHORTLIST REPORT — Run ID: 058fe801-d309-4779-88e5-59e0fdb99053
+Job Title: is ideal for candidates with academic projects, internship simulations, strong coding interest, and 
+Total Candidates Evaluated: 3
+Shortlisted: 2
+============================================================
+
+Rank #1 — Niranjan Patil | Score: 19.8/100
+  Email: niranjanpatil1516@gmail.com | Phone: +91-7709561516
+  Experience: 0.0y | Skills: java, sql, c++, go, c#, html, tailwind, javascript
+  Recommendation: SHORTLIST
+  Confidence: 70%
+  Strengths: Strong coding interest; Academic project experience with Tata Consultancy Services; SQL Bootcamp certificate
+  Gaps: Lack of direct experience in building backend modules using required technologies; No professional work experience
+  Summary: Niranjan Patil shows strong potential as a junior engineer with a solid foundation in programming languages and tools. However, he lacks direct experience in building backend modules using Python, Django, React.js, and Tailwind CSS.
+------------------------------------------------------------
+
+Rank #2 — OMKAR HALPATRAO | Score: 17.8/100
+  Email: omkarhalptrao2004@gmail.com | Phone: 7972274886
+  Experience: 0.0y | Skills: mysql, sql, go, flask, computer vision, python, django, writing
+  Recommendation: SHORTLIST
+  Confidence: 70%
+  Strengths: Python; Flask; Django
+  Gaps: 0-2 years of experience; Location flexibility (Mumbai, Pune, Bengaluru, Remote India)
+  Summary: OMKAR HALPATRAO shows strong potential as a backend developer with impressive skills in Python, Flask, and Django. However, lacks experience and location flexibility.
+------------------------------------------------------------

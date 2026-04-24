@@ -1,0 +1,15 @@
+SHORTLIST REPORT — Run ID: 97ab1750-0d41-4469-8a8d-14c0a1ff1ed3
+Job Title: Junior Software Developer / Full Stack Developer
+Total Candidates Evaluated: 3
+Shortlisted: 1
+============================================================
+
+Rank #1 — Niranjan Patil | Score: 56.0/100
+  Email: niranjanpatil1516@gmail.com | Phone: +91-7709561516
+  Experience: 0.0y | Skills: tableau, make, r, html, c++, php, jupyter, sql
+  Recommendation: SHORTLIST
+  Confidence: 64%
+  Strengths: Matched 46 required skills: Job Title: Junior Software Developer, Full Stack Developer, Responsibilities:, and improve application performance, Create clean, Preferred Skills:; 1 project(s) demonstrated using react, java, php, r, html; Certified: • SQL Bootcamp certificate – aug’23 (link)
+  Gaps: Missing 4 required skills: Debug, test, maintainable, and efficient code; Weakest area: Projects (25/100)
+  Summary: Niranjan Patil is a good fit for the Junior Software Developer / Full Stack Developer role with a score of 56.0/100 (46/50 required skills matched, 0.0y experience). Key strengths include matched 46 required skills: job title: junior software developer, full stack developer, responsibilities:, and improve application performance, create clean, preferred skills:. Primary gap: missing 4 required skills: debug, test, maintainable, and efficient code.
+------------------------------------------------------------

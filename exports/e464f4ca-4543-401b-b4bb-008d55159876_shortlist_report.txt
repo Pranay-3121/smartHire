@@ -1,0 +1,35 @@
+SHORTLIST REPORT — Run ID: e464f4ca-4543-401b-b4bb-008d55159876
+Job Title: Junior Software Developer / Full Stack Developer
+Total Candidates Evaluated: 6
+Shortlisted: 3
+============================================================
+
+Rank #1 — SURAJ GORAKH NAIKWADE | Score: 61.3/100
+  Email: mca25_2526ics@met.edu | Phone: 9119447777
+  Experience: 0.0y | Skills: html, sql, go, css, cad, java, mysql, r
+  Recommendation: SHORTLIST
+  Confidence: 61%
+  Strengths: Matched 41 required skills: Job Title: Junior Software Developer, Full Stack Developer, Responsibilities:, and improve application performance, Create clean, and efficient code; Soft skills present: communication, problem-solving, teamwork; Strongest area: Technical skills (80/100)
+  Gaps: Missing 4 required skills: Debug, test, maintainable, Python; No education details found; job requires: Bachelor’s degree in Computer Science / IT / BCA / Related Field.; Weakest area: Education (0/100)
+  Summary: SURAJ GORAKH NAIKWADE is a good fit for the Junior Software Developer / Full Stack Developer role with a score of 61.3/100 (41/45 required skills matched, 0.0y experience). Key strengths include matched 41 required skills: job title: junior software developer, full stack developer, responsibilities:, and improve application performance, create clean, and efficient code. Primary gap: missing 4 required skills: debug, test, maintainable, python.
+------------------------------------------------------------
+
+Rank #2 — Niranjan Patil | Score: 59.1/100
+  Email: niranjanpatil1516@gmail.com | Phone: +91-7709561516
+  Experience: 0.0y | Skills: html, sql, wordpress, git, javascript, make, word, go
+  Recommendation: SHORTLIST
+  Confidence: 66%
+  Strengths: Matched 44 required skills: Job Title: Junior Software Developer, Full Stack Developer, Responsibilities:, and improve application performance, Create clean, Preferred Skills:; 1 project(s) demonstrated using php, css, r, make, react; Certified: • SQL Bootcamp certificate – aug’23 (link)
+  Gaps: Missing 4 required skills: Debug, test, maintainable, and efficient code; Weakest area: Projects (26/100)
+  Summary: Niranjan Patil is a good fit for the Junior Software Developer / Full Stack Developer role with a score of 59.1/100 (44/48 required skills matched, 0.0y experience). Key strengths include matched 44 required skills: job title: junior software developer, full stack developer, responsibilities:, and improve application performance, create clean, preferred skills:. Primary gap: missing 4 required skills: debug, test, maintainable, and efficient code.
+------------------------------------------------------------
+
+Rank #3 — SUBANANDIDA THEVAR | Score: 55.9/100
+  Email: anandidat@gmail.com | Phone: 992063008 0
+  Experience: 0.0y | Skills: machine learning, html, vite, sql, git, next.js, go, css
+  Recommendation: SHORTLIST
+  Confidence: 64%
+  Strengths: Matched 43 required skills: Job Title: Junior Software Developer, Full Stack Developer, Responsibilities:, and improve application performance, Create clean, Preferred Skills:; 1 project(s) demonstrated using r; Certified: Excel certifications, criterion, 07/2022
+  Gaps: Missing 4 required skills: Debug, test, maintainable, and efficient code; Weakest area: Projects (15/100)
+  Summary: SUBANANDIDA THEVAR is a good fit for the Junior Software Developer / Full Stack Developer role with a score of 55.9/100 (43/47 required skills matched, 0.0y experience). Key strengths include matched 43 required skills: job title: junior software developer, full stack developer, responsibilities:, and improve application performance, create clean, preferred skills:. Primary gap: missing 4 required skills: debug, test, maintainable, and efficient code.
+------------------------------------------------------------

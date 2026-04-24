@@ -1,0 +1,25 @@
+SHORTLIST REPORT — Run ID: cc59227a-c6d2-4a69-974a-f9fa9631a119
+Job Title: Junior Software Developer / Full Stack Developer
+Total Candidates Evaluated: 3
+Shortlisted: 2
+============================================================
+
+Rank #1 — Niranjan Patil | Score: 59.1/100
+  Email: niranjanpatil1516@gmail.com | Phone: +91-7709561516
+  Experience: 0.0y | Skills: sql, excel, jupyter, html, sem, react, tableau, javascript
+  Recommendation: SHORTLIST
+  Confidence: 66%
+  Strengths: Matched 46 required skills: Job Title: Junior Software Developer, Full Stack Developer, Responsibilities:, and improve application performance, Create clean, Preferred Skills:; 1 project(s) demonstrated using java, make, tailwind, r, sql; Certified: • SQL Bootcamp certificate – aug’23 (link)
+  Gaps: Missing 4 required skills: Debug, test, maintainable, and efficient code; Weakest area: Projects (25/100)
+  Summary: Niranjan Patil is a good fit for the Junior Software Developer / Full Stack Developer role with a score of 59.1/100 (46/50 required skills matched, 0.0y experience). Key strengths include matched 46 required skills: job title: junior software developer, full stack developer, responsibilities:, and improve application performance, create clean, preferred skills:. Primary gap: missing 4 required skills: debug, test, maintainable, and efficient code.
+------------------------------------------------------------
+
+Rank #2 — SUBANANDIDA THEVAR | Score: 56.2/100
+  Email: anandidat@gmail.com | Phone: 992063008 0
+  Experience: 0.0y | Skills: linux, sql, excel, html, git, spark, php, go
+  Recommendation: SHORTLIST
+  Confidence: 65%
+  Strengths: Matched 45 required skills: Job Title: Junior Software Developer, Full Stack Developer, Responsibilities:, and improve application performance, Create clean, Preferred Skills:; 1 project(s) demonstrated using r; Certified: Excel certifications, criterion, 07/2022
+  Gaps: Missing 4 required skills: Debug, test, maintainable, and efficient code; Weakest area: Projects (15/100)
+  Summary: SUBANANDIDA THEVAR is a good fit for the Junior Software Developer / Full Stack Developer role with a score of 56.2/100 (45/49 required skills matched, 0.0y experience). Key strengths include matched 45 required skills: job title: junior software developer, full stack developer, responsibilities:, and improve application performance, create clean, preferred skills:. Primary gap: missing 4 required skills: debug, test, maintainable, and efficient code.
+------------------------------------------------------------

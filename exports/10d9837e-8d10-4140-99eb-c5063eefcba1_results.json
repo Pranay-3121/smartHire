@@ -1,0 +1,191 @@
+{
+  "run_id": "10d9837e-8d10-4140-99eb-c5063eefcba1",
+  "job_title": "is ideal for candidates with academic projects, internship simulations, strong coding interest, and ",
+  "total_candidates": 1,
+  "candidates": [
+    {
+      "candidate": {
+        "candidate_id": "ff70a992-46c6-4711-9569-2bb14887a5d2",
+        "file_path": "uploads\\10d9837e-8d10-4140-99eb-c5063eefcba1\\Nandita Resume.pdf.pdf",
+        "file_name": "Nandita Resume.pdf.pdf",
+        "name": "SUBANANDIDA THEVAR",
+        "email": "anandidat@gmail.com",
+        "phone": "992063008 0",
+        "location": null,
+        "skills": [
+          "linux",
+          "java",
+          "mysql",
+          "sql",
+          "c++",
+          "go",
+          "html",
+          "machine learning",
+          "tailwind",
+          "css",
+          "spark",
+          "python",
+          "git",
+          "proficient",
+          "and mysql. strong grasp of"
+        ],
+        "work_experience": [
+          {
+            "company": "software development. Skilled in tackling complex projects that Proficient",
+            "title": "Hindi",
+            "start_date": null,
+            "end_date": null,
+            "duration_months": 0,
+            "description": "enhance critical and creative thinking. Dedicated to ongoing",
+            "is_current": false
+          }
+        ],
+        "total_experience_years": 0.0,
+        "companies": [
+          "software development. Skilled in tackling complex projects that Proficient"
+        ],
+        "projects": [
+          {
+            "name": "Percentage",
+            "description": "Guru Nanak Khalsa College Matunga 81.5 / 100 Emplo yee Management System",
+            "technologies": [],
+            "url": null
+          }
+        ],
+        "education": [
+          {
+            "institution": "Bachelor of Computer Science",
+            "degree": "Proficient",
+            "field_of_study": null,
+            "graduation_year": null,
+            "gpa": null
+          }
+        ],
+        "certifications": [
+          "Excel certifications, criterion, 07/2022"
+        ],
+        "languages": [],
+        "summary": null,
+        "parse_status": "success",
+        "parse_confidence": 1.0,
+        "warning_flags": [],
+        "raw_text": "SUBANANDIDA THEVAR\nSoftware Developer\nST\n992063008 0 sub anandidat@gmail.com Mum bai\nhttp://linkedin.com/in/subanandida-thevar-902240204\nSUMMARY LANGUAGES\nEnglish\nPursuing a Mast er's in Computer Science with expertise in\nProficient\nPython, JAVA, C++, HTML, and MySQL. Strong grasp of\nalgorithms and data structures, coupled with experience in\nHindi\nsoftware development. Skilled in tackling complex projects that Proficient\nenhance critical and creative thinking. Dedicated to ongoing\nlearning and embracing new technologies.\nMarathi\nProficient\nEDUCATION Tamil\nProficient\nBachelor of Computer Science\nSKILLS\nSGPA\nGuru Nanak Khalsa College Matunga\n8.68 / 10\nPHP SQL HTML Python C/C++\n2021 - 2025 Mumbai\nJava CSS Linux\nHigher Secondary Certificate PROJECTS\nPercentage\nGuru Nanak Khalsa College Matunga 81.5 / 100\nEmplo yee Management System\n201 9 - 2021 Mumba i Technologies : Java, MySql\nFace Recognition Attendance System\nSecondary School Certificate Percentage Software\n60.4 / 100\nCanossa Convent High School Technologies: Python, HTML Tkinter, MySql\n2019 Mumbai AI-powered Interview Mocker\nCERTIFICATIONS Technologies: Next.js, Clerk, Tailwindcss,\nGemini API, Drizzle\nACTIVITES\nExcel certifications, criterion, 07/2022\nInduction programs of financial literacy, cyber\nContributing and managing the\netiquette, communication skills, GNKC, 11/2022\nCSCORNERSunitarai website, with\nImperative programming in C Level, GNKC, 05/2023 over 50,000 subscribers on YouTube.\nFundamentals of full stack development, Excer,\n01/2024 Volunteered at E-Spark 24 Annual\nTech Fest in college, 2024.\nGraphics design and video editing, Udemy, 12/2024\nMedical coding, Excler, 01/2025\nMachine learning, Excler, 01/2025\nAce Coding Interviews: DSA Mastery with Java, 02/2025\nDigital marketing, Excler, 03/2025",
+        "is_duplicate": false,
+        "content_hash": "12dab9f6b379ce167205754aecb195980d9d6e9f62b0e24f6a129a6bb49cba41"
+      },
+      "score_breakdown": {
+        "role_experience": {
+          "raw_score": 18.6,
+          "weighted_score": 6.51,
+          "weight": 35.0,
+          "matched_items": [
+            "* Build backend modules using Python",
+            "* Django",
+            "* Tailwind CSS"
+          ],
+          "missing_items": [
+            "0 to 2 years",
+            "# Location",
+            "Mumbai",
+            "Pune",
+            "Bengaluru",
+            "Remote India",
+            "# Role Summary",
+            "career developers who can contribute to backend systems",
+            "web applications",
+            "APIs",
+            "automation tools",
+            "and AI",
+            "integrated products.",
+            "databases",
+            "debugging",
+            "and problem solving. Candidates with college projects",
+            "hackathons",
+            "freelance work",
+            "simulations",
+            "internships",
+            "or self",
+            "built products are strongly encouraged to apply.",
+            "# Key Responsibilities",
+            "## Backend Development",
+            "* Create and maintain REST APIs",
+            "* Write reusable business logic",
+            "* Handle form submissions",
+            "authentication",
+            "and validations"
+          ],
+          "notes": "Experience: 0.0y, Required: 0.0y"
+        },
+        "relevant_projects": {
+          "raw_score": 13.33,
+          "weighted_score": 5.33,
+          "weight": 40.0,
+          "matched_items": [],
+          "missing_items": [],
+          "notes": "1 projects found"
+        },
+        "certifications": {
+          "raw_score": 0.0,
+          "weighted_score": 0.0,
+          "weight": 10.0,
+          "matched_items": [],
+          "missing_items": [
+            "* Certifications"
+          ],
+          "notes": ""
+        },
+        "education": {
+          "raw_score": 25.0,
+          "weighted_score": 2.5,
+          "weight": 10.0,
+          "matched_items": [
+            "* B.Sc Computer Science"
+          ],
+          "missing_items": [
+            "Mumbai / Pune / Bengaluru / Remote India",
+            "* B.Tech / BE",
+            "Strong skills and projects can outweigh degree type."
+          ],
+          "notes": ""
+        },
+        "soft_signals": {
+          "raw_score": 20.0,
+          "weighted_score": 1.0,
+          "weight": 5.0,
+          "matched_items": [
+            "communication"
+          ],
+          "missing_items": [
+            "leadership",
+            "problem solving",
+            "collaboration",
+            "attention to detail"
+          ],
+          "notes": ""
+        },
+        "semantic_similarity": 0.0,
+        "penalty_deductions": 0.0,
+        "total_score": 15.34
+      },
+      "reasoning": {
+        "summary": "Subanandida has a strong foundation in programming languages and technologies, but lacks direct experience in software development. While they have some relevant skills, their overall fit for the role is mediocre.",
+        "strengths": [
+          "Strong grasp of multiple programming languages",
+          "Proficient in tackling complex projects"
+        ],
+        "gaps": [
+          "Lack of direct experience in software development",
+          "No mention of backend systems or web applications expertise"
+        ],
+        "risks": [
+          "May require significant training and onboarding to adapt to the role's requirements"
+        ],
+        "confidence_level": 0.45,
+        "recommendation": "hold",
+        "recommendation_reason": "While Subanandida has some relevant skills, their lack of direct experience in software development and unclear expertise in backend systems make them a moderate fit for the role."
+      },
+      "rank": 1,
+      "tiebreak_score": 2.5
+    }
+  ]
+}

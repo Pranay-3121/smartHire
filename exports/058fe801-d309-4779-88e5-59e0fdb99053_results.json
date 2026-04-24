@@ -1,0 +1,571 @@
+{
+  "run_id": "058fe801-d309-4779-88e5-59e0fdb99053",
+  "job_title": "is ideal for candidates with academic projects, internship simulations, strong coding interest, and ",
+  "total_candidates": 3,
+  "candidates": [
+    {
+      "candidate": {
+        "candidate_id": "1c173a84-c137-464b-8927-235b950450c1",
+        "file_path": "uploads\\058fe801-d309-4779-88e5-59e0fdb99053\\Niranjan patil resume new.pdf",
+        "file_name": "Niranjan patil resume new.pdf",
+        "name": "Niranjan Patil",
+        "email": "niranjanpatil1516@gmail.com",
+        "phone": "+91-7709561516",
+        "location": null,
+        "skills": [
+          "java",
+          "sql",
+          "c++",
+          "go",
+          "c#",
+          "html",
+          "tailwind",
+          "javascript",
+          "css",
+          "python",
+          "react",
+          "git",
+          "technical: java",
+          "css.",
+          "tools: vs code",
+          "sql plus",
+          "tableau",
+          "excel",
+          "jupyter",
+          "wordpress",
+          "google api\u2019s",
+          "github",
+          "shadcn ui"
+        ],
+        "work_experience": [
+          {
+            "company": "\u2022 Completed a simulation involving creating data visualizations for Tata Consultancy Services",
+            "title": "Tata Data Visualisation: Empowering Business with Effective Insights Job Simulation on Forage May\u2019 2",
+            "start_date": null,
+            "end_date": null,
+            "duration_months": 0,
+            "description": "\u2022 Created visuals for data analysis to help executives with effective decision making. Deloitte - Virtual Internship program April\u2019 25 \u2022 Fundamentals of data analytics, handling dataset, importing files, using queries \u2022 Understanding data visualization using tableau, writing queries in excel",
+            "is_current": false
+          }
+        ],
+        "total_experience_years": 0.0,
+        "companies": [
+          "\u2022 Completed a simulation involving creating data visualizations for Tata Consultancy Services"
+        ],
+        "projects": [
+          {
+            "name": "Ai-travel-planner 11/24 \u2013 02/25",
+            "description": "\u2022 Ai \u2013 driven trip planner which suggest places to visit and hotel recommendation according budget using real data \u2022 We used javascript and little bit react.js for functions and html , tailwind css for designing purpose, and shadcn ui \u2022 Made easy to make plans on trip, and gives iternary for no of days, helpful for travel lovers to plan trips. Supreme Roadways 08/24 \u2013 09/24 \u2022 Created Supreme Roadways, a dynamic transportation website for businesses and individuals, featuring an admin panel with ",
+            "technologies": [
+              "java",
+              "sql",
+              "html",
+              "tailwind",
+              "javascript",
+              "css",
+              "react"
+            ],
+            "url": null
+          }
+        ],
+        "education": [
+          {
+            "institution": "Bachelor of Computer Applications 2022 \u2013 2025",
+            "degree": "Vivekanand College Kolhapur, India",
+            "field_of_study": null,
+            "graduation_year": 2022,
+            "gpa": null
+          }
+        ],
+        "certifications": [
+          "\u2022 SQL Bootcamp certificate \u2013 aug\u201923 (link)"
+        ],
+        "languages": [],
+        "summary": null,
+        "parse_status": "success",
+        "parse_confidence": 1.0,
+        "warning_flags": [],
+        "raw_text": "Niranjan Patil\n+91-7709561516 | niranjanpatil1516@gmail.com | github | linkedIn\nI am Niranjan Patil, A Bachelor of Computer Application student from Vivekanand College, Kolhapur. I am passionate about\ntechnology and eager to learn new things. I have strong foundational skills in C++ , java and SQL. I am calm, composed, and\nalways ready to contribute towards improving productivity in an organization.\nEDUCATION\nVivekanand College Kolhapur, India\nBachelor of Computer Applications 2022 \u2013 2025\n\u2022 CGPA \u2013 9.29\n\u2022 Among the top 5% of the department of BCA\n\u2022 Relevant coursework in [C++, Python, java , etc.]\nSKILLS\nTechnical: Java , C++, SQL, Python, HTML, CSS.\nTools: Vs Code, SQL Plus, Tableau, Excel, Jupyter, WordPress, google Api\u2019s, GitHub, shadcn UI,\nCERTIFICATIONS\n\u2022 Tata Data Visualisation job simulation \u2013 May\u201925 (link)\n\u2022 Data Analytics job simulation from Deloitte - April\u201925 (link)\n\u2022 Wordcamp Kolhapur \u2013 jan\u201925 (link)\n\u2022 C# foundational course \u2013 sep\u201924 (link)\n\u2022 SQL Bootcamp certificate \u2013 aug\u201923 (link)\nEXPERIENCE\nTata Data Visualisation: Empowering Business with Effective Insights Job Simulation on Forage May\u2019 25\n\u2022 Completed a simulation involving creating data visualizations for Tata Consultancy Services\n\u2022 Created visuals for data analysis to help executives with effective decision making.\nDeloitte - Virtual Internship program April\u2019 25\n\u2022 Fundamentals of data analytics, handling dataset, importing files, using queries\n\u2022 Understanding data visualization using tableau, writing queries in excel\nPROJECTS\nAi-travel-planner 11/24 \u2013 02/25\n\u2022 Ai \u2013 driven trip planner which suggest places to visit and hotel recommendation according budget using real data\n\u2022 We used javascript and little bit react.js for functions and html , tailwind css for designing purpose, and shadcn ui\n\u2022 Made easy to make plans on trip, and gives iternary for no of days, helpful for travel lovers to plan trips.\nSupreme Roadways 08/24 \u2013 09/24\n\u2022 Created Supreme Roadways, a dynamic transportation website for businesses and individuals, featuring an admin\npanel with interactive forms.\n\u2022 Technologies : HTML, CSS, js for frontend, and SQL,php for backend functionality.\nACHIEVEMENTS\n\u2022 Winner of national level debugging competition at Bharati Vidyapeeth Kolhapur, participated in different competitions\n\u2022 Wordcamp Kolhapur \u2013 A national level event where we won multiple competition and exciting prizes\n\u2022 In top 3 students, among all semester exams",
+        "is_duplicate": false,
+        "content_hash": "c22f96b6f8909f8860b34e19300278b3198b0b231933f475bd7cc613aa7735c6"
+      },
+      "score_breakdown": {
+        "role_experience": {
+          "raw_score": 19.8,
+          "weighted_score": 6.93,
+          "weight": 35.0,
+          "matched_items": [
+            "* Build backend modules using Python",
+            "* Django",
+            "* React.js",
+            "* Tailwind CSS",
+            "* Tableau"
+          ],
+          "missing_items": [
+            "0 to 2 years",
+            "# Location",
+            "Mumbai",
+            "Pune",
+            "Bengaluru",
+            "Remote India",
+            "# Role Summary",
+            "career developers who can contribute to backend systems",
+            "web applications",
+            "APIs",
+            "automation tools",
+            "and AI",
+            "integrated products.",
+            "databases",
+            "debugging",
+            "and problem solving. Candidates with college projects",
+            "hackathons",
+            "freelance work",
+            "simulations",
+            "internships",
+            "or self",
+            "built products are strongly encouraged to apply.",
+            "# Key Responsibilities",
+            "## Backend Development",
+            "* Create and maintain REST APIs",
+            "* Write reusable business logic",
+            "* Handle form submissions",
+            "authentication",
+            "and validations"
+          ],
+          "notes": "Experience: 0.0y, Required: 0.0y"
+        },
+        "relevant_projects": {
+          "raw_score": 13.33,
+          "weighted_score": 5.33,
+          "weight": 40.0,
+          "matched_items": [],
+          "missing_items": [],
+          "notes": "1 projects found"
+        },
+        "certifications": {
+          "raw_score": 0.0,
+          "weighted_score": 0.0,
+          "weight": 10.0,
+          "matched_items": [],
+          "missing_items": [
+            "* Certifications"
+          ],
+          "notes": ""
+        },
+        "education": {
+          "raw_score": 75.0,
+          "weighted_score": 7.5,
+          "weight": 10.0,
+          "matched_items": [
+            "Mumbai / Pune / Bengaluru / Remote India",
+            "* B.Sc Computer Science",
+            "Strong skills and projects can outweigh degree type."
+          ],
+          "missing_items": [
+            "* B.Tech / BE"
+          ],
+          "notes": ""
+        },
+        "soft_signals": {
+          "raw_score": 0.0,
+          "weighted_score": 0.0,
+          "weight": 5.0,
+          "matched_items": [],
+          "missing_items": [
+            "communication",
+            "leadership",
+            "problem solving",
+            "collaboration",
+            "attention to detail"
+          ],
+          "notes": ""
+        },
+        "semantic_similarity": 0.0,
+        "penalty_deductions": 0.0,
+        "total_score": 19.76
+      },
+      "reasoning": {
+        "summary": "Niranjan Patil shows strong potential as a junior engineer with a solid foundation in programming languages and tools. However, he lacks direct experience in building backend modules using Python, Django, React.js, and Tailwind CSS.",
+        "strengths": [
+          "Strong coding interest",
+          "Academic project experience with Tata Consultancy Services",
+          "SQL Bootcamp certificate"
+        ],
+        "gaps": [
+          "Lack of direct experience in building backend modules using required technologies",
+          "No professional work experience"
+        ],
+        "risks": [
+          "May require additional training or mentorship to adapt to the role's specific requirements"
+        ],
+        "confidence_level": 0.7,
+        "recommendation": "shortlist",
+        "recommendation_reason": "Niranjan shows promise, but further evaluation is needed to assess his ability to quickly learn and adapt to the required technologies."
+      },
+      "rank": 1,
+      "tiebreak_score": 2.5
+    },
+    {
+      "candidate": {
+        "candidate_id": "5918b71e-eaee-41f3-9636-151ce22cfaec",
+        "file_path": "uploads\\058fe801-d309-4779-88e5-59e0fdb99053\\Omkar_final CV.pdf",
+        "file_name": "Omkar_final CV.pdf",
+        "name": "OMKAR HALPATRAO",
+        "email": "omkarhalptrao2004@gmail.com",
+        "phone": "7972274886",
+        "location": null,
+        "skills": [
+          "mysql",
+          "sql",
+          "go",
+          "flask",
+          "computer vision",
+          "python",
+          "django",
+          "writing",
+          "optimized queries",
+          "and ensuring data consistency.",
+          "enabling smooth communication",
+          "tracing",
+          "modular architecture (mvc)",
+          "and adheres to",
+          "languages known backend developer skills",
+          "english \u26ab",
+          "hindi \u26ab",
+          "flask / django",
+          "marathi \u26ab"
+        ],
+        "work_experience": [],
+        "total_experience_years": 0.0,
+        "companies": [],
+        "projects": [
+          {
+            "name": "Carnival Event Management System",
+            "description": "A web application for managing carnival events with: User registration and login functionality. \u26ab Volunteer management portal. \u26ab Admin dashboard for event oversight. \u26ab Date validation and image verification features. \u26ab Separate interfaces for users, volunteers, and administrators. \u26ab Fitness Exercise Tracker Web Application web application that tracks and analyzes workout exercises Developed a Flask-based web application that tracks and analyzes workout exercises in real- \u26ab time using computer vi",
+            "technologies": [
+              "flask",
+              "computer vision"
+            ],
+            "url": null
+          }
+        ],
+        "education": [
+          {
+            "institution": "Course: B.Voc.Cyber Security and forensic Board: Maharashtra State Board Board: Maharashtra State Board",
+            "degree": "Graduation Class XII Class X",
+            "field_of_study": null,
+            "graduation_year": 2022,
+            "gpa": 60.0
+          }
+        ],
+        "certifications": [],
+        "languages": [],
+        "summary": null,
+        "parse_status": "success",
+        "parse_confidence": 0.8,
+        "warning_flags": [],
+        "raw_text": "OMKAR HALPATRAO\nAspiring Full-Stack Developer | Focused on Code Quality & User Experience\nEmail : omkarhalptrao2004@gmail.com Contact: 7972274886\nLinkedin :-https://www.linkedin.com/in/omkar-halpatrao-55968b26b\nA dedicated and detail-driven Computer Science graduate from B.K. Birla College, Kalyan (CGPA 7+), with a\npassion for backend development and building robust, scalable systems. Experienced in Python, MySQL,\nand core backend logic, I enjoy optimizing performance, managing databases, and developing clean APIs\nthat power efficient applications. Problem-solving mindset, I\u2019m eager to contribute to backend-focused\nroles and solve real-world challenges with clean, maintainable code.\nEDUCATION HISTORY\nGraduation Class XII Class X\nCourse: B.Voc.Cyber Security and forensic Board: Maharashtra State Board Board: Maharashtra State Board\nCollege: B.K.Birla College Kalyan - Mumbai Medium: English Medium: English\nUniversity Year of Passing: 2022 Year of Passing: 2020\nYear of Passing: 2025 Grade: 60% Grade: 73%\nAvg. Grade:- 7+/10\nPROFESSIONAL Skills\nBackend Programming: Proficient in server-side languages such as Python with the ability to design and\nimplement scalable backend logic and system workflows.\nDatabase Management: Skilled in using relational (MySQL) databases for designing schemas, writing\noptimized queries, and ensuring data consistency.\nAPI Development: Experienced in creating and managing RESTful APIs, enabling smooth communication\nbetween frontend interfaces and backend services.\nError Handling & Debugging: Capable of identifying, tracing, and resolving bugs efficiently using backend\nlogs and structured debugging techniques.\nCode Quality & Maintenance: Follows clean code principles, modular architecture (MVC), and adheres to\ndocumentation standards for long-term maintainability.\nLanguages Known Backend developer Skills\nPython\n\u26ab\nEnglish \u26ab\nMySQL\nHindi \u26ab\n\u26ab\nFlask / Django\nMarathi \u26ab\n\u26ab\n\u00b7 \u00b7 \u00b7\n\u26ab\n\u26ab\nPROJECTS\nCarnival Event Management System\nA web application for managing carnival events with:\nUser registration and login functionality.\n\u26ab\nVolunteer management portal.\n\u26ab\nAdmin dashboard for event oversight.\n\u26ab\nDate validation and image verification features.\n\u26ab\nSeparate interfaces for users, volunteers, and administrators.\n\u26ab\nFitness Exercise Tracker Web Application\nweb application that tracks and analyzes workout exercises\nDeveloped a Flask-based web application that tracks and analyzes workout exercises in real-\n\u26ab\ntime using computer vision.\nImplemented exercise-specific endpoints (bicep curls, squats,jumping jacks, lunges) with live\n\u26ab\nvideo feed processing.\nDesigned a responsive frontend interface to display exercisetracking results.\n\u26ab",
+        "is_duplicate": false,
+        "content_hash": "264d01bc179f3a80693bd36685b94cb9d270a7c2c015844199a0998ce30be525"
+      },
+      "score_breakdown": {
+        "role_experience": {
+          "raw_score": 18.6,
+          "weighted_score": 6.51,
+          "weight": 35.0,
+          "matched_items": [
+            "* Build backend modules using Python",
+            "* Flask",
+            "* Django"
+          ],
+          "missing_items": [
+            "0 to 2 years",
+            "# Location",
+            "Mumbai",
+            "Pune",
+            "Bengaluru",
+            "Remote India",
+            "# Role Summary",
+            "career developers who can contribute to backend systems",
+            "web applications",
+            "APIs",
+            "automation tools",
+            "and AI",
+            "integrated products.",
+            "databases",
+            "debugging",
+            "and problem solving. Candidates with college projects",
+            "hackathons",
+            "freelance work",
+            "simulations",
+            "internships",
+            "or self",
+            "built products are strongly encouraged to apply.",
+            "# Key Responsibilities",
+            "## Backend Development",
+            "* Create and maintain REST APIs",
+            "* Write reusable business logic",
+            "* Handle form submissions",
+            "authentication",
+            "and validations"
+          ],
+          "notes": "Experience: 0.0y, Required: 0.0y"
+        },
+        "relevant_projects": {
+          "raw_score": 13.33,
+          "weighted_score": 5.33,
+          "weight": 40.0,
+          "matched_items": [],
+          "missing_items": [],
+          "notes": "1 projects found"
+        },
+        "certifications": {
+          "raw_score": 0.0,
+          "weighted_score": 0.0,
+          "weight": 10.0,
+          "matched_items": [],
+          "missing_items": [
+            "* Certifications"
+          ],
+          "notes": ""
+        },
+        "education": {
+          "raw_score": 50.0,
+          "weighted_score": 5.0,
+          "weight": 10.0,
+          "matched_items": [
+            "* B.Tech / BE",
+            "Strong skills and projects can outweigh degree type."
+          ],
+          "missing_items": [
+            "Mumbai / Pune / Bengaluru / Remote India",
+            "* B.Sc Computer Science"
+          ],
+          "notes": ""
+        },
+        "soft_signals": {
+          "raw_score": 20.0,
+          "weighted_score": 1.0,
+          "weight": 5.0,
+          "matched_items": [
+            "communication"
+          ],
+          "missing_items": [
+            "leadership",
+            "problem solving",
+            "collaboration",
+            "attention to detail"
+          ],
+          "notes": ""
+        },
+        "semantic_similarity": 0.0,
+        "penalty_deductions": 0.0,
+        "total_score": 17.84
+      },
+      "reasoning": {
+        "summary": "OMKAR HALPATRAO shows strong potential as a backend developer with impressive skills in Python, Flask, and Django. However, lacks experience and location flexibility.",
+        "strengths": [
+          "Python",
+          "Flask",
+          "Django"
+        ],
+        "gaps": [
+          "0-2 years of experience",
+          "Location flexibility (Mumbai, Pune, Bengaluru, Remote India)"
+        ],
+        "risks": [
+          "Lack of industry experience may impact adaptability to the role"
+        ],
+        "confidence_level": 0.7,
+        "recommendation": "shortlist",
+        "recommendation_reason": "While OMKAR's technical skills are impressive, his lack of experience and limited location flexibility make it uncertain whether he can effectively contribute to backend systems."
+      },
+      "rank": 2,
+      "tiebreak_score": 1.8
+    },
+    {
+      "candidate": {
+        "candidate_id": "0c8aceba-5d00-46ab-a53f-35ce54e64509",
+        "file_path": "uploads\\058fe801-d309-4779-88e5-59e0fdb99053\\Nandita Resume.pdf.pdf",
+        "file_name": "Nandita Resume.pdf.pdf",
+        "name": "SUBANANDIDA THEVAR",
+        "email": "anandidat@gmail.com",
+        "phone": "992063008 0",
+        "location": null,
+        "skills": [
+          "linux",
+          "java",
+          "mysql",
+          "sql",
+          "c++",
+          "go",
+          "html",
+          "machine learning",
+          "tailwind",
+          "css",
+          "spark",
+          "python",
+          "git",
+          "proficient",
+          "and mysql. strong grasp of"
+        ],
+        "work_experience": [
+          {
+            "company": "software development. Skilled in tackling complex projects that Proficient",
+            "title": "Hindi",
+            "start_date": null,
+            "end_date": null,
+            "duration_months": 0,
+            "description": "enhance critical and creative thinking. Dedicated to ongoing",
+            "is_current": false
+          }
+        ],
+        "total_experience_years": 0.0,
+        "companies": [
+          "software development. Skilled in tackling complex projects that Proficient"
+        ],
+        "projects": [
+          {
+            "name": "Percentage",
+            "description": "Guru Nanak Khalsa College Matunga 81.5 / 100 Emplo yee Management System",
+            "technologies": [],
+            "url": null
+          }
+        ],
+        "education": [
+          {
+            "institution": "Bachelor of Computer Science",
+            "degree": "Proficient",
+            "field_of_study": null,
+            "graduation_year": null,
+            "gpa": null
+          }
+        ],
+        "certifications": [
+          "Excel certifications, criterion, 07/2022"
+        ],
+        "languages": [],
+        "summary": null,
+        "parse_status": "success",
+        "parse_confidence": 1.0,
+        "warning_flags": [],
+        "raw_text": "SUBANANDIDA THEVAR\nSoftware Developer\nST\n992063008 0 sub anandidat@gmail.com Mum bai\nhttp://linkedin.com/in/subanandida-thevar-902240204\nSUMMARY LANGUAGES\nEnglish\nPursuing a Mast er's in Computer Science with expertise in\nProficient\nPython, JAVA, C++, HTML, and MySQL. Strong grasp of\nalgorithms and data structures, coupled with experience in\nHindi\nsoftware development. Skilled in tackling complex projects that Proficient\nenhance critical and creative thinking. Dedicated to ongoing\nlearning and embracing new technologies.\nMarathi\nProficient\nEDUCATION Tamil\nProficient\nBachelor of Computer Science\nSKILLS\nSGPA\nGuru Nanak Khalsa College Matunga\n8.68 / 10\nPHP SQL HTML Python C/C++\n2021 - 2025 Mumbai\nJava CSS Linux\nHigher Secondary Certificate PROJECTS\nPercentage\nGuru Nanak Khalsa College Matunga 81.5 / 100\nEmplo yee Management System\n201 9 - 2021 Mumba i Technologies : Java, MySql\nFace Recognition Attendance System\nSecondary School Certificate Percentage Software\n60.4 / 100\nCanossa Convent High School Technologies: Python, HTML Tkinter, MySql\n2019 Mumbai AI-powered Interview Mocker\nCERTIFICATIONS Technologies: Next.js, Clerk, Tailwindcss,\nGemini API, Drizzle\nACTIVITES\nExcel certifications, criterion, 07/2022\nInduction programs of financial literacy, cyber\nContributing and managing the\netiquette, communication skills, GNKC, 11/2022\nCSCORNERSunitarai website, with\nImperative programming in C Level, GNKC, 05/2023 over 50,000 subscribers on YouTube.\nFundamentals of full stack development, Excer,\n01/2024 Volunteered at E-Spark 24 Annual\nTech Fest in college, 2024.\nGraphics design and video editing, Udemy, 12/2024\nMedical coding, Excler, 01/2025\nMachine learning, Excler, 01/2025\nAce Coding Interviews: DSA Mastery with Java, 02/2025\nDigital marketing, Excler, 03/2025",
+        "is_duplicate": false,
+        "content_hash": "12dab9f6b379ce167205754aecb195980d9d6e9f62b0e24f6a129a6bb49cba41"
+      },
+      "score_breakdown": {
+        "role_experience": {
+          "raw_score": 18.6,
+          "weighted_score": 6.51,
+          "weight": 35.0,
+          "matched_items": [
+            "* Build backend modules using Python",
+            "* Django",
+            "* Tailwind CSS"
+          ],
+          "missing_items": [
+            "0 to 2 years",
+            "# Location",
+            "Mumbai",
+            "Pune",
+            "Bengaluru",
+            "Remote India",
+            "# Role Summary",
+            "career developers who can contribute to backend systems",
+            "web applications",
+            "APIs",
+            "automation tools",
+            "and AI",
+            "integrated products.",
+            "databases",
+            "debugging",
+            "and problem solving. Candidates with college projects",
+            "hackathons",
+            "freelance work",
+            "simulations",
+            "internships",
+            "or self",
+            "built products are strongly encouraged to apply.",
+            "# Key Responsibilities",
+            "## Backend Development",
+            "* Create and maintain REST APIs",
+            "* Write reusable business logic",
+            "* Handle form submissions",
+            "authentication",
+            "and validations"
+          ],
+          "notes": "Experience: 0.0y, Required: 0.0y"
+        },
+        "relevant_projects": {
+          "raw_score": 13.33,
+          "weighted_score": 5.33,
+          "weight": 40.0,
+          "matched_items": [],
+          "missing_items": [],
+          "notes": "1 projects found"
+        },
+        "certifications": {
+          "raw_score": 0.0,
+          "weighted_score": 0.0,
+          "weight": 10.0,
+          "matched_items": [],
+          "missing_items": [
+            "* Certifications"
+          ],
+          "notes": ""
+        },
+        "education": {
+          "raw_score": 25.0,
+          "weighted_score": 2.5,
+          "weight": 10.0,
+          "matched_items": [
+            "* B.Sc Computer Science"
+          ],
+          "missing_items": [
+            "Mumbai / Pune / Bengaluru / Remote India",
+            "* B.Tech / BE",
+            "Strong skills and projects can outweigh degree type."
+          ],
+          "notes": ""
+        },
+        "soft_signals": {
+          "raw_score": 20.0,
+          "weighted_score": 1.0,
+          "weight": 5.0,
+          "matched_items": [
+            "communication"
+          ],
+          "missing_items": [
+            "leadership",
+            "problem solving",
+            "collaboration",
+            "attention to detail"
+          ],
+          "notes": ""
+        },
+        "semantic_similarity": 0.0,
+        "penalty_deductions": 0.0,
+        "total_score": 15.34
+      },
+      "reasoning": {
+        "summary": "Subanandida has a strong foundation in programming languages and technologies, but lacks direct experience in software development. While they have some relevant skills, their overall fit for the role is mediocre.",
+        "strengths": [
+          "Strong grasp of multiple programming languages",
+          "Proficient in tackling complex projects"
+        ],
+        "gaps": [
+          "Lack of direct experience in software development",
+          "No mention of backend systems or web applications expertise"
+        ],
+        "risks": [
+          "May require significant training and onboarding to adapt to the role's requirements"
+        ],
+        "confidence_level": 0.45,
+        "recommendation": "hold",
+        "recommendation_reason": "While Subanandida has some relevant skills, their lack of direct experience in software development and unclear expertise in backend systems make them a moderate fit for the role."
+      },
+      "rank": 3,
+      "tiebreak_score": 2.5
+    }
+  ]
+}

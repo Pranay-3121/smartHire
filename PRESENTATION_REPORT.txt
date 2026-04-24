@@ -1,0 +1,541 @@
+================================================================================
+          RESUME RANKER — PROJECT PRESENTATION REPORT
+================================================================================
+
+TABLE OF CONTENTS
+-----------------
+1. System Overview
+2. Architecture Diagram
+3. Workflow / Pipeline
+4. Tech Stack
+5. Ranking Dimensions & Scoring Breakdown
+6. How Confidence Is Calculated
+7. What To Show During Demo
+8. Key Features & Edge Cases Handled
+9. Results & Export Formats
+10. Project Structure
+
+================================================================================
+1. SYSTEM OVERVIEW
+================================================================================
+
+Resume Ranker is an enterprise-grade AI hiring platform that automates the
+entire candidate evaluation process. It reads a job description, parses multiple
+resumes, scores each candidate across multiple intelligent dimensions, applies
+penalties for red flags, and generates human-readable reasoning with
+recommendations (Shortlist / Hold / Reject).
+
+CORE VALUE PROPOSITION:
+  - Reduces resume screening time from hours to minutes
+  - Eliminates human bias with consistent, explainable scoring
+  - Handles real-world edge cases (scanned PDFs, duplicates, keyword stuffing)
+  - Provides semantic understanding, not just keyword matching
+
+================================================================================
+2. ARCHITECTURE DIAGRAM
+================================================================================
+
+                              USER (Browser)
+                                   |
+                                   v
+                    +------------------------------+
+                    |     REACT FRONTEND (Vite)    |
+                    |  - Job Description Input     |
+                    |  - Resume Upload (Drag/Drop) |
+                    |  - Results Dashboard         |
+                    |  - Candidate Detail View     |
+                    +------------------------------+
+                                   |
+                                   | HTTP/REST
+                                   v
+                    +------------------------------+
+                    |      FASTAPI BACKEND         |
+                    |  - API Endpoints             |
+                    |  - Background Task Runner    |
+                    |  - File Storage              |
+                    +------------------------------+
+                                   |
+          +------------------------+------------------------+
+          |                        |                        |
+          v                        v                        v
+   +-------------+         +--------------+         +-------------+
+   |   AGENTS    |         |   SERVICES   |         |    TOOLS    |
+   | (LangGraph) |         |              |         |             |
+   +-------------+         +--------------+         +-------------+
+          |                        |                        |
+   +-------------+         +--------------+         +-------------+
+   | JD Reader   |         | Ollama Client|         | JD Parser   |
+   | Resume      |         | (Llama 3 AI) |         | Resume      |
+   |   Parser    |         |              |         |   Parser    |
+   | Ranking     |         | Embeddings   |         | Scorer      |
+   | Reasoning   |         | (ChromaDB)   |         | Role Class. |
+   |             |         | Storage      |         | Edge Handler|
+   |             |         | (JSON/File)  |         | Exporter    |
+   +-------------+         +--------------+         +-------------+
+
+
+DETAILED DATA FLOW:
+
+  [User Input]
+      |
+      v
+  [Job Description] ---> [JD Reader Agent] ---> [Job Profile Object]
+      |                                               |
+      |                    [Resumes] ---> [Resume Parser Agent]
+      |                                               |
+      |                                               v
+      |                                    [Candidate Profiles]
+      |                                               |
+      v                                               v
+  [Ranking Agent] <------ compares ------> [Job Profile + Candidates]
+      |
+      v
+  [Scored Candidates] ---> [Reasoning Agent] ---> [Ranked Results]
+      |
+      v
+  [Export: CSV + JSON + Report]
+
+
+PIPELINE STATE FLOW:
+
+    STARTED
+      |
+      v
+  JD_PARSED  (extract role, skills, experience)
+      |
+      v
+  RESUMES_PARSED  (extract candidate info)
+      |
+      v
+  RANKED  (calculate scores)
+      |
+      v
+  COMPLETED  (generate reasoning + export)
+
+================================================================================
+3. WORKFLOW / PIPELINE
+================================================================================
+
+STEP 1: ANALYZE JOB DESCRIPTION
+  - API: POST /analyze-job
+  - Input: Raw job description text
+  - Process:
+    1. Rule-based parser extracts skills, experience, education, certifications
+    2. Llama 3 (via Ollama) refines and validates extraction
+    3. Results merged and cleaned (removes noise like locations, headers)
+    4. Role type classified (Engineering, Data Science, Compliance, etc.)
+  - Output: Structured JobProfile object
+  - Store: In-memory + JSON storage
+
+STEP 2: UPLOAD RESUMES
+  - API: POST /upload-resumes
+  - Input: PDF, DOCX, or TXT files
+  - Validation: File size, supported format
+  - Process:
+    1. Files saved to uploads/{run_id}/
+    2. Paths stored for pipeline execution
+  - Output: Upload confirmation with file count
+
+STEP 3: RUN RANKING PIPELINE
+  - API: POST /rank
+  - Process: Runs in background (FastAPI BackgroundTasks)
+  - Pipeline execution:
+    1. Parse resumes -> CandidateProfile objects
+    2. Score each candidate -> ScoredCandidate objects
+    3. Generate reasoning -> RankedCandidate objects
+    4. Export results -> CSV, JSON, text report
+  - Status: Poll GET /status/{run_id}
+  - Output: Final ranked list with explanations
+
+STEP 4: VIEW & DOWNLOAD RESULTS
+  - API: GET /results/{run_id}
+  - Shows: Ranked candidates with scores and reasoning
+  - API: GET /download/{run_id}?format=csv|json|report
+  - Downloads: Professional reports for HR team
+
+================================================================================
+4. TECH STACK
+================================================================================
+
+BACKEND:
+  - Python 3.10+          (core language)
+  - FastAPI               (high-performance API framework)
+  - Uvicorn               (ASGI server)
+  - LangGraph             (workflow/orchestration for AI pipeline)
+  - Pydantic              (data validation and schemas)
+
+AI / ML:
+  - Ollama                (local LLM runner)
+  - Llama 3               (AI model for parsing & reasoning)
+  - ChromaDB              (vector database for semantic similarity)
+  - Sentence Transformers (embedding generation)
+
+DOCUMENT PROCESSING:
+  - pdfplumber            (PDF text extraction)
+  - PyMuPDF (fitz)        (PDF fallback extraction)
+  - python-docx           (DOCX text extraction)
+  - pytesseract           (OCR for scanned PDFs)
+
+FRONTEND:
+  - React 18              (UI framework)
+  - Vite                  (build tool)
+  - Tailwind CSS          (styling)
+  - Axios                 (HTTP client)
+
+TESTING:
+  - pytest                (unit & integration tests)
+
+INFRASTRUCTURE:
+  - Local file system     (uploads, exports, logs)
+  - JSON file storage     (run state persistence)
+
+================================================================================
+5. RANKING DIMENSIONS & SCORING BREAKDOWN
+================================================================================
+
+Each candidate receives a score from 0 to 100 based on 5 weighted dimensions.
+Weights vary by role type.
+
+DIMENSION 1: ROLE EXPERIENCE
+  What it measures: How well the candidate's skills and experience match the job
+  Weight examples:
+    - Engineering:   35%
+    - Compliance:    35%
+    - Fresher:       10%
+    - Data Science:  30%
+    - Management:    45%
+
+  Sub-components:
+    - Must-have skills match:    Direct = 1.0 pts, Alias/related = 0.6 pts
+    - Preferred skills match:    Direct = 1.0 pts, Alias/related = 0.6 pts
+    - Experience years:          Meets min = 100%, Below = ratio * 80% (floor 20%)
+
+  Formula:
+    skill_score = (must_have_score * 0.7) + (preferred_score * 0.3)
+    exp_score   = based on years comparison
+    raw_score   = (skill_score * 0.6) + (exp_score * 0.4)
+    weighted    = raw_score * dimension_weight / 100
+
+DIMENSION 2: RELEVANT PROJECTS
+  What it measures: Quality and relevance of candidate's projects
+  Weight examples:
+    - Engineering:   40%
+    - Compliance:    15%
+    - Fresher:       35%
+    - Data Science:  40%
+    - Management:    20%
+
+  Sub-components:
+    - Project count score:       min(projects / 3 * 100, 100)
+    - Technology relevance:      matched_techs / total_jd_skills * 100
+    - Fallback (no projects):    Uses work_experience (55), skills (45), or education (35)
+
+  Formula:
+    raw_score = (project_count * 0.4) + (tech_relevance * 0.6)
+    weighted  = raw_score * dimension_weight / 100
+
+DIMENSION 3: CERTIFICATIONS
+  What it measures: Required and preferred certifications held
+  Weight examples:
+    - Engineering:   10%
+    - Compliance:    35%
+    - Fresher:       15%
+    - Data Science:  15%
+    - Management:    10%
+
+  Sub-components:
+    - Required certifications:   Fuzzy match against candidate certs
+    - Preferred certifications:  Fuzzy match against candidate certs
+    - Neutral baseline:          70 if no certs required by job
+
+  Formula:
+    raw_score = (matched / total_required) * 100
+    weighted  = raw_score * dimension_weight / 100
+
+DIMENSION 4: EDUCATION
+  What it measures: Degree match against job requirements
+  Weight examples:
+    - Engineering:   10%
+    - Compliance:    10%
+    - Fresher:       35%
+    - Data Science:  10%
+    - Management:    10%
+
+  Sub-components:
+    - Degree matching:           With alias support (BCA = B.Tech = BSc)
+    - Neutral baseline:          70 if has education, 40 if none
+
+  Formula:
+    raw_score = (matched_reqs / total_reqs) * 100
+    weighted  = raw_score * dimension_weight / 100
+
+DIMENSION 5: SOFT SKILLS
+  What it measures: Presence of soft skills mentioned in JD
+  Weight examples:
+    - Engineering:    5%
+    - Compliance:     5%
+    - Fresher:        5%
+    - Data Science:   5%
+    - Management:    15%
+
+  Sub-components:
+    - Context-aware matching:    Soft skill must appear in meaningful context
+    - Neutral baseline:          70 if no soft skills required
+
+  Formula:
+    raw_score = (matched / total_soft_skills) * 100
+    weighted  = raw_score * dimension_weight / 100
+
+BONUS: SEMANTIC SIMILARITY
+  What it measures: Overall meaning match between resume and JD
+  Source: AI embeddings via ChromaDB
+  Value: similarity_score * 5.0 (up to 5 bonus points)
+
+PENALTIES (DEDUCTED FROM TOTAL):
+  - Job hopping (3+ jobs < 12 months):     -3.0 pts
+  - Career gap (> 6 months):               -2.0 pts
+  - Keyword stuffing (> 40 skills):        -2.0 pts
+  - Overqualified (> 1.5x max exp):        -1.5 pts
+  - Underqualified (< 30% of min exp):     -2.0 pts
+  - Low parse confidence (< 30%):          -1.0 pt
+  - Maximum penalty cap:                   10.0 pts
+
+FINAL SCORE CALCULATION:
+  base_score = exp_weighted + proj_weighted + cert_weighted + edu_weighted + soft_weighted
+  semantic_bonus = similarity * 5.0
+  penalties = sum(penalty_values)
+  TOTAL = min(max(base_score + semantic_bonus - penalties, 0), 100)
+
+TIEBREAKER (when scores are equal):
+  tiebreak = (experience_years * 0.5) + (certifications * 0.3) + (projects * 0.2) + (confidence * 2.0)
+
+SCORE INTERPRETATION:
+  - 70-100: SHORTLIST (Strong fit — recommend interview)
+  - 50-69:  HOLD     (Good fit but has gaps — evaluate further)
+  - 0-49:   REJECT   (Weak fit — not suitable)
+
+================================================================================
+6. HOW CONFIDENCE IS CALCULATED
+================================================================================
+
+CONFIDENCE is calculated at TWO levels:
+
+A) PARSE CONFIDENCE (Resume Quality)
+  This tells us how trustworthy the extracted resume data is.
+
+  Factors checked:
+    1. Name extracted?            (Yes = 1, No = 0)
+    2. Email extracted?           (Yes = 1, No = 0)
+    3. Skills found?              (Yes = 1, No = 0)
+    4. Work experience found?     (Yes = 1, No = 0)
+    5. Education found?           (Yes = 1, No = 0)
+
+  Formula:
+    parse_confidence = filled_fields / 5.0
+
+  Examples:
+    - All 5 fields found:  100% confidence
+    - Only 3 fields found:  60% confidence
+    - Only 1 field found:   20% confidence
+
+  Impact:
+    - If < 60%: Status = PARTIAL parse
+    - If < 30%: Penalty of -1 point applied
+    - Triggers LLM enhancement for better extraction
+
+B) REASONING CONFIDENCE (Match Quality)
+  This tells us how confident the system is in its recommendation.
+
+  Formula:
+    reasoning_confidence = (parse_confidence * 0.35) + (total_score / 100 * 0.65)
+
+  Breakdown:
+    - 35% weight on how well the resume was parsed
+    - 65% weight on the candidate's total score
+
+  Examples:
+    - Parse confidence = 100%, Score = 90/100
+      -> Confidence = (1.0 * 0.35) + (0.90 * 0.65) = 0.35 + 0.585 = 93.5%
+
+    - Parse confidence = 60%, Score = 75/100
+      -> Confidence = (0.60 * 0.35) + (0.75 * 0.65) = 0.21 + 0.4875 = 69.75%
+
+    - Parse confidence = 80%, Score = 45/100
+      -> Confidence = (0.80 * 0.35) + (0.45 * 0.65) = 0.28 + 0.2925 = 57.25%
+
+  Interpretation:
+    - 90%+ : Very high confidence in recommendation
+    - 70-89%: High confidence
+    - 50-69%: Moderate confidence
+    - <50%  : Low confidence — review manually
+
+================================================================================
+7. WHAT TO SHOW DURING DEMO
+================================================================================
+
+SCREEN 1: SYSTEM HEALTH CHECK
+  - Navigate to: GET /health
+  - Show: Ollama connected, ChromaDB connected
+  - Message: "All AI services are running locally"
+
+SCREEN 2: JOB DESCRIPTION ANALYSIS
+  - Paste a realistic job description (e.g., "Senior Python Developer")
+  - Show the extracted:
+    * Role title and type
+    * Must-have skills list
+    * Preferred skills list
+    * Minimum experience
+    * Education requirements
+  - Highlight: "AI + Rules working together"
+
+SCREEN 3: RESUME UPLOAD
+  - Upload 3-5 sample resumes (mix of good and weak candidates)
+  - Show: Drag & drop interface, file validation, upload confirmation
+  - Highlight: "Supports PDF, DOCX, TXT"
+
+SCREEN 4: PIPELINE EXECUTION
+  - Click "Rank Candidates"
+  - Show: Status polling (processing -> completed)
+  - Highlight: "Runs in background, no waiting"
+
+SCREEN 5: RANKED RESULTS DASHBOARD
+  - Show the ranked table:
+    * Rank | Name | Score | Recommendation | Confidence
+  - Point out color coding:
+    * Green = Shortlist (70+)
+    * Yellow = Hold (50-69)
+    * Red = Reject (<50)
+  - Highlight: "Scores are explainable, not black box"
+
+SCREEN 6: CANDIDATE DETAIL VIEW
+  - Click on top candidate
+  - Show:
+    * Score breakdown (5 dimensions with bar charts)
+    * Strengths list
+    * Gaps list
+    * Risks list
+    * Semantic similarity score
+    * Penalties applied (if any)
+  - Highlight: "Every score has a reason"
+
+SCREEN 7: EDGE CASE DEMONSTRATION (Optional but impressive)
+  - Show a duplicate resume being flagged
+  - Show a scanned PDF being processed via OCR
+  - Show keyword stuffing detection and penalty
+  - Show job hopping detection and penalty
+
+SCREEN 8: EXPORT & REPORTS
+  - Download CSV file: "Open in Excel, share with team"
+  - Download JSON: "Programmatic access for integrations"
+  - Download Text Report: "Human-readable shortlist report"
+  - Show sample report content
+
+SCREEN 9: COMPARISON (Bonus)
+  - Show two candidates side-by-side
+  - Explain why one ranked higher than the other
+  - Reference: skill matching, experience, projects, penalties
+
+TALKING POINTS:
+  - "We use both rule-based parsing AND AI for maximum accuracy"
+  - "Semantic similarity means we understand meaning, not just keywords"
+  - "Role-based weights ensure fair evaluation for different positions"
+  - "Every decision is explainable — no black box AI"
+  - "Edge cases like scanned PDFs and duplicates are handled automatically"
+  - "Everything runs locally — no data leaves your machine"
+
+================================================================================
+8. KEY FEATURES & EDGE CASES HANDLED
+================================================================================
+
+PARSING INTELLIGENCE:
+  [x] Multi-format support: PDF, DOCX, TXT
+  [x] OCR fallback for scanned/image PDFs
+  [x] Duplicate detection via SHA-256 hashing
+  [x] Multilingual resume flagging
+  [x] Low-confidence parse enhancement via LLM
+
+SMART MATCHING:
+  [x] Fuzzy skill matching (handles typos)
+  [x] Alias/transferable skill recognition
+    - Python <-> Django, Flask, FastAPI
+    - React <-> JavaScript, Angular, Vue
+    - AWS <-> Azure, GCP
+  [x] Context-aware soft skill detection
+  [x] Semantic similarity via embeddings
+
+FAIR & ADAPTIVE SCORING:
+  [x] Role-specific weights (6 role types)
+  [x] Generous scoring for entry-level/fresher roles
+  [x] Fallback scoring when data is missing
+  [x] Tiebreaker for equal scores
+
+RED FLAG DETECTION:
+  [x] Job hopping (3+ short stints)
+  [x] Career gaps (> 6 months)
+  [x] Keyword stuffing (> 40 skills)
+  [x] Overqualified candidates
+  [x] Underqualified candidates (skips for fresher roles)
+  [x] Low parse confidence
+
+ROBUSTNESS:
+  [x] Graceful failure for password-protected PDFs
+  [x] Error isolation (one bad resume doesn't crash pipeline)
+  [x] Comprehensive logging for debugging
+  [x] Status polling for long-running operations
+
+================================================================================
+9. RESULTS & EXPORT FORMATS
+================================================================================
+
+CSV EXPORT:
+  Columns: Rank, Name, Email, Score, Recommendation, Confidence, Strengths, Gaps
+  Use case: Import into Excel, share with hiring managers
+
+JSON EXPORT:
+  Structure: Full object with job profile + all candidates + full reasoning
+  Use case: API integration, data analysis, custom dashboards
+
+TEXT REPORT:
+  Content: Executive summary, shortlisted candidates with reasoning
+  Use case: Print and share, email to stakeholders
+
+SAMPLE RESULTS SUMMARY:
+  Total Candidates: 25
+  Shortlisted:      8  (32%)
+  On Hold:          7  (28%)
+  Rejected:        10  (40%)
+  Average Score:   58.5
+  Top Score:       92.3
+
+================================================================================
+10. PROJECT STRUCTURE
+================================================================================
+
+resume_ranker/
+├── backend/
+│   ├── api/            # FastAPI routes (main.py)
+│   ├── agents/         # AI agents (jd_reader, resume_parser, ranking, reasoning)
+│   ├── core/           # Config, constants, logging, state management
+│   ├── schemas/        # Pydantic data models (job, candidate, scoring, api)
+│   ├── services/       # Ollama client, embeddings, storage
+│   ├── tools/          # Parsers, scorer, exporter, edge handler, role classifier
+│   ├── workflows/      # LangGraph pipeline definition
+│   └── tests/          # pytest test suite
+├── frontend/
+│   ├── src/
+│   │   ├── pages/      # Dashboard, Results, Candidate Detail
+│   │   ├── components/ # UI components (cards, charts, dropzone)
+│   │   ├── hooks/      # React hooks (usePipeline)
+│   │   └── services/   # API client
+│   ├── index.html
+│   └── package.json
+├── uploads/            # Uploaded resume files
+├── exports/            # Generated reports
+├── chroma_db/          # Vector database storage
+├── logs/               # Application logs
+└── requirements.txt    # Python dependencies
+
+================================================================================
+                              END OF REPORT
+================================================================================
+
