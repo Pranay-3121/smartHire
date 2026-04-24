@@ -5,7 +5,7 @@ Enterprise-grade AI resume ranking system powered by Llama 3, LangGraph, ChromaD
 ---
 
 Group 1 - 
-
+    Niranjan Patil
     Vivek Neharkar
 ## Architecture
 
