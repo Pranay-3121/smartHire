@@ -4,7 +4,7 @@ Enterprise-grade AI resume ranking system powered by Llama 3, LangGraph, ChromaD
 
 ---
 
-Group  - Runtime Terror
+Group 1 - 
 
     Vivek Neharkar
     Omkar Halpatrao

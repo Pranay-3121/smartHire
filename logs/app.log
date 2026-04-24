@@ -1292,3 +1292,4 @@ role_type
 2026-04-24 15:27:13 | INFO     | backend.tools.exporter | Exported 6 candidates to JSON: exports\e464f4ca-4543-401b-b4bb-008d55159876_results.json
 2026-04-24 15:27:13 | INFO     | backend.tools.exporter | Shortlist report written: exports\e464f4ca-4543-401b-b4bb-008d55159876_shortlist_report.txt
 2026-04-24 15:27:15 | INFO     | backend.api.main | GET /results/e464f4ca-4543-401b-b4bb-008d55159876
+2026-04-24 15:37:30 | INFO     | backend.services.storage | Loaded 20 runs from uploads\runs_state.json
